@@ -36,8 +36,19 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU1030.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1030.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU6100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU6100.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU870.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU870.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU920.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU920.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_p3.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_pcc.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_pcc.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_srgb.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dsc_cmd_C3D_cali_srgb.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_p3.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_pcc.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_pcc.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_srgb.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_dsi_wuji_rm693a0_tianma_dvt2_cmd_C3D_cali_srgb.txt \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit_dvt2.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit_dvt2.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
@@ -447,6 +458,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libeai_fixed \
     libeai_float \
+    libhdrvivid \
     libhme \
     libhwliqinterface2 \
     libipebpsstriping \
@@ -613,6 +625,7 @@ PRODUCT_PACKAGES += \
     ccid_daemon_nr \
     cnd \
     cnss-daemon \
+    colorbin \
     diag-router \
     fm_qsoc_patches \
     hexlpservice \
