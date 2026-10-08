@@ -287,45 +287,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.sensor.gc08a8_sunwin_front",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/com.qti.sensor.gc08a8_sunwin_front.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.sensor.imx362",
     owner: "lenovo",
     strip: {
@@ -6553,10 +6514,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/qc_bcs_lib.so",
             ],
             shared_libs: [
-                "libcutils",
-                "liblog",
                 "libqcbor",
                 "libminksocket_vendor",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -6624,41 +6585,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.qseecom-V1-ndk",
                 "libbinder_ndk",
                 "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector@1.0-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libxml2",
-                "vendor.qti.hardware.qteeconnector-V1-ndk",
-                "libbinder_ndk",
-                "libion",
-                "libGPreqcancel_svc",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -6787,60 +6713,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libGPMTEEC_vendor",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libGPMTEEC_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libGPTEE_vendor",
-                "libminkdescriptor",
-                "libdmabufheap",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libGPTEE_vendor",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libGPTEE_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libutils",
-                "liblog",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -7395,6 +7267,7 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libcutils",
                 "liblog",
+                "libtflite_fd",
                 "libsync",
                 "libz",
                 "libc++",
@@ -8473,6 +8346,65 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhdrdynamic",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhdrdynamic.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libsdm-color",
+                "libtinyxml2_1",
+                "libcutils",
+                "libutils",
+                "libdisplayskuutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhdrdynamicootf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhdrdynamicootf.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libsdm-color",
+                "libtinyxml2_1",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhme",
     owner: "lenovo",
     strip: {
@@ -8500,10 +8432,13 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libcdsprpc",
+                "libdmabufheap",
+                "libion",
+                "libOpenCL",
                 "libz",
+                "libdl",
                 "libc",
                 "libm",
-                "libdl",
             ],
         },
     },
@@ -9647,35 +9582,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libssd",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssd.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libdiag",
-                "liblog",
-                "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libssdStaticHelper",
     owner: "lenovo",
     strip: {
@@ -9763,6 +9669,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsvswcpu",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsvswcpu.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtee_provisioner_qti",
     owner: "lenovo",
     strip: {
@@ -9778,6 +9709,30 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc",
                 "libminkdescriptor",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtflite_fd",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtflite_fd.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libm",
+                "libc",
             ],
         },
     },
@@ -10181,7 +10136,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector-V1-ndk",
+    name: "vendor.qti.qccvndhal_aidl-V2-ndk",
     owner: "lenovo",
     strip: {
         none: true,
@@ -10189,33 +10144,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so",
+                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -10606,31 +10535,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.gatekeeper-rust-service-qti",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.gatekeeper-rust-service-qti",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "liblog",
-                "libminkdescriptor",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.powerstats-service.qti",
     owner: "lenovo",
     target: {
@@ -10822,42 +10726,10 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "init.qcom.cabl.off",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qcom.cabl.off.sh",
-    filename: "init.qcom.cabl.off.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.cabl",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qcom.cabl.sh",
-    filename: "init.qcom.cabl.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qcom.post_boot",
     owner: "lenovo",
     src: "proprietary/vendor/bin/init.qcom.post_boot.sh",
     filename: "init.qcom.post_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.svi.off",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qcom.svi.off.sh",
-    filename: "init.qcom.svi.off.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.svi",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/init.qcom.svi.sh",
-    filename: "init.qcom.svi.sh",
     soc_specific: true,
 }
 
@@ -11001,32 +10873,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "oemowninfo",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/oemowninfo",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "port-bridge",
     owner: "lenovo",
     target: {
@@ -11050,14 +10896,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "profile_config_service",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/profile_config_service.sh",
-    filename: "profile_config_service.sh",
     soc_specific: true,
 }
 
@@ -11085,7 +10923,7 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "vendor.qti.qccvndhal_aidl-V1-ndk",
+                "vendor.qti.qccvndhal_aidl-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-halimpl",
                 "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "libc++",
@@ -11235,46 +11073,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "setwlansardsi0",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/setwlansardsi0.sh",
-    filename: "setwlansardsi0.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "setwlansardsi1",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/setwlansardsi1.sh",
-    filename: "setwlansardsi1.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "setwlansardsi2",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/setwlansardsi2.sh",
-    filename: "setwlansardsi2.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "setwlansardsi3",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/setwlansardsi3.sh",
-    filename: "setwlansardsi3.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "setwlansardsi4",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/setwlansardsi4.sh",
-    filename: "setwlansardsi4.sh",
     soc_specific: true,
 }
 

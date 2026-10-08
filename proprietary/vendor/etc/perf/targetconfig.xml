@@ -58,7 +58,7 @@
              Target="canoe"
              NumClusters="2"
              TotalNumCores="8"
-             SocIds="660,661"
+             SocIds="660,661,743"
              SynCore="1"
              CoreCtlCpu="4"
              MinCoreOnline="0"
@@ -130,4 +130,29 @@
 
     </Config3>
 
+    <Config4>
+
+         <TargetInfo
+             Target="whale"
+             NumClusters="2"
+             TotalNumCores="8"
+             SocIds="722,723"
+             SynCore="1"
+             CoreCtlCpu="4"
+             MinCoreOnline="0"
+             CpufreqGov="1"
+             TargetMaxArgsPerReq="64"
+        />
+
+         <ClustersInfo Id="0" NumCores="6" Type="big" />
+         <ClustersInfo Id="1" NumCores="2" Type="prime" />
+
+         <LogicalMPAMGroupInfo Id="0" Name="default" Prio="0" />
+         <LogicalMPAMGroupInfo Id="1" Name="video" Prio="1" />
+         <LogicalMPAMGroupInfo Id="2" Name="camera" Prio="2" />
+         <LogicalMPAMGroupInfo Id="3" Name="game" Prio="3" />
+
+         <MPAMInfo NumOfCacheBlocks="2" CacheType="L2" MPAMPrioAware="0" />
+
+    </Config4>
 </TargetConfig>

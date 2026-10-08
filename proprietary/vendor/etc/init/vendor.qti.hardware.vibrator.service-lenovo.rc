@@ -1,3 +1,4 @@
+# Wuji code for WUJI-1690 by zengwang2 at 2026-04-22 start
 on boot
     chown system system /sys/class/qcom-haptics/primitive_duration
     chmod 0600 /sys/class/qcom-haptics/primitive_duration
@@ -31,6 +32,7 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service-
 
 on property:sys.boot_completed=1
     setprop vendor.haptic.calibrate.done 1
+# Wuji code for WUJI-1690 by zengwang2 at 2026-04-22 end
 
 on late-init
     write /sys/class/leds/vibrator/trigger "transient"

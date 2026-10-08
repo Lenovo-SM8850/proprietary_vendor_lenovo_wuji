@@ -28,23 +28,15 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp \
     vendor/lenovo/baldur/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
-    vendor/lenovo/baldur/proprietary/vendor/etc/cablconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cablconfig.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    vendor/lenovo/baldur/proprietary/vendor/etc/dcp_symbols/dcp.elf:$(TARGET_COPY_OUT_VENDOR)/etc/dcp_symbols/dcp.elf \
-    vendor/lenovo/baldur/proprietary/vendor/etc/display/SVIConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/SVIConfig.xml \
-    vendor/lenovo/baldur/proprietary/vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_p3.txt \
-    vendor/lenovo/baldur/proprietary/vendor/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_srgb.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/panel_baldur_nt36523_csot_3k_dsc_vid_C3D_cali_srgb.txt \
-    vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_DPHY_video_panel.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630946261688083603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946261688083603.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
     vendor/lenovo/baldur/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
@@ -76,7 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/pwr/GamePowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/GamePowerOptFeature.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/qcvm_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/qcvm_config.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/qvirtmgr-vndr.json:$(TARGET_COPY_OUT_VENDOR)/etc/qvirtmgr-vndr.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/res/images/WQHD_1600_2560/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1600_2560/charger/battery_fail.png \
     vendor/lenovo/baldur/proprietary/vendor/etc/res/images/WQHD_1600_2560/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1600_2560/charger/battery_scale.png \
     vendor/lenovo/baldur/proprietary/vendor/etc/res/images/WQHD_1840_2944/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1840_2944/charger/battery_fail.png \
@@ -94,10 +85,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_lsm6dsv_0.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_mmc56x3x_0.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_qmc630x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_qmc630x_0.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_stk3acx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_stk3acx_0.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_sx932x_0.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/sensors/config/kaanapali_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_tmd3765_0.json \
-    vendor/lenovo/baldur/proprietary/vendor/etc/sensors/javalibs/odpmanagerlib-aar:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/javalibs/odpmanagerlib-aar \
     vendor/lenovo/baldur/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/baldur/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/thermal-engine_battery_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_0.conf \
@@ -117,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/etc/thermal_user_case.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_user_case.conf \
     vendor/lenovo/baldur/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/lenovo/baldur/proprietary/vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini \
-    vendor/lenovo/baldur/proprietary/vendor/etc/wifi/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/sar-vendor-cmd.xml \
     vendor/lenovo/baldur/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
@@ -158,7 +146,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/arcface_ta.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.mdt \
     vendor/lenovo/baldur/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
@@ -170,26 +157,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/baldur/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/lenovo/baldur/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu35_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/firmware/vpu35_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu35_4v_unsigned.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
     vendor/lenovo/baldur/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.sensormodule.gc08a8_sunwin_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.gc08a8_sunwin_front.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.default.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.canoe.bin \
-    vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.gc08a8_sunwin_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.gc08a8_sunwin_front.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_default.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin \
     vendor/lenovo/baldur/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin \
@@ -205,7 +180,6 @@ PRODUCT_PACKAGES += \
     com.qti.eeprom.truly_cmb433 \
     com.qti.ois.bu63169gwz \
     com.qti.ois.dw9784 \
-    com.qti.sensor.gc08a8_sunwin_front \
     com.qti.sensor.imx362 \
     com.qti.sensor.imx363 \
     com.qti.sensor.imx376 \
@@ -372,13 +346,10 @@ PRODUCT_PACKAGES += \
     qc_bcs_lib \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
-    vendor.qti.hardware.qteeconnector@1.0-impl \
     lib-imsdcservice \
     lib-rtpcore \
     lib-rtpsl \
     libCsecClient \
-    libGPMTEEC_vendor \
-    libGPTEE_vendor \
     libLenovoNvram \
     libQnnGpu \
     libQnnHtp \
@@ -428,6 +399,8 @@ PRODUCT_PACKAGES += \
     libdpps \
     libeai_fixed \
     libeai_float \
+    libhdrdynamic \
+    libhdrdynamicootf \
     libhme \
     libhwliqinterface2 \
     libipebpsstriping \
@@ -463,11 +436,12 @@ PRODUCT_PACKAGES += \
     libsn100u_fw \
     libsn300u_fw \
     libspuprovisionids \
-    libssd \
     libssdStaticHelper \
     libstream_compress \
     libstream_pcm \
+    libsvswcpu \
     libtee_provisioner_qti \
+    libtflite_fd \
     libvideooptfeature \
     libvmfilexfer \
     libpseudocryptoplugin \
@@ -482,8 +456,7 @@ PRODUCT_PACKAGES += \
     libquasar \
     vendor.qti.gnss-service \
     vendor.qti.hardware.camera.aon-service-impl \
-    vendor.qti.hardware.qteeconnector-V1-ndk \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.qti.qccvndhal_aidl-V2-ndk \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
     vendor_lib_rfsa_adsp_libQnnHtpV81_so \
     vendor_lib_rfsa_adsp_libQnnHtpV81Skel_so \
@@ -499,18 +472,13 @@ PRODUCT_PACKAGES += \
     hlosminkdaemon \
     android.hardware.biometrics.face@4.0-service.face \
     android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.gatekeeper-rust-service-qti \
     android.hardware.powerstats-service.qti \
     android.hardware.security.onekeymint-service-qti \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.lenovo.hardware.vibrator_dual-service \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.vibrator.service-lenovo \
-    init.qcom.cabl.off \
-    init.qcom.cabl \
     init.qcom.post_boot \
-    init.qcom.svi.off \
-    init.qcom.svi \
     init.qti.kernel.debug-canoe \
     init.qti.kernel.debug \
     init.qti.kernel.early_debug \
@@ -519,19 +487,12 @@ PRODUCT_PACKAGES += \
     loadalgo \
     lowi-server \
     nvram_cc \
-    oemowninfo \
     port-bridge \
-    profile_config_service \
     qcc-vendor \
     qseecomd \
     qwes_cli \
     qwesd \
     sec_nvm \
-    setwlansardsi0 \
-    setwlansardsi1 \
-    setwlansardsi2 \
-    setwlansardsi3 \
-    setwlansardsi4 \
     shsusrd \
     spdaemon \
     sscrpcd \

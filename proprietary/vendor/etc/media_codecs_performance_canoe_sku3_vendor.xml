@@ -98,7 +98,7 @@
             <!-- measured 98%:85-223 med:194/186 FLAKY(mn=80.8 < 85 - 372) -->
             <Limit name="measured-frame-rate-720x480" range="274-606" /> <!-- TWEAKED N=270 v98%=1.6 -->
             <Limit name="measured-frame-rate-1280x720" range="181-253" /> <!-- N=270 v98%=1.4 -->
-            <Limit name="measured-frame-rate-1920x1080" range="127-177" /> <!-- N=230 v98%=1.2 (-PD1A.180706.000) -->
+            <Limit name="measured-frame-rate-1920x1080" range="230-322" /> <!-- N=230 v98%=1.2 (-PD1A.180706.000) -->
         </MediaCodec>
         <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <!-- measured 98%:191-657 med:617/613 FLAKY(mn=183.9 < 191 - 1226) -->
@@ -119,7 +119,7 @@
             <Limit name="measured-frame-rate-352x288" range="698-886" />
             <Limit name="measured-frame-rate-640x360" range="279-572" />
             <Limit name="measured-frame-rate-720x480" range="197-561" />
-            <Limit name="measured-frame-rate-1280x720" range="52-116" />
+            <Limit name="measured-frame-rate-1280x720" range="164-232" />
         </MediaCodec>
         <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
             <Limit name="measured-frame-rate-352-288" range="1350-1898" />
@@ -150,7 +150,7 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-320x240" range="480-535" />
-            <Limit name="measured-frame-rate-720x480" range="165-210" />
+            <Limit name="measured-frame-rate-720x480" range="293-395" />
             <Limit name="measured-frame-rate-1280x720" range="280-403" />
             <Limit name="measured-frame-rate-1920x1080" range="210-326" />
             <Limit name="measured-frame-rate-3840x2160" range="69-99" />

@@ -247,140 +247,24 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
   </screenBrightnessMap>
 
   <highBrightnessMode enabled="true">
-    <transitionPoint>0.8</transitionPoint>
+    <transitionPoint>0.85</transitionPoint>
     <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
 
     <minimumLux>10000</minimumLux>
     <timing>
-      <timeWindowSecs>1800</timeWindowSecs>
-      <timeMaxSecs>300</timeMaxSecs>
-      <timeMinSecs>60</timeMinSecs>
-    </timing>
+      <timeWindowSecs>1800</timeWindowSecs>  // Window in which we restrict HBM.
+      <timeMaxSecs>300</timeMaxSecs>         // Maximum time of HBM allowed in that window.
+      <timeMinSecs>60</timeMinSecs>          // Minimum time remaining required to switch
+    </timing>                                //   HBM on for.
 
     <sdrHdrRatioMap>
       <point>
-        <sdrNits>4.000</sdrNits>
-        <hdrRatio>4.000</hdrRatio>
+        <sdrNits>2.000</sdrNits>
+        <hdrRatio>8.000</hdrRatio>
       </point>
       <point>
-        <sdrNits>75.000</sdrNits>
-        <hdrRatio>3.995</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>78.859</sdrNits>
-        <hdrRatio>3.851</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>82.717</sdrNits>
-        <hdrRatio>3.721</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>86.576</sdrNits>
-        <hdrRatio>3.602</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>98.152</sdrNits>
-        <hdrRatio>3.301</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>105.869</sdrNits>
-        <hdrRatio>3.137</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>113.586</sdrNits>
-        <hdrRatio>2.996</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>125.162</sdrNits>
-        <hdrRatio>2.816</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>136.737</sdrNits>
-        <hdrRatio>2.667</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>148.313</sdrNits>
-        <hdrRatio>2.541</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>159.889</sdrNits>
-        <hdrRatio>2.433</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>175.323</sdrNits>
-        <hdrRatio>2.312</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>194.616</sdrNits>
-        <hdrRatio>2.187</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>213.909</sdrNits>
-        <hdrRatio>2.084</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>229.343</sdrNits>
-        <hdrRatio>2.015</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>244.778</sdrNits>
-        <hdrRatio>1.954</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>264.071</sdrNits>
-        <hdrRatio>1.888</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>287.222</sdrNits>
-        <hdrRatio>1.821</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>306.515</sdrNits>
-        <hdrRatio>1.773</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>325.808</sdrNits>
-        <hdrRatio>1.73</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>341.242</sdrNits>
-        <hdrRatio>1.699</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>360.535</sdrNits>
-        <hdrRatio>1.665</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>379.828</sdrNits>
-        <hdrRatio>1.634</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>402.98</sdrNits>
-        <hdrRatio>1.6</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>426.131</sdrNits>
-        <hdrRatio>1.571</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>445.424</sdrNits>
-        <hdrRatio>1.548</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>464.526</sdrNits>
-        <hdrRatio>1.545</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>487.105</sdrNits>
-        <hdrRatio>1.57</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>502.158</sdrNits>
-        <hdrRatio>1.585</hdrRatio>
-      </point>
-      <point>
-        <sdrNits>502.197</sdrNits>
-        <hdrRatio>1.593</hdrRatio>
+        <sdrNits>500.000</sdrNits>
+        <hdrRatio>1.5</hdrRatio>
       </point>
     </sdrHdrRatioMap>
   </highBrightnessMode>

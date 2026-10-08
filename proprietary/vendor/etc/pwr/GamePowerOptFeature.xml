@@ -16,7 +16,8 @@
 <Feature>
    <Name>GamePowerOptFeature</Name>
    <Libname>libgamepoweroptfeature.so</Libname>
-   <Configs>
+   <!-- Please keep profile with target at the top. -->
+   <Configs  target = "canoe">
         <!-- FPS threshold values in the order: Increase, Busy Target FPS Delta, Decrease, Target FPS Delta-->
         <FPS_30_THRESHOLD>0.6, 0.5, 0.2, 0.0</FPS_30_THRESHOLD>
         <FPS_35_THRESHOLD>0.6, 0.5, 0.3, 0.0</FPS_35_THRESHOLD>
@@ -28,12 +29,15 @@
         <FPS_144_THRESHOLD>2.0, 0.5, 0.8, 0.0</FPS_144_THRESHOLD>
         <FPS_165_THRESHOLD>2.0, 0.5, 0.8, 0.0</FPS_165_THRESHOLD>
         <FPS_MAX_THRESHOLD>165</FPS_MAX_THRESHOLD>
+        <FORCE_TARGET_FPS_OFFSET>1</FORCE_TARGET_FPS_OFFSET>
         <USE_SMART_FREQUENCY>1</USE_SMART_FREQUENCY>
         <SMART_FREQUENCY_ENABLE>0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1</SMART_FREQUENCY_ENABLE>
         <SMART_FREQUENCY_LEVEL>0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10</SMART_FREQUENCY_LEVEL>
         <USE_JANK_HEADROOM>1</USE_JANK_HEADROOM>
         <HEADROMM_EXPAND_CHECKPOINT>2</HEADROMM_EXPAND_CHECKPOINT>
         <HEADROMM_EXPAND_BOOSTRATIO>10</HEADROMM_EXPAND_BOOSTRATIO>
+        <HEADROMM_EXPAND_LRPB_CEILING_THRESH>1</HEADROMM_EXPAND_LRPB_CEILING_THRESH>
+        <HEADROMM_EXPAND_LRPB_CEILING_LEVEL>5</HEADROMM_EXPAND_LRPB_CEILING_LEVEL>
         <!-- Parameters: kp, ki, kd, iLimit, outputLimit, dt (fre unit kHz)-->
         <PID_Parameters_Up>6, 1, 3, 20, 200, 0.5</PID_Parameters_Up>
         <PID_Parameters_Down>12, 2, 6, 20, 400, 0.5</PID_Parameters_Down>
@@ -94,12 +98,15 @@
         <FPS_144_THRESHOLD>2.0, 0.5, 0.8, 0.0</FPS_144_THRESHOLD>
         <FPS_165_THRESHOLD>2.0, 0.5, 0.8, 0.0</FPS_165_THRESHOLD>
         <FPS_MAX_THRESHOLD>165</FPS_MAX_THRESHOLD>
+        <FORCE_TARGET_FPS_OFFSET>1</FORCE_TARGET_FPS_OFFSET>
         <USE_SMART_FREQUENCY>1</USE_SMART_FREQUENCY>
         <SMART_FREQUENCY_ENABLE>0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1</SMART_FREQUENCY_ENABLE>
         <SMART_FREQUENCY_LEVEL>0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10</SMART_FREQUENCY_LEVEL>
         <USE_JANK_HEADROOM>1</USE_JANK_HEADROOM>
         <HEADROMM_EXPAND_CHECKPOINT>2</HEADROMM_EXPAND_CHECKPOINT>
         <HEADROMM_EXPAND_BOOSTRATIO>10</HEADROMM_EXPAND_BOOSTRATIO>
+        <HEADROMM_EXPAND_LRPB_CEILING_THRESH>1</HEADROMM_EXPAND_LRPB_CEILING_THRESH>
+        <HEADROMM_EXPAND_LRPB_CEILING_LEVEL>5</HEADROMM_EXPAND_LRPB_CEILING_LEVEL>
         <!-- Parameters: kp, ki, kd, iLimit, outputLimit, dt (fre unit kHz)-->
         <PID_Parameters_Up>6, 1, 3, 20, 200, 0.5</PID_Parameters_Up>
         <PID_Parameters_Down>12, 2, 6, 20, 400, 0.5</PID_Parameters_Down>
@@ -149,7 +156,7 @@
         <GPUBUSY_SAMPLE_CALL_INTERVAL_MSEC>500</GPUBUSY_SAMPLE_CALL_INTERVAL_MSEC>
     </Configs>
     <Profiles>
-        <Profile>
+        <Profile target = "canoe">
         <!-- Profiles which can be configured -->
         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0 -->
         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0 -->
@@ -220,15 +227,16 @@
         <SMART_FREQ_LRPB_ACTIVE>0x62C58000</SMART_FREQ_LRPB_ACTIVE>
         </Profile>
     </Profiles>
-    <IgnoredApps>
+    <IgnoredApps target = "canoe">
         <!-- Apps which be excluded for optimization -->
-        <App1></App1>
-        <App2></App2>
+        <App1>com.epicgames.fortnite</App1>
+        <App2>com.samsung.gamesimulator</App2>
     </IgnoredApps>
     <IgnoredApps target = "alor">
         <!-- Apps which be excluded for optimization -->
-        <App1></App1>
-        <App2></App2>
+        <App1>com.miHoYo.GenshinImpact</App1>
+        <App2>com.epicgames.fortnite</App2>
+        <App3>com.HoYoverse.hkrpgoversea</App3>
     </IgnoredApps>
     <Trigger>
         <AsyncId>0x00001001, 0x00001002, 0x00001003, 0x00001004, 0x00001093, 0X00001401, 0x00001060, 0x0000105A, 0x00001059</AsyncId>
@@ -237,6 +245,30 @@
         <!-- Apps which be included for optimization -->
         <!-- Package, MaxFPS -->
     </AppliedApps>
+    <!-- HOK & Genshin on canoe -->
+     <PerCaseConfig target = "canoe" package = "com.tencent.tmgp.sgame;com.miHoYo.Yuanshen">
+        <SMART_FREQUENCY_LEVEL>0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2</SMART_FREQUENCY_LEVEL>
+     </PerCaseConfig>
+     <!-- WWM on canoe -->
+     <PerCaseConfig target = "canoe" package = "com.netease.yyslscn;">
+        <SMART_FREQUENCY_LEVEL>0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4</SMART_FREQUENCY_LEVEL>
+     </PerCaseConfig>
+     <!-- WW 60fps on canoe -->
+     <PerCaseConfig target = "canoe" package = "60fps:com.kurogame.mingchao">
+        <HEADROMM_EXPAND_BOOSTRATIO>30</HEADROMM_EXPAND_BOOSTRATIO>
+        <PID_Parameters_CPUBusy_FPS>1, 1, 0, 25, 30, 0.5</PID_Parameters_CPUBusy_FPS>
+        <CPUBusy_Target_Default>80, 80</CPUBusy_Target_Default>
+        <CPUBusy_LRPB_Boost_Pct>20</CPUBusy_LRPB_Boost_Pct>
+        <FREQ_MIN_Enable>1, 1</FREQ_MIN_Enable>
+     </PerCaseConfig>
+    <!-- Naraka 60fps on canoe -->
+    <PerCaseConfig target = "canoe" package = "60fps:com.netease.l22">
+        <FPS_60_THRESHOLD>0.6, 0.2, 1, 0.0</FPS_60_THRESHOLD>
+        <PID_Parameters_CPUBusy_FPS>1, 1, 0, 15, 15, 0.5</PID_Parameters_CPUBusy_FPS>
+        <CPUBusy_Target_Default>50, 50</CPUBusy_Target_Default>
+        <FREQ_MIN_Enable>1, 1</FREQ_MIN_Enable>
+        <MIN_MAX_CAP_RANGE_DOWN>1, 1</MIN_MAX_CAP_RANGE_DOWN>
+    </PerCaseConfig>
     <!-- GP 120fps on alor -->
     <PerCaseConfig target = "alor" package = "120fps:com.tencent.tmgp.pubgmhd">
         <CPUBusy_Target_Default>70, 80</CPUBusy_Target_Default>
@@ -250,5 +282,20 @@
         <CPUBusy_LRPB_Boost_Pct>15</CPUBusy_LRPB_Boost_Pct>
         <FREQ_MIN_Enable>1, 1</FREQ_MIN_Enable>
         <MIN_MAX_CAP_RANGE_UP>1, 1</MIN_MAX_CAP_RANGE_UP>
+    </PerCaseConfig>
+    <!-- SR on alor -->
+    <PerCaseConfig target = "alor" package = "com.miHoYo.hkrpg">
+        <FREQ_MIN_Enable>0, 0</FREQ_MIN_Enable>
+    </PerCaseConfig>
+    <!-- BGMI on alor -->
+    <PerCaseConfig target = "alor" package = "com.pubg.imobile">
+        <FREQ_MIN_Enable>0, 0</FREQ_MIN_Enable>
+    </PerCaseConfig>
+    <!-- HOK&GP 60fps on alor -->
+    <PerCaseConfig target = "alor" package = "60fps:com.tencent.tmgp.sgame;com.tencent.tmgp.pubgmhd">
+        <FREQ_MAX_Enable>0, 0</FREQ_MAX_Enable>
+        <FREQ_MIN_Enable>0, 0</FREQ_MIN_Enable>
+        <USE_JANK_HEADROOM>0</USE_JANK_HEADROOM>
+        <CPUBusy_Enable>0</CPUBusy_Enable>
     </PerCaseConfig>
 </Feature>

@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
-    "soc_id": ["519", "536", "600", "601", "661"]
+    "soc_id": ["519", "536", "600", "601", "661", "660"]
   },
     "qmc630x_0":{
     "owner": "sns_qmc630x",
@@ -92,10 +92,10 @@
     ".orient":{
       "owner": "sns_qmc630x",
       "x":{ "type": "str", "ver": "1",
-        "data": "-y"
+        "data": "-x"
       },
       "y":{ "type": "str", "ver": "1",
-        "data": "-x"
+        "data": "+y"
       },
       "z":{ "type": "str", "ver": "1",
         "data": "-z"
@@ -107,32 +107,32 @@
         "owner": "sns_qmc630x",
         ".corr_mat":{
           "owner": "sns_qmc630x",
-          "0_0":{ "type": "flt", "ver": "2",
-	    "data": "0.9479"
-	   },
-	   "0_1":{ "type": "flt", "ver": "2",
-	     "data": "-0.0452"
-	   },
-	   "0_2":{ "type": "flt", "ver": "2",
-	     "data": "-0.0290"
-	   },
-	   "1_0":{ "type": "flt", "ver": "2",
-	     "data": "-0.0295"
-	   },
-	   "1_1":{ "type": "flt", "ver": "2",
-	     "data": "0.9768"
-	   },
-	   "1_2":{ "type": "flt", "ver": "2",
-	     "data": "-0.0018"
-	   },
-	   "2_0":{ "type": "flt", "ver": "2",
-	     "data": "-0.0323"
-	   },
-	   "2_1":{ "type": "flt", "ver": "2",
-	     "data": "-0.0242"
-	   },
-	   "2_2":{ "type": "flt", "ver": "2",
-	     "data": "0.9997"
+          "0_0":{ "type": "flt", "ver": "1",
+            "data": "0.999658"
+          },
+          "0_1":{ "type": "flt", "ver": "1",
+            "data": "-0.00218"
+          },
+          "0_2":{ "type": "flt", "ver": "1",
+            "data": "0.01274"
+          },
+          "1_0":{ "type": "flt", "ver": "1",
+            "data": "0.00149"
+          },
+          "1_1":{ "type": "flt", "ver": "1",
+            "data": "0.93205"
+          },
+          "1_2":{ "type": "flt", "ver": "1",
+            "data": "0.033199"
+          },
+          "2_0":{ "type": "flt", "ver": "1",
+            "data": "-0.012386"
+          },
+          "2_1":{ "type": "flt", "ver": "1",
+            "data": "-0.01449"
+          },
+          "2_2":{ "type": "flt", "ver": "1",
+            "data": "1.0063"
           }
         },
         ".bias":{
@@ -152,31 +152,31 @@
         "owner": "sns_qmc630x",
         ".corr_mat":{
           "owner": "sns_qmc630x",
-          "0_0":{ "type": "flt", "ver": "2",
+          "0_0":{ "type": "flt", "ver": "0",
             "data": "1.0"
           },
-          "0_1":{ "type": "flt", "ver": "2",
+          "0_1":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "0_2":{ "type": "flt", "ver": "2",
+          "0_2":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "1_0":{ "type": "flt", "ver": "2",
+          "1_0":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "1_1":{ "type": "flt", "ver": "2",
+          "1_1":{ "type": "flt", "ver": "0",
             "data": "1.0"
           },
-          "1_2":{ "type": "flt", "ver": "2",
+          "1_2":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "2_0":{ "type": "flt", "ver": "2",
+          "2_0":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "2_1":{ "type": "flt", "ver": "2",
+          "2_1":{ "type": "flt", "ver": "0",
             "data": "0.0"
           },
-          "2_2":{ "type": "flt", "ver": "2",
+          "2_2":{ "type": "flt", "ver": "0",
             "data": "1.0"
           }
         },

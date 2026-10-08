@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "QRD", "RCM"],
-    "soc_id": ["339", "340", "361", "356", "439", "482", "536", "577", "661"]
+    "soc_id": ["339", "340", "361", "356", "439", "482", "536", "577", "661", "660"]
   },
   "icm536xx_0":{
     "owner": "icm536xx",
@@ -149,14 +149,14 @@
     },
     ".orient":{
       "owner": "icm536xx",
-      "x":{ "type": "str", "ver": "0",
-        "data": "+x"
+      "x":{ "type": "str", "ver": "2",
+        "data": "+y"
       },
-      "y":{ "type": "str", "ver": "0",
-        "data": "-y"
+      "y":{ "type": "str", "ver": "2",
+        "data": "-x"
       },
-      "z":{ "type": "str", "ver": "1",
-        "data": "-z"
+      "z":{ "type": "str", "ver": "2",
+        "data": "+z"
       }
     },
     ".gyro":{

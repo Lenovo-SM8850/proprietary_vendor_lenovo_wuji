@@ -14,7 +14,3 @@ service qspmhal /vendor/bin/vendor.qti.qspmhal-service
 on post-fs-data
     #Create QSPM-hal deamon related dirs
     mkdir /data/vendor/gaming 0770 root system
-    start profile_config_service
-    symlink /vendor/etc/com.miHoYo.Nap-gpu data/vendor/gaming/com.miHoYo.Nap-gpu
-
-

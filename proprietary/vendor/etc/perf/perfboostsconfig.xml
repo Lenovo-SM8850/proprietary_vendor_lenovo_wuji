@@ -35,7 +35,7 @@
 
         <!-- Type="1", main launch boost of 0.6sec -->
         <Config
-            Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
@@ -101,7 +101,7 @@
 
         <!-- Type="2", Main App Launch Boost -->
         <Config
-            Id="0x00001081" Type="2" Enable="true" Timeout="2000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="2" Enable="true" Timeout="2000" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
@@ -157,7 +157,7 @@
 
         <!-- Type="3", Main Game Launch Boost -->
         <Config
-            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x1,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x42C10000, 0x1,
@@ -225,7 +225,7 @@
 
         <!-- Type="5", main launch boost of 0.6sec, revisit on next project.-->
         <Config
-            Id="0x00001081" Type="5" Enable="true" Timeout="600" Target="canoe,alor"
+            Id="0x00001081" Type="5" Enable="true" Timeout="600" Target="canoe,alor,whale"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x41848000, 0x927C0, 0x41844000, 0x927C0, 0x41868000, 0x44D90, 0x41864000, 0x44D90, 0x4303C000, 0x858B8, 0x43040000, 0x858B8, 0x42C10000, 0x1,
@@ -259,7 +259,7 @@
 
         <!-- Type="10", main launch boost of 2sec -->
         <Config
-            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="10" Enable="true" Timeout="2000" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
@@ -306,13 +306,13 @@
     <!--app launch boost (attach application) -->
         <!-- SCHED_TASK_BOOST resource opcode, value-->
         <Config
-            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor"
+            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C80000, 0x0" />
 
     <!--app attach launch base boost (LL app attach) -->
         <!-- SCHED_TASK_BOOST resource opcode, value-->
         <Config
-            Id="0x00001081" Type="104" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor"
+            Id="0x00001081" Type="104" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C80000, 0x0" />
 
     <!--Animation boost -->
@@ -325,7 +325,7 @@
         <!-- SCHED_IPC_LEVELS BIG Core resource opcode, value-->
         <!-- SCHED_IPC_LEVELS PRIME Core resource opcode, value-->
         <Config
-            Id="0x00001083" Enable="true" Timeout="400" Target="canoe,alor_interposer,alor"
+            Id="0x00001083" Enable="true" Timeout="400" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40804000, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
@@ -341,7 +341,7 @@
 
         <!-- Type="", MTP boost -->
         <Config
-            Id="0x00001086" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x00001086" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40800000, 1800, 0x40C48000,0x3F" />
 
     <!--PackageInstall boost-->
@@ -355,7 +355,7 @@
         <!-- Type="", Package Install boost -->
 
         <Config
-            Id="0x00001088" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x00001088" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000,0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0,
                        0x40CCC000, 0" />
@@ -373,7 +373,7 @@
         <!-- Type="", Rotation latency boost -->
 
         <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="canoe,alor_interposer,alor"
+            Id="0x00001089" Enable="true" Timeout="1500" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000,0xCE6, 0x40800200,0xFE6,
                        0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
@@ -386,7 +386,7 @@
         <!-- Type="", Rotation animation boost -->
 
         <Config
-            Id="0x00001090" Enable="true" Timeout="1000" Target="canoe,alor_interposer,alor"
+            Id="0x00001090" Enable="true" Timeout="1000" Target="canoe,alor_interposer,alor,whale"
             Resources="0x42804000, 5" />
 
     <!--Performance mode-->
@@ -404,7 +404,7 @@
         <!-- MPCTLV3_SCHED_MAX_FREQ_PARTIAL_HALT resource opcode, value-->
         <!-- Type="", Performance mode -->
         <Config
-            Id="0x00001091" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x00001091" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1785, 0x40800200, 1689,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1, 0x40CFC000, 0, 0x4348C000,0x71C50,
                        0X43C1C000, 0x7FFFFFFF, 0X43C1C200, 0x7FFFFFFF, 0X43C20000, 0x7FFFFFFF" />
@@ -436,7 +436,7 @@
         <!-- MPCTLV3_MPAM_GROUP_SCHEMATA L Cluster, value -->
         <!-- CPU SLC MPAM GEAR partid1 -->
         <Config
-            Id="0x000010AC" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x000010AC" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x4080C000, 0x7FFFFFFF, 0x4080C200, 0x7FFFFFFF,
                       0x40808000, 691200, 0x40808200, 883200,
                       0x41000000, 6, 0x41000200, 2,
@@ -470,7 +470,7 @@
         <!-- SCHED_MIN_TASK_UTIL_FOR_UCLAMP, value-->
         <!-- GPU DISABLE resource opcode, value  -->
         <Config
-            Id="0x000010AD" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x000010AD" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xEFFF, 0x40800200, 0xEFFF,
                        0x41000000, 6, 0x41000200, 2,
@@ -492,7 +492,7 @@
         <!-- LLCC resource opcode, value-->
         <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
         <Config
-            Id="0x000010AA" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x000010AA" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x4281C000, 2000, 0x4441C000, 4, 0x44404000, 0x10000002,
                        0x44404200, 0x10000002, 0x4440C000, 0, 0x44410000, 13,
                        0x40804000, 1996, 0x40804200, 2246, 0x4348C000, 0x71C50,
@@ -522,7 +522,7 @@
         <!-- GPU SLC MPAM GEAR -->
         <!-- CPU SLC MPAM GEAR pardid0 -->
         <Config
-            Id="0x000010AB" Enable="true" Target="canoe,alor_interposer,alor"
+            Id="0x000010AB" Enable="true" Target="canoe,alor_interposer,alor,whale"
             Resources="0x4080C000, 0x7FFFFFFF, 0x4080C200, 0x7FFFFFFF,
                        0x40808000, 691200, 0x40808200, 883200,
                        0x41000000, 6, 0x41000200, 2,
@@ -535,18 +535,18 @@
     <!--Display on Resource -->
         <!-- Display on resource opcode, value -->
         <Config
-                Id="0x00001041" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor"
+                Id="0x00001041" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor,whale"
                 Resources="0x40000000, 1" />
 
     <!--Display off Resource -->
         <!-- Display on resource opcode, value -->
         <Config
-                Id="0x00001040" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor"
+                Id="0x00001040" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor,whale"
                 Resources="0x40000000, 0x0" />
 
     <!-- Doze hint -->
     <Config
-            Id="0x00001053" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor"
+            Id="0x00001053" Enable="true" Timeout="0" Target="canoe,alor_interposer,alor,whale"
             Resources="0x42C34000, 1" />
 
     <!--FPS Update from Framework-->
@@ -558,35 +558,35 @@
         <!-- Type indicates FPS -->
         <!-- 30fps -->
         <Config
-            Id="0x00001094" Type="30" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="30" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 8, 0x43468000, 32" />
         <!-- 45fps -->
         <Config
-            Id="0x00001094" Type="45" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="45" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 5, 0x43468000, 20" />
         <!-- 60fps -->
         <Config
-            Id="0x00001094" Type="60" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="60" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 4, 0x43468000, 16" />
         <!-- 90fps -->
         <Config
-            Id="0x00001094" Type="90" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="90" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 3, 0x43468000, 12" />
         <!-- 120fps -->
         <Config
-            Id="0x00001094" Type="120" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="120" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 144fps -->
         <Config
-            Id="0x00001094" Type="144" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="144" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 180fps -->
         <Config
-            Id="0x00001094" Type="180" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="180" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 240fps -->
         <Config
-            Id="0x00001094" Type="240" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x00001094" Type="240" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
 
         <!--FPS Immediate Update from within Perfd-->
@@ -598,139 +598,139 @@
         <!-- Type indicates FPS -->
         <!-- 30fps -->
         <Config
-            Id="0x0000109B" Type="30" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="30" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 8, 0x43468000, 32" />
         <!-- 45fps -->
         <Config
-            Id="0x0000109B" Type="45" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="45" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 5, 0x43468000, 20" />
         <!-- 60fps -->
         <Config
-            Id="0x0000109B" Type="60" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="60" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 4, 0x43468000, 16" />
         <!-- 90fps -->
         <Config
-            Id="0x0000109B" Type="90" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="90" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 3, 0x43468000, 12" />
         <!-- 120fps -->
         <Config
-            Id="0x0000109B" Type="120" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="120" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 144fps -->
         <Config
-            Id="0x0000109B" Type="144" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="144" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 180fps -->
         <Config
-            Id="0x0000109B" Type="180" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="180" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
         <!-- 240fps -->
         <Config
-            Id="0x0000109B" Type="240" Enable="true" Target="canoe,alor_interposer,alor" Timeout="0"
+            Id="0x0000109B" Type="240" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="0"
             Resources="0x40CA4000, 2, 0x43468000, 8, 0x40CC8000, 119" />
 
     <!-- PiCard Early Wakeup both GPU and Display -->
         <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="60"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="60"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="90"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="90"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="120"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="120"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="144"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="144"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="180"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="180"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="240"
+                Id="0x00001098" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="240"
                 Resources="0x42834000, 1, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
         <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="60"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="60"
                 Resources="0x42834000, 1" />
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="90"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="90"
                 Resources="0x42834000, 1" />
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="120"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="120"
                 Resources="0x42834000, 1" />
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="144"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="144"
                 Resources="0x42834000, 1" />
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="180"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="180"
                 Resources="0x42834000, 1" />
         <Config
-                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="240"
+                Id="0x00001099" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="240"
                 Resources="0x42834000, 1" />
 
     <!-- PiCard Early Wakeup Display only -->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="60"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="60"
                 Resources="0x41C0C000, 0" />
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="90"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="90"
                 Resources="0x41C0C000, 0" />
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="120"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="120"
                 Resources="0x41C0C000, 0" />
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="144"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="144"
                 Resources="0x41C0C000, 0" />
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="180"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="180"
                 Resources="0x41C0C000, 0" />
         <Config
-                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor" Timeout="2000" Fps="240"
+                Id="0x0000109A" Type="0" Enable="true" Target="canoe,alor_interposer,alor,whale" Timeout="2000" Fps="240"
                 Resources="0x41C0C000, 0" />
 
     <!--Large Comp Hint -->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value -->
         <!-- GPU_MIN_POWER_LEVEL resource opcode,value -->
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="30"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="30"
                 Resources="0x40800000, 500" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="60"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="60"
                 Resources="0x40800000, 500" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="90"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="90"
                 Resources="0x40800000, 1000, 0x42804000, 12" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="120"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="120"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="144"
-                Resources="0x40800000, 1500, 0x42804000, 5" />
-
-        <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="180"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="144"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="240"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="180"
+                Resources="0x40800000, 1500, 0x42804000, 5" />
+
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="240"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
 
     <!--HDR Content Hint -->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value -->
         <Config
-                Id="0x000010A8" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="30, 60, 90"
+                Id="0x000010A8" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="30, 60, 90"
                 Resources="0x40800000, 500" />
 
         <Config
-                Id="0x000010A8" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="120, 144, 180, 240"
+                Id="0x000010A8" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor,whale" Fps="120, 144, 180, 240"
                 Resources="0x40800000, 1500" />
 
     <!-- Silky_Scrolls_Lite: Scroll Boost (default)-->
@@ -749,7 +749,7 @@
 
         <!-- Type 1 Heavy Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -776,7 +776,7 @@
 
         <!-- Type 1 Heavy Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer,whale" Fps="90"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -784,7 +784,7 @@
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80" />
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="1" Enable="true" Target="canoe,alor_interposer,whale" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -845,7 +845,7 @@
 
         <!-- Type 2 Medium Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -868,7 +868,7 @@
 
         <!-- Type 2 Medium Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer,whale" Fps="90"
             Resources="
                        0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
@@ -876,7 +876,7 @@
                        0x41000200, 1,
                        0x6081C000, 2, 2611200, 80" />
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="2" Enable="true" Target="canoe,alor_interposer,whale" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -927,7 +927,7 @@
 
         <!-- Type 3 Light Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer,whale"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
             0x6081C000, 2, 2611200, 80" />
 
@@ -948,14 +948,14 @@
 
         <!-- Type 3 Light Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer,whale" Fps="90"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
                        0x41000200, 1,
                        0x6081C000, 2, 2611200, 80"/>
         <Config
-            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="3" Enable="true" Target="canoe,alor_interposer,whale" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1007,7 +1007,7 @@
 
         <!-- Type 1 Heavy pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="1" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="1" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1035,7 +1035,7 @@
 
         <!-- Type 1 Heavy pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="1" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="1" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1090,7 +1090,7 @@
 
         <!-- Type 2 Medium pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="2" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="2" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1113,7 +1113,7 @@
 
         <!-- Type 2 Medium pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="2" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="2" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1160,7 +1160,7 @@
 
         <!-- Type 3 Light pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="3" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="3" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
             0x6081C000, 2, 2611200, 80" />
 
@@ -1181,7 +1181,7 @@
 
         <!-- Type 3 Light pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="3" Enable="true" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="3" Enable="true" Timeout="100" Target="canoe,alor_interposer,whale" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1220,7 +1220,7 @@
         <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
         <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
         <Config
-            Id="0x000010A7" Type="1" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor"
+            Id="0x000010A7" Type="1" Enable="true" Timeout="2000" Target="canoe,alor_interposer,alor,whale"
             Resources="0x40C00000, 0x1, 0x4080C000, 2950000, 0x4080C200, 3300000,
                         0x40808000, 1070000, 0x40808200, 1010000" />
 
@@ -1237,7 +1237,7 @@
 
         <!-- Type 1 Heavy Drags, 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="60,90"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40808000, 600000, 0x40808200, 800000,
@@ -1263,7 +1263,7 @@
 
         <!-- Type=1 Heavy Drags, 120 FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="120"
+            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="120"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 2, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1289,7 +1289,7 @@
 
         <!-- Type=1 Heavy Drags, 144 and higher FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="144,180,240"
+            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="144,180,240"
             Resources="0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 2, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1363,7 +1363,7 @@
 
         <!-- Type 2 Medium Drags, 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="60,90"
             Resources="0x4080C000, 998000, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x40C00000, 2, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1387,7 +1387,7 @@
 
         <!-- Type 2 Medium Drags, 120 FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="120"
+            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="120"
             Resources="0x4080C000, 902400, 0x4080C200, 902400, 0x40C00000, 2, 0x41000000, 6,
                        0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1412,7 +1412,7 @@
 
         <!-- Type 2 Medium Drags, 144 and higher FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="144,180,240"
+            Id="0x00001087" Type="2" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="144,180,240"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1452,7 +1452,7 @@
         <!-- MPCTLV3_ZONE_MAX_UTIL_PCT, NumOfValues, Freq, Percent -->
         <!-- Type 3 Light Drags: 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="3" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="3" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="60,90"
             Resources="0x40C78000, 0, 0x40C7C000, 0, 0x40C00000, 2, 0x41000000, 4,
             0x6081C000, 2, 2611200, 80" />
 
@@ -1463,7 +1463,7 @@
         <!-- MPCTLV3_ZONE_MAX_UTIL_PCT, NumOfValues, Freq, Percent -->
         <!-- Type 3 Light Drags: 120 and higher FPS -->
         <Config
-            Id="0x00001087" Type="3" Enable="true" Timeout="0" Target="canoe,alor_interposer" Fps="120,144,180,240"
+            Id="0x00001087" Type="3" Enable="true" Timeout="0" Target="canoe,alor_interposer,whale" Fps="120,144,180,240"
             Resources="0x40C78000, 0, 0x40C7C000, 0, 0x40C00000, 2, 0x41000000, 4,
             0x6081C000, 2, 2611200, 80" />
 

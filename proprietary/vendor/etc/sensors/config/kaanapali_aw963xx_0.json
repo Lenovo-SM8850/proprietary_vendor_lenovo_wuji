@@ -1,7 +1,7 @@
 {
 	"config":{
 		"hw_platform": ["HDK", "QRD"],
-		"soc_id": ["356", "661"]
+		"soc_id": ["356", "661", "660"]
 	},
 	"aw963xx_0_platform":{
 		"owner": "sns_aw963xx",
@@ -50,7 +50,7 @@
 				"data": "/pmic/client/sensor_vdd"
 			},
 			"vddio_rail":{ "type": "str", "ver": "0",
-				"data": "/pmic/client/sensor_vddio"
+				"data": "L1B_E0"
 			},
 			"rigid_body_type":{ "type": "int", "ver": "0",
 				"data": "0"
@@ -124,7 +124,7 @@
 			"default_config_num": {"type": "int", "ver": "0",
 			"data": "0"
 			},
-			"factory_mode_flag": {"type": "int", "ver": "1",
+			"factory_mode_flag": {"type": "int", "ver": "0",
 			"data": "1"
 			},
 			"irq_mux": {"type": "int", "ver": "0",

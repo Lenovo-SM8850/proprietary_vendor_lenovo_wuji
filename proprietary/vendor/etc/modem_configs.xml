@@ -13,4 +13,7 @@
     <config id="ZUI_TPUT.cfg"></config>
     <config id="gps_diag.cfg"></config>
     <config id="sensors_diag.cfg"></config>
+    <!--WUJI code for WUJI-16961 by wufan18 at 2026/07/23 start -->
+    <config id="DIAG_audio_07-07.cfg"></config>
+    <!--WUJI code for WUJI-16961 by wufan18 at 2026/07/23 end -->
 </modemconfigs>

@@ -5,8 +5,17 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #=============================================================================
 
-soc_id=`cat /sys/devices/soc0/soc_id` 2> /dev/null
-chip_id=`cat /sys/devices/soc0/chip_id` 2> /dev/null
+if [ -f /sys/devices/soc1/soc_id ]; then
+    soc_id=`cat /sys/devices/soc1/soc_id` 2> /dev/null
+else
+    soc_id=`cat /sys/devices/soc0/soc_id` 2> /dev/null
+fi
+
+if [ -f /sys/devices/soc1/chip_id ]; then
+    chip_id=`cat /sys/devices/soc1/chip_id` 2> /dev/null
+else
+    chip_id=`cat /sys/devices/soc0/chip_id` 2> /dev/null
+fi
 
 # Store soc_id in ro.vendor.qti.soc_id
 setprop ro.vendor.qti.soc_id $soc_id
@@ -18,9 +27,14 @@ setprop ro.vendor.qti.soc_model $chip_id
 # and store it in ro.vendor.qti.soc_name.
 if [ "$soc_id" -eq 707 ] || [ "$soc_id" -eq 708 ] ; then
     setprop ro.vendor.qti.soc_name art
-elif [ "$soc_id" -eq 660 ] || [ "$soc_id" -eq 661 ] || [ "$soc_id" -eq 704 ]; then
+elif [ "$soc_id" -eq 660 ] || [ "$soc_id" -eq 661 ] || [ "$soc_id" -eq 704 ] || [ "$soc_id" -eq 743 ]; then
     setprop ro.vendor.qti.soc_name canoe
     setprop ro.vendor.media_performance_class 35
+elif [ "$soc_id" -eq 722 ] || [ "$soc_id" -eq 723 ]; then
+    setprop ro.vendor.qti.soc_name whale
+    setprop ro.vendor.media_performance_class 35
+elif [ "$soc_id" -eq 724 ] || [ "$soc_id" -eq 744 ]; then
+    setprop ro.vendor.qti.soc_name chora
 elif [ "$soc_id" -eq 685 ] || [ "$soc_id" -eq 727 ]; then
     setprop ro.vendor.qti.soc_name alor
     setprop ro.vendor.media_performance_class 35
@@ -41,4 +55,6 @@ elif [ "$soc_id" -eq 575 ]; then
 elif [ "$soc_id" -eq 576 ]; then
     setprop ro.vendor.qti.soc_name yupik
     setprop ro.vendor.qti.soc_model QCM5430
+elif [ "$soc_id" -eq 555 ]; then
+    setprop ro.vendor.qti.soc_name hamoa
 fi

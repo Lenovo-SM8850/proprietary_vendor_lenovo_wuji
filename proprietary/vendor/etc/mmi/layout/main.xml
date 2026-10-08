@@ -60,7 +60,7 @@
         color="0x666666ff" />
 </layout>
 -->
-<!-- LAPISW-1936 by huangjin10 20250730 modify ffbm mode start -->
+<!-- Wuji code for WUJI-1663 by zengwang2 at 2026-04-27 start -->
 <layout>
   <button
         name="tips1"
@@ -96,4 +96,4 @@
         y_rel="90"
         color="" />
 </layout>
-<!-- LAPISW-1936 by huangjin10 20250730 modify ffbm mode end -->
+<!-- Wuji code for WUJI-1663 by zengwang2 at 2026-04-27 end -->

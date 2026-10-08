@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf", "RCM", "HDK", "QRD"],
-    "soc_id": ["557", "577", "661"]
+    "soc_id": ["557", "577", "661","660"]
   },
   "lsm6dsv_0":{
     "owner": "lsm6dsv",
@@ -142,14 +142,14 @@
     },
     ".orient":{
       "owner": "lsm6dsv",
-      "x":{ "type": "str", "ver": "2",
+      "x":{ "type": "str", "ver": "0",
         "data": "+x"
       },
-      "y":{ "type": "str", "ver": "2",
+      "y":{ "type": "str", "ver": "0",
         "data": "-y"
       },
-      "z":{ "type": "str", "ver": "2",
-        "data": "-z"
+      "z":{ "type": "str", "ver": "0",
+        "data": "+z"
       }
     },
     ".gyro":{

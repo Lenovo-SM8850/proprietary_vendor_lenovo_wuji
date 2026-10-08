@@ -57,6 +57,9 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x4" WVal="" RVal="" />  <!-- not supported -->
         <Minor OpcodeValue="0x5" WVal="" RVal="" />  <!-- not supported -->
         <Minor OpcodeValue="0x6" WVal="1" RVal="1" />
+        <Minor OpcodeValue="0x7" WVal="" RVal="" />
+        <Minor OpcodeValue="0x8" WVal="" RVal="" />
+        <Minor OpcodeValue="0x9" WVal="" RVal="" />
     <!-- power collapse major end -->
 
     <!-- cpufreq major start -->
@@ -305,6 +308,10 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x16" Exception="MultiValuedNode" />
         <Minor OpcodeValue="0x17" WVal="1" RVal="1" />
         <Minor OpcodeValue="0x18" WVal="144" RVal="144" />
+        <Minor OpcodeValue="0x19" WVal="" RVal="" />   <!-- not supported -->
+        <Minor OpcodeValue="0x1A" WVal="" RVal="" />   <!-- not supported -->
+        <Minor OpcodeValue="0x1B" WVal="" RVal="" />   <!-- not supported -->
+        <Minor OpcodeValue="0x1C" WVal="" RVal="" />   <!-- not supported -->
     <!-- misc major end -->
 
     <!-- llcbw hwmon major start -->

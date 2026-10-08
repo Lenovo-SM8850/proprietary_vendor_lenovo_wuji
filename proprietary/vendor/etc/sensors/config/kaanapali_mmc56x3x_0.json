@@ -1,8 +1,8 @@
 {
   "config":{
     "hw_platform": ["MTP", "RCM", "Surf", "HDK", "QRD"],
-    "soc_id": ["356", "439", "661"]
-  },
+    "platform_family": ["160"]
+  },   
   "mmc56x3x_0":{
     "owner": "sns_mmc56x3x",
     ".mag":{
@@ -22,7 +22,7 @@
           "data": "0"
         }
       }
-	}
+   }
   },
   "mmc56x3x_0_platform":{
     "owner": "sns_mmc56x3x",
@@ -55,156 +55,11 @@
       "rail_on_state":{ "type": "int", "ver": "0",
         "data": "1"
       },
-
-	  "vddio_rail":{ "type": "str", "ver": "0",
-        "data": "/pmic/client/sensor_vddio"
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "L1B_E0"
       },
       "rigid_body_type":{ "type": "int", "ver": "0",
       "data": "0"
-      }
-    },
-    ".orient":{
-      "owner": "sns_mmc56x3x",
-      "x":{ "type": "str", "ver": "4",
-        "data": "-y"
-      },
-      "y":{ "type": "str", "ver": "4",
-        "data": "-x"
-      },
-      "z":{ "type": "str", "ver": "3",
-        "data": "-z"
-      }
-    },
-    ".mag":{
-      "owner": "sns_mmc56x3x",
-      ".fac_cal":{
-        "owner": "sns_mmc56x3x",
-        ".corr_mat":{
-          "owner": "sns_mmc56x3x",
-          "0_0":{ "type": "flt", "ver": "3",
-            "data": "0.999126"
-          },
-          "0_1":{ "type": "flt", "ver": "3",
-            "data": "-0.041805"
-          },
-          "0_2":{ "type": "flt", "ver": "3",
-            "data": "0.000380"
-          },
-          "1_0":{ "type": "flt", "ver": "3",
-            "data": "-0.030902"
-          },
-          "1_1":{ "type": "flt", "ver": "3",
-            "data": "1.045205"
-          },
-          "1_2":{ "type": "flt", "ver": "3",
-            "data": "-0.016791"
-          },
-          "2_0":{ "type": "flt", "ver": "3",
-            "data": "-0.095184"
-          },
-          "2_1":{ "type": "flt", "ver": "3",
-            "data": "-0.026164"
-          },
-          "2_2":{ "type": "flt", "ver": "3",
-            "data": "1.058224"
-          }
-        },
-        ".bias":{
-          "owner": "sns_mmc56x3x",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "y":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "z":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          }
-        }
-      },
-      ".fac_cal_2":{
-        "owner": "sns_mmc56x3x",
-        ".corr_mat":{
-          "owner": "sns_mmc56x3x",
-          "0_0":{ "type": "flt", "ver": "3",
-            "data": "0.999126"
-          },
-          "0_1":{ "type": "flt", "ver": "3",
-            "data": "-0.041805"
-          },
-          "0_2":{ "type": "flt", "ver": "3",
-            "data": "0.000380"
-          },
-          "1_0":{ "type": "flt", "ver": "3",
-            "data": "-0.030902"
-          },
-          "1_1":{ "type": "flt", "ver": "3",
-            "data": "1.045205"
-          },
-          "1_2":{ "type": "flt", "ver": "3",
-            "data": "-0.016791"
-          },
-          "2_0":{ "type": "flt", "ver": "3",
-            "data": "-0.095184"
-          },
-          "2_1":{ "type": "flt", "ver": "3",
-            "data": "-0.026164"
-          },
-          "2_2":{ "type": "flt", "ver": "3",
-            "data": "1.058224"
-          }
-        },
-        ".bias":{
-          "owner": "sns_mmc56x3x",
-          "x":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "y":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          },
-          "z":{ "type": "flt", "ver": "0",
-            "data": "0.0"
-          }
-        }
-      }
-    },
-    ".placement":{
-      "owner": "sns_mmc56x3x",
-      "0":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "1":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "2":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "3":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "4":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "5":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "6":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "7":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "8":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "9":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "10":{ "type": "flt", "ver": "0",
-        "data": "0.0"
-      },
-      "11":{ "type": "flt", "ver": "0",
-        "data": "0.0"
       }
     }
   }

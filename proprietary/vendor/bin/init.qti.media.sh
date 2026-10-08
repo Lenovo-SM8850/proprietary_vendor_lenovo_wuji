@@ -87,7 +87,9 @@ case "$target" in
         fi
         ;;
     "canoe")
+        #BEGIN LENOVO WUJI-2568, zhongzy5, enable qcom parser
         setprop vendor.mm.target.enable.qcom_parser 16563967
+        #END WUJI-2568
         if [ $build_codename -le "16" ]; then
             setprop vendor.netflix.bsp_rev "Q8850-41474-1"
         fi
@@ -116,6 +118,25 @@ case "$target" in
                 ;;
             685|727)
                 setprop vendor.media.target_variant "_canoe_sku3"
+                setprop vendor.netflix.bsp_rev "Q8845-41954-1"
+                ;;
+            743)
+                setprop vendor.media.target_variant "_canoe_v2"
+                setprop vendor.netflix.bsp_rev 0
+                ;;
+            722|723)
+                setprop vendor.media.target_variant "_canoe_v3"
+                setprop vendor.netflix.bsp_rev 0
+                sku_ver=`cat /sys/devices/platform/soc/2000000.qcom,vidc/sku_version` 2> /dev/null
+                if [ $sku_ver -eq 1 ]; then
+                    setprop vendor.media.target_variant "_canoe_sku1"
+                fi
+                if [ $sku_ver -eq 2 ]; then
+                    setprop vendor.media.target_variant "_canoe_sku2"
+                fi
+                if [ $sku_ver -eq 3 ]; then
+                    setprop vendor.media.target_variant "_canoe_sku3"
+                fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_canoe_v2"
@@ -125,6 +146,26 @@ case "$target" in
     "seraph")
         setprop vendor.mm.target.enable.qcom_parser 0
         setprop vendor.media.target_variant "_seraph"
+        ;;
+    "chora")
+        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.netflix.bsp_rev 0
+        case "$soc_hwid" in
+            724|744)
+                setprop vendor.media.target_variant "_chora_sku1"
+                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
+                if [ $sku_ver -eq 1 ]; then
+                    setprop vendor.media.target_variant "_chora_sku2"
+                fi
+                ;;
+            *)
+                ;;
+        esac
+        ;;
+    "malabar")
+        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.media.target_variant "_malabar"
+        setprop vendor.netflix.bsp_rev ""
         ;;
     "taro")
         setprop vendor.mm.target.enable.qcom_parser 1040479

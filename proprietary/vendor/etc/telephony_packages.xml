@@ -35,7 +35,9 @@
     <packageinfo name="com.android.mms.service" path="/system/priv-app/MmsService" />
     <packageinfo name="com.android.MultiplePdpTest" path="/system_ext/app/MultiplePdpTest" />
     <packageinfo name="com.android.ons" path="/system/priv-app/ONS" />
+    <packageinfo name="com.android.phone" path="/system/priv-app/TeleService" />
     <packageinfo name="com.android.phone.overlay.common" path="/product/overlay/TelephonyResCommon_Sys.apk" />
+    <packageinfo name="com.android.providers.telephony" path="/system/priv-app/TelephonyProvider" />
     <packageinfo name="com.android.stk" path="/system/app/Stk" />
     <packageinfo name="com.qti.confuridialer" path="/product/app/ConfURIDialer" />
     <packageinfo name="com.qti.phone" path="/system_ext/priv-app/QtiTelephony" />

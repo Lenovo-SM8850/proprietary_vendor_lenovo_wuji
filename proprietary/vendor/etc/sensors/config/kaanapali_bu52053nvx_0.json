@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
-    "platform_family": ["160", "661"]
+    "platform_family": ["160"]
   },
     "bu52053nvx_0":{
     "owner": "sns_bu52053nvx",
