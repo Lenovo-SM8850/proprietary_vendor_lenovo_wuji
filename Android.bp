@@ -13796,14 +13796,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "lrootfs",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/lrootfs.sh",
-    filename: "lrootfs.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "nvram_cc",
     owner: "lenovo",

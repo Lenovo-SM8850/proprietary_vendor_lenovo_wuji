@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp \
-    vendor/lenovo/wuji/proprietary/vendor/etc/assets/lrootfs-20260409.tgz:$(TARGET_COPY_OUT_VENDOR)/etc/assets/lrootfs-20260409.tgz \
     vendor/lenovo/wuji/proprietary/vendor/etc/assets/usrimg:$(TARGET_COPY_OUT_VENDOR)/etc/assets/usrimg \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
@@ -49,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lowi-server.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/lrootfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lrootfs.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
@@ -641,7 +639,6 @@ PRODUCT_PACKAGES += \
     ks \
     loadalgo \
     lowi-server \
-    lrootfs \
     nvram_cc \
     port-bridge \
     qcc-vendor \
