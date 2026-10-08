@@ -1,0 +1,10 @@
+<!--
+    Input:
+        hardware/interfaces/biometrics/fingerprint/aidl/gf_aidl_service/fingerprint-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint.cap</name>
+        <fqname>IGoodixFingerprintDaemon/default</fqname>
+    </hal>
+</manifest>

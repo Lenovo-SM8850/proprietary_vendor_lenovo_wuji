@@ -6612,6 +6612,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "gf_fingerprint.default",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/gf_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libgf_hal",
+                "libgoodixfingerprint",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "qc_bcs_lib",
     owner: "lenovo",
     strip: {
@@ -8688,6 +8717,103 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_ca",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_ca.so",
+            ],
+            shared_libs: [
+                "libQSEEComAPI",
+                "libhardware",
+                "libcutils",
+                "libion",
+                "libdmabufheap",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_hal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_hal.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbinder",
+                "libutils",
+                "liblog",
+                "libgf_ca",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgoodixfingerprint",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgoodixfingerprint.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libc++",
+                "libvndksupport",
+                "libcgrouprc",
+                "libbase",
+                "libunwindstack",
+                "libprocessgroup",
+                "liblzma",
+                "libvendor.goodix.hardware.biometrics.fingerprint.cap",
+                "libgf_hal",
+                "libgf_ca",
+                "libbinder_ndk",
                 "libc",
                 "libm",
                 "libdl",
@@ -10908,6 +11034,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvendor.goodix.hardware.biometrics.fingerprint.cap",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint.cap.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libbinder_ndk",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvideooptfeature",
     owner: "lenovo",
     strip: {
@@ -12937,6 +13089,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "fingerprint-gfcap.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-gfcap.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "qcrilhook-saidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/qcrilhook-saidl.xml",
@@ -13433,6 +13594,37 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.biometrics.fingerprint-service.gfcap",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.gfcap",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libbinder_ndk",
+                "android.hardware.biometrics.fingerprint-V3-ndk",
+                "android.hardware.biometrics.common-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.bluetooth@aidl-service-qti",
     owner: "lenovo",
     target: {
@@ -13565,6 +13757,39 @@ cc_prebuilt_binary {
                 "libATFWD",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "qfp-daemon",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/qfp-daemon",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libc",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libqfp-service",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
                 "libm",
                 "libdl",
             ],

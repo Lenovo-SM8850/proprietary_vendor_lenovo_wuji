@@ -73,6 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
@@ -463,6 +464,7 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
+    gf_fingerprint.default \
     qc_bcs_lib \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -526,6 +528,9 @@ PRODUCT_PACKAGES += \
     libdpps \
     libeai_fixed \
     libeai_float \
+    libgf_ca \
+    libgf_hal \
+    libgoodixfingerprint \
     libhdrvivid \
     libhme \
     libhwliqinterface2 \
@@ -592,6 +597,7 @@ PRODUCT_PACKAGES += \
     libstream_pcm \
     libsystem_health_mon2 \
     libtee_provisioner_qti \
+    libvendor.goodix.hardware.biometrics.fingerprint.cap \
     libvideooptfeature \
     libvmfilexfer \
     libwms \
@@ -676,6 +682,7 @@ PRODUCT_PACKAGES += \
     atfwd-saidl.xml \
     dataconnection-saidl.xml \
     deviceinfo-saidl.xml \
+    fingerprint-gfcap.xml \
     qcrilhook-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
@@ -701,10 +708,12 @@ PRODUCT_PACKAGES += \
     hexlpservice \
     hlosminkdaemon \
     android.hardware.biometrics.face@4.0-service.face \
+    android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.powerstats-service.qti \
     android.hardware.security.onekeymint-service-qti \
     qcrilNrd \
+    qfp-daemon \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.lenovo.hardware.vibrator_dual-service \
     vendor.qti.MemHal-service \
