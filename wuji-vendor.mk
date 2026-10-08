@@ -651,10 +651,12 @@ PRODUCT_PACKAGES += \
     qtiwakelock \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensiongenericqnnprovider \
     libnspextensionsuperresolutionprovider \
     libqsegnetengine_dsp_skel \
     libsvdsp \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
