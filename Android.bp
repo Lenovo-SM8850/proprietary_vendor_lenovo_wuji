@@ -14,6 +14,35 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbyproxyandroid-system",
+    stem: "libdolbyproxyandroid",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libdolbyproxyandroid.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "lenovo",
     strip: {

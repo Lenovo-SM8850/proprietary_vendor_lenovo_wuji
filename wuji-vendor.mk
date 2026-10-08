@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/wuji/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD_Baldur.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD_Baldur.cfg \
@@ -74,6 +75,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
@@ -314,9 +316,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.sc820acs_ofilm_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sc820acs_ofilm_front.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/fdconfigcpufd.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigcpufd.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/cpufd_v1_2_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_2_0.bin \
-    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin
+    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin \
+    vendor/lenovo/wuji/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
+    libdolbyproxyandroid-system \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
