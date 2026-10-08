@@ -86,7 +86,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/yepdiag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/yepdiag.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v3/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2_vendor.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_sku2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku2_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_sku3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku3.xml \
@@ -95,6 +98,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v1_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v2.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v2_vendor.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v3.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_performance_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v3_vendor.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_profiles_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v3.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/mmi/layout/main.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mmi/layout/main.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/modem_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_configs.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/perf/factorsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/factorsconfig.xml \
@@ -265,6 +272,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.cfgb:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.cfgb \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_test_limits.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits.csv \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6_rsa.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v7.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
