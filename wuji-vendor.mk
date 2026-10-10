@@ -209,25 +209,46 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/ffu_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/ffu_config.txt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_sqe.fw \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_gmu.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_sqe.fw \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80900_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.cfgb:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.cfgb \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_test_limits.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits.csv \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6_rsa.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v7.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
