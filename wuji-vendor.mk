@@ -5,6 +5,50 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
+PRODUCT_PACKAGES += lenovo_wuji_vendor_etc_bpf_qmsUidStats_o
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_CAMERA_ICP_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_CAMERA_ICP_1_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_b00
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_mdt
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80000_zap_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80200_zap_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80900_zap_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_unsigned_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v6_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v6_rsa_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v7_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu20_1v_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu20_1v_unsigned_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu30_4v_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_1v_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_1v_unsigned_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_unsigned_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_v1_mbn
+
+PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_v1_unsigned_mbn
+
 PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
@@ -71,12 +115,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
@@ -211,55 +259,25 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b00 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b04 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b05 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b06 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b07 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.mdt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/ffu_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/ffu_config.txt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_sqe.fw \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_gmu.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_sqe.fw \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/gen80900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80900_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.cfgb:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.cfgb \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_test_limits.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits.csv \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_unsigned.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v6_rsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v6_rsa.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/venus_v7.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_v7.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu20_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v_unsigned.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
@@ -319,10 +337,15 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/cpufd_v1_2_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_2_0.bin \
-    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin
+    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin \
+    vendor/lenovo/wuji/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
+    c2.dolby.client \
+    c2.dolby.store \
+    c2.dolby.vision.dec \
+    c2.dolby.vision.sec.dec \
     com.qti.sensor.imx858 \
     com.qti.sensor.sc820acs_ofilm_front \
     com.qti.eisv2 \
@@ -503,12 +526,21 @@ PRODUCT_PACKAGES += \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyottcameracontrol \
+    libdolbyproxyandroid \
+    libdolbyui \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsutils \
     libeai_fixed \
     libeai_float \
     libfastcvopt \
+    libgdix_afe \
+    libgdix_tsa \
+    libgdix_tsc \
+    libgdix_tsd \
     libgf_ca \
     libgf_hal \
     libgoodixfingerprint \
@@ -633,11 +665,16 @@ PRODUCT_PACKAGES += \
     qtiwakelock \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensionsuperresolutionprovider \
     libsvdsp \
+    libvpp_frc \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    libswdapaidl \
+    libswgamedapaidl \
     vendor.libdpmctmgr \
     vendor.libdpmframework \
     vendor.qti.ImsRtpService-aidl-Impl \
@@ -685,6 +722,7 @@ PRODUCT_PACKAGES += \
     fingerprint-gfcap.xml \
     qcrilhook-saidl.xml \
     qtiradio-saidl.xml \
+    vendor.dolby.media.c2-service-vision.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
     vendor.qti.hardware.radio.am.xml \
@@ -706,8 +744,10 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.weaver-service-spu-qti \
+    dvs-aidl-service \
     qcrilNrd \
     qfp-daemon \
+    vendor.dolby.media.c2-service-vision \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.spu-service \
@@ -722,12 +762,11 @@ PRODUCT_PACKAGES += \
     smartpa_tool \
     start_subsys \
     thermal-engine-v2 \
-    vppservice \
+    vppservice
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
+    vendor_lib64_libGLESv2_adreno_so
 
 PRODUCT_PACKAGES += \
     C2PAInternetService \
