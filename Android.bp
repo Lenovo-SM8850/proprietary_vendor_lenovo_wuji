@@ -7287,101 +7287,6 @@ cc_prebuilt_library_shared {
 
 
 cc_prebuilt_library_shared {
-    name: "libgdix_afe",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgdix_afe.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgdix_tsa",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgdix_tsa.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgdix_tsc",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgdix_tsc.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgdix_tsd",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgdix_tsd.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgf_ca",
     owner: "lenovo",
     strip: {
@@ -12256,6 +12161,7 @@ dex_import {
     system_ext_specific: true,
 }
 
+
 prebuilt_etc {
     name: "odpmanagerlib.jar",
     owner: "lenovo",
@@ -13310,83 +13216,179 @@ install_symlink {
     symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
 }
 
-cc_prebuilt_library_shared {
-    name: "libgdix_tsc_wuji_recovery",
-    stem: "libgdix_tsc",
-    recovery: true,
-    compile_multilib: "64",
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_CAMERA_ICP_mbn_blob",
     srcs: [
-        "proprietary/vendor/lib64/libgdix_tsc.so",
+        "proprietary/vendor/firmware/CAMERA_ICP.mbn",
     ],
-    shared_libs: [
-        "liblog",
-        "libc",
-        "libm",
-        "libdl",
-    ],
-    stl: "none",
-    strip: {
-        none: true,
-    },
 }
 
-cc_prebuilt_library_shared {
-    name: "libgdix_afe_wuji_recovery",
-    stem: "libgdix_afe",
-    recovery: true,
-    compile_multilib: "64",
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_CAMERA_ICP_1_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/CAMERA_ICP_1.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_evass_b00_blob",
+    srcs: [
+        "proprietary/vendor/firmware/evass.b00",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_evass_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/evass.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_evass_mdt_blob",
+    srcs: [
+        "proprietary/vendor/firmware/evass.mdt",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_gen80000_zap_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/gen80000_zap.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_gen80200_zap_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/gen80200_zap.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_gen80900_zap_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/gen80900_zap.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_venus_unsigned_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/venus_unsigned.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_venus_v6_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/venus_v6.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_venus_v6_rsa_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/venus_v6_rsa.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_venus_v7_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/venus_v7.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu20_1v_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu20_1v.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu20_1v_unsigned_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu20_1v_unsigned.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu30_4v_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu30_4v.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_1v_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_1v.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_1v_unsigned_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_1v_unsigned.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_2v_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_2v.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_2v_unsigned_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_2v_unsigned.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_2v_v1_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_2v_v1.mbn",
+    ],
+}
+
+filegroup {
+    name: "lenovo_wuji_vendor_firmware_vpu40_2v_v1_unsigned_mbn_blob",
+    srcs: [
+        "proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn",
+    ],
+}
+
+filegroup {
+    name: "libgdix_afe_blob",
     srcs: [
         "proprietary/vendor/lib64/libgdix_afe.so",
     ],
-    shared_libs: [
-        "liblog",
-        "libc",
-        "libm",
-    ],
-    stl: "none",
-    strip: {
-        none: true,
-    },
 }
 
-cc_prebuilt_library_shared {
-    name: "libgdix_tsa_wuji_recovery",
-    stem: "libgdix_tsa",
-    recovery: true,
-    compile_multilib: "64",
+filegroup {
+    name: "libgdix_tsa_blob",
     srcs: [
         "proprietary/vendor/lib64/libgdix_tsa.so",
     ],
-    shared_libs: [
-        "liblog",
-        "libc",
-        "libm",
-        "libdl",
-    ],
-    stl: "none",
-    strip: {
-        none: true,
-    },
 }
 
-cc_prebuilt_library_shared {
-    name: "libgdix_tsd_wuji_recovery",
-    stem: "libgdix_tsd",
-    recovery: true,
-    compile_multilib: "64",
+filegroup {
+    name: "libgdix_tsc_blob",
+    srcs: [
+        "proprietary/vendor/lib64/libgdix_tsc.so",
+    ],
+}
+
+filegroup {
+    name: "libgdix_tsd_blob",
     srcs: [
         "proprietary/vendor/lib64/libgdix_tsd.so",
     ],
-    shared_libs: [
-        "liblog",
-        "libc",
-        "libm",
-        "libdl",
-    ],
-    stl: "none",
-    strip: {
-        none: true,
-    },
 }
 
 cc_prebuilt_library_shared {

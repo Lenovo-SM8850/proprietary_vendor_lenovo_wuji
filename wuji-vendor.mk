@@ -5,50 +5,6 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
-PRODUCT_PACKAGES += lenovo_wuji_vendor_etc_bpf_qmsUidStats_o
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_CAMERA_ICP_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_CAMERA_ICP_1_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_b00
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_evass_mdt
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80000_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80200_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_gen80900_zap_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v6_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v6_rsa_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_venus_v7_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu20_1v_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu20_1v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu30_4v_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_1v_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_1v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_unsigned_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_v1_mbn
-
-PRODUCT_PACKAGES += lenovo_wuji_vendor_firmware_vpu40_2v_v1_unsigned_mbn
-
 PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
@@ -126,12 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku3/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v1/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v2/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v3/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1_vendor.xml \
@@ -537,10 +487,6 @@ PRODUCT_PACKAGES += \
     libeai_fixed \
     libeai_float \
     libfastcvopt \
-    libgdix_afe \
-    libgdix_tsa \
-    libgdix_tsc \
-    libgdix_tsd \
     libgf_ca \
     libgf_hal \
     libgoodixfingerprint \
