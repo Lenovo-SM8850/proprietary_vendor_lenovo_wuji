@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/wuji/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_CZRXD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_CZRXD.pmd \
@@ -500,8 +501,6 @@ PRODUCT_PACKAGES += \
     libdolbydecoderprocessor \
     libdolbyeglcore \
     libdolbyottcameracontrol \
-    libdolbyproxyandroid \
-    libdolbyui \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsutils \
@@ -711,7 +710,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.weaver-service-spu-qti \
-    dvs-aidl-service \
     qcrilNrd \
     qfp-daemon \
     vendor.dolby.media.c2-service-vision \
