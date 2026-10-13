@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),baldur)
+ifeq ($(TARGET_DEVICE),wuji)
 
 $(call add-radio-file-sha1-checked,radio/abl.img,1c2928cc430261c5971f8c5e47a52e081c91cc80)
 $(call add-radio-file-sha1-checked,radio/aop.img,8314b7cd7ccd2f241039389dfba3532f94369ab9)
