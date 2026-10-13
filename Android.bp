@@ -13515,45 +13515,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.biometrics.face@4.0-service.face",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.biometrics.face-V4-ndk",
-                "android.hardware.biometrics.common-V4-ndk",
-                "android.hardware.keymaster-V4-ndk",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libui",
-                "libion",
-                "libcamera2ndk_vendor",
-                "libmediandk",
-                "libnativewindow",
-                "libarcsoft_face_biometric",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint-service.gfcap",
     owner: "lenovo",
     target: {
