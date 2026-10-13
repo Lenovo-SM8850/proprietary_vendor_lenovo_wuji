@@ -10513,7 +10513,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "libwqe",
     owner: "lenovo",
@@ -11689,7 +11688,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "vendor.libdpmframework",
     owner: "lenovo",
@@ -11727,8 +11725,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.ImsRtpService-aidl-Impl",
@@ -12751,7 +12747,6 @@ cc_prebuilt_binary {
 
 
 
-
 cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint-service.gfcap",
     owner: "lenovo",
@@ -13095,8 +13090,6 @@ cc_prebuilt_binary {
 
 
 
-
-
 sh_binary {
     name: "init.qcrild",
     owner: "lenovo",
@@ -13351,7 +13344,6 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
-
 
 
 
