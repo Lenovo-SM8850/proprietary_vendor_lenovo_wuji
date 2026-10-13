@@ -1262,6 +1262,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qti.sensor.sc820acs_ofilm_front",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/com.qti.sensor.sc820acs_ofilm_front.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.eisv2",
     owner: "lenovo",
     strip: {
@@ -7531,6 +7570,51 @@ cc_prebuilt_library_shared {
                 "libcom.qti.chinodeutils",
                 "vendor.qti.hardware.hexlp-V1-ndk",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxhwlbpsdriver",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamxhwlbpsdriver.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libcamxcsl",
+                "libcamxhwnodecontext",
+                "libcamximageformatutils",
+                "libhwliqinterface2",
+                "libhwlispcffdump",
+                "libsiminputgenutil",
                 "libc",
                 "libm",
                 "libdl",

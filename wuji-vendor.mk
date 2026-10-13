@@ -217,7 +217,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/lenovo/wuji/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib/cpufd_v1_2_0_32.bin:$(TARGET_COPY_OUT_VENDOR)/lib/cpufd_v1_2_0_32.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.sensormodule.sc820acs_ofilm_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sc820acs_ofilm_front.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.sensorsocmap.socid_map.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensorsocmap.socid_map.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.default.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.canoe.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_default.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin \
@@ -225,6 +231,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.sc820acs_ofilm_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sc820acs_ofilm_front.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/fdconfigcpufd.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigcpufd.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/cpufd_v1_2_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_2_0.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin
 
@@ -261,6 +269,7 @@ PRODUCT_PACKAGES += \
     com.qti.sensor.s5kjd1sp \
     com.qti.sensor.s5kjn5 \
     com.qti.sensor.s5kjns_qtech_main \
+    com.qti.sensor.sc820acs_ofilm_front \
     com.qti.eisv2 \
     com.qti.eisv3 \
     com.qti.hwcfg.bps \
@@ -433,6 +442,7 @@ PRODUCT_PACKAGES += \
     libcamxexternalformatutils \
     libcamxfdengine \
     libcamxhexlpservicebase \
+    libcamxhwlbpsdriver \
     libcamxhwlfrontend \
     libcamxhwlipedriver \
     libcamxhwnodecontext \
