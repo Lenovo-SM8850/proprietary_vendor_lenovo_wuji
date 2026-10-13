@@ -144,16 +144,21 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
+    vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/alana_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/alana_fcal_mmc56x3x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_aw963xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_aw963xx_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_aw963xx_0_sar_register.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_aw963xx_0_sar_register.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_bu52053nvx_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_icm536xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_icm536xx_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_lsm6dsv_0.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_lsm6dsv_1.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_mmc56x3x_0.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_mtp_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_mtp_mmc56x3x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_qmc630x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_qmc630x_0.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_stk3a5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_stk3a5x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_sx932x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_tmd3765_0.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/molokai_mtp_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mtp_mmc56x3x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_battery_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_0.conf \
@@ -652,6 +657,7 @@ PRODUCT_PACKAGES += \
     imssettings \
     qcrilmsgtunnel \
     qcrilhook \
+    odpmanagerlib.jar \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \

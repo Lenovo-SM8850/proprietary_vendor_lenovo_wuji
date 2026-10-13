@@ -12800,6 +12800,15 @@ dex_import {
     system_ext_specific: true,
 }
 
+prebuilt_etc {
+    name: "odpmanagerlib.jar",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/sensors/javalibs/odpmanagerlib.jar",
+    filename_from_src: true,
+    sub_dir: "sensors/javalibs",
+    soc_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "android.hardware.radio.config.xml",
     owner: "lenovo",
