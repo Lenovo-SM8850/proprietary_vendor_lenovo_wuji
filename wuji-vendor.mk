@@ -913,7 +913,6 @@ PRODUCT_PACKAGES += \
     libvppclient \
     libvpphvx \
     libvpplibrary \
-    libwms \
     libwqe \
     libxml \
     qcrilInterfaces \
@@ -949,10 +948,7 @@ PRODUCT_PACKAGES += \
     sensors.qsh \
     libquasar \
     vendor.libdpmctmgr \
-    vendor.libdpmfdmgr \
     vendor.libdpmframework \
-    vendor.libdpmtcm \
-    vendor.libmwqemiptablemgr \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
@@ -1025,7 +1021,6 @@ PRODUCT_PACKAGES += \
     embmsslServer \
     engine-service \
     feature_enabler_client \
-    fm_qsoc_patches \
     hdcp1prov \
     hdcp2p2prov \
     hexlpservice \
@@ -1049,9 +1044,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.spu-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
-    ims-dataservice-daemon \
     ims_rtp_daemon \
-    imsdaemon \
     init.qcrild \
     init.qti.keymaster \
     init.qti.media \
@@ -1091,7 +1084,6 @@ PRODUCT_PACKAGES += \
     thermal-engine-v2 \
     tlpd \
     trusteduilistener \
-    vendor.dpmd \
     vppservice \
     wdsdaemon \
     wifi_qos_daemon \
@@ -1101,3 +1093,13 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_PACKAGES += \
+    fm_qsoc_patches \
+    ims-dataservice-daemon \
+    imsdaemon \
+    libwms \
+    vendor.dpmd \
+    vendor.libdpmfdmgr \
+    vendor.libdpmtcm \
+    vendor.libmwqemiptablemgr
