@@ -7,8 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
-    vendor/lenovo/wuji/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_CZRXD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_CZRXD.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_PUBG.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_PUBG.pmd \
@@ -52,49 +50,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/assets/usrimg:$(TARGET_COPY_OUT_VENDOR)/etc/assets/usrimg \
-    vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_alor/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/audio_effects_config_stub.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_whale/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_whale/audio_effects_config_stub.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile7.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/App/profile-type-app1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/App/profile-type-app1.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/App/profile-type-app2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/App/profile-type-app2.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/App/profile-type-app3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/App/profile-type-app3.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/Internet/profile-type-internet1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/Internet/profile-type-internet1.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/Internet/profile-type-internet2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/Internet/profile-type-internet2.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/Internet/profile-type-internet3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/Internet/profile-type-internet3.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile7.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/default-permissions/vendor.qti.data.txpwradmin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/vendor.qti.data.txpwradmin.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU1030.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1030.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU6100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU6100.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU870.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU870.xml \
@@ -114,21 +71,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
@@ -199,9 +147,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
     vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/alana_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/alana_fcal_mmc56x3x_0.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/kaanapali_aw963xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_aw963xx_0.json \
@@ -223,7 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_battery_0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_0.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_battery_1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_battery_1.conf \
@@ -377,7 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin
 
 PRODUCT_PACKAGES += \
-    vendor.qti.diaghal-V1-ndk-system \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
@@ -564,7 +508,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.nonlinearmapper \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
-    com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.mcx.usecase.extension \
     deviceInfoServiceModuleNr \
     eglSubDriverAndroid \
@@ -608,7 +551,6 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libATFWD \
     libCB \
-    libCneAppJni \
     libDcfHalFramework \
     libDcfHalLogger \
     libGPMTEEC_vendor \
@@ -623,8 +565,6 @@ PRODUCT_PACKAGES += \
     libQtiSocket \
     libTUITAVMInterface \
     libTrustedUIAIDL \
-    libTxPwrJni \
-    libWlanServiceJni \
     libadm \
     libadreno_app_profiles \
     libadreno_compiler_cl \
@@ -689,8 +629,6 @@ PRODUCT_PACKAGES += \
     libclstc_tm \
     libcne \
     libcneapiclient \
-    libcneoplookup \
-    libcneqmiutils \
     libcolor-default \
     libcom.qti.chinodeutils \
     libconfigdb \
@@ -1014,13 +952,9 @@ PRODUCT_PACKAGES += \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
     vendor.qti.ImsRtpService-aidl-Impl \
-    vendor.qti.data.mwqem@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.data.connectionaidl-V1-ndk \
-    vendor.qti.hardware.data.iwlandata-V3-ndk \
-    vendor.qti.hardware.dpmaidlservice-V1-ndk \
-    vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.atfwd-V1-ndk \
     vendor.qti.hardware.radio.common-V1-ndk \
@@ -1038,21 +972,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
-    lib-imsvideocodec \
-    lib-imsvt \
-    lib-imsvtextutils \
-    lib-imsvtutils \
-    libdiag_system \
-    libimscamera_jni \
-    libimsmedia_jni \
-    vendor.qti.ImsRtpService-V2-ndk-system \
-    vendor.qti.diaghal@1.0-system \
-    vendor.qti.imsrtpservice@3.0-system \
-    vendor.qti.imsrtpservice@3.1-system \
     CACertService \
-    CneApp \
-    IWlanService \
-    TxPwrAdmin \
     CarrierConfigResCommon_Sys \
     QtiTelephonyService \
     QtiTelephony \
@@ -1061,7 +981,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     qcrilhook \
     odpmanagerlib.jar \
-    ImsRtpService-aidl.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
@@ -1073,16 +992,10 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element.xml \
     atfwd-saidl.xml \
     c2_manifest_vendor.xml \
-    cacert-saidl.xml \
     dataconnection-saidl.xml \
-    datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
-    dpm-saidl.xml \
     fingerprint-gfcap.xml \
-    imsdcservice-saidl.xml \
-    mwqem-saidl.xml \
     qcrilhook-saidl.xml \
-    qms-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
@@ -1093,7 +1006,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim.xml \
     vendor.qti.hardware.radio.uim_remote_client.xml \
     vendor.qti.hardware.radio.uim_remote_server.xml \
-    vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     manifest_whale.xml \
     C2PAInternetService \
