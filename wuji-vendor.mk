@@ -9,11 +9,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD_Baldur.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD_Baldur.cfg \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_CZRXD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_CZRXD.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_PUBG.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_PUBG.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_XCPD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_XCPD.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_YHTJ.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_YHTJ.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_YJWJ.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_YJWJ.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_cdp/CDP_alor_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_cdp/CDP_alor_acdb_cal.acdb \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_cdp/CDP_alor_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_cdp/CDP_alor_workspaceFileXml.qwsp \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_mtp_wcd9378/MTP_alor_wcd9378_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_mtp_wcd9378/MTP_alor_wcd9378_acdb_cal.acdb \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_mtp_wcd9378/MTP_alor_wcd9378_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_mtp_wcd9378/MTP_alor_wcd9378_workspaceFileXml.qwsp \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_mtp_wcd939x/MTP_alor_wcd939x_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_mtp_wcd939x/MTP_alor_wcd939x_acdb_cal.acdb \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_mtp_wcd939x/MTP_alor_wcd939x_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_mtp_wcd939x/MTP_alor_wcd939x_workspaceFileXml.qwsp \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_qrd/QRD_alor_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_qrd/QRD_alor_acdb_cal.acdb \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/alor_qrd/QRD_alor_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/alor_qrd/QRD_alor_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb \
@@ -32,8 +41,17 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/ffv_models/ffv__16.0.1.1_0.0__eai_5.7_enpu_v6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__16.0.1.1_0.0__eai_5.7_enpu_v6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.40.1.10_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_0.0__19.0.1_0.0__eai_5.6.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.40.1.10_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_0.0__19.0.1_0.0__eai_5.6.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.40.1.11_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_5.6.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.40.1.11_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_5.6.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.40.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.40.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.40.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.40.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_5.11.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.60.1.3_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_5.6.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.60.1.3_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_5.6.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_0.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_0.0__eai_5.11.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/assets/usrimg:$(TARGET_COPY_OUT_VENDOR)/etc/assets/usrimg \
-    vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_whale/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_whale/audio_effects_config_stub.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/DPU1030.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1030.xml \
@@ -678,6 +696,7 @@ PRODUCT_PACKAGES += \
     qwesd \
     sec_nvm \
     shsusrd \
+    smartpa_tool \
     spdaemon \
     sscrpcd \
     start_subsys \

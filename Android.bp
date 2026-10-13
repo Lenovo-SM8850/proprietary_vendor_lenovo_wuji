@@ -14276,6 +14276,31 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "smartpa_tool",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/smartpa_tool",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "spdaemon",
     owner: "lenovo",
     target: {
