@@ -4,8 +4,7 @@
 
 soong_namespace {
     imports: [
-        "device/lenovo/wuji",
-        "device/lenovo/sm8850-common",
+        "hardware/lenovo",
         "hardware/qcom-caf/sm8850",
         "hardware/qcom-caf/wlan",
         "vendor/lenovo/sm8850-common",
