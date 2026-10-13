@@ -323,48 +323,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
-    com.qti.eeprom.gt24p128c2csli_imx766 \
-    com.qti.eeprom.irs2381c_polar \
-    com.qti.eeprom.p24c256c_imx766 \
-    com.qti.eeprom.truly_cmb433 \
-    com.qti.ois.bu63169gwz \
-    com.qti.ois.dw9784 \
-    com.qti.sensor.imx362 \
-    com.qti.sensor.imx363 \
-    com.qti.sensor.imx376 \
-    com.qti.sensor.imx386 \
-    com.qti.sensor.imx476 \
-    com.qti.sensor.imx481 \
-    com.qti.sensor.imx519 \
-    com.qti.sensor.imx563 \
-    com.qti.sensor.imx576 \
-    com.qti.sensor.imx586 \
-    com.qti.sensor.imx588 \
-    com.qti.sensor.imx686 \
-    com.qti.sensor.imx688 \
-    com.qti.sensor.imx766 \
     com.qti.sensor.imx858 \
-    com.qti.sensor.imx888 \
-    com.qti.sensor.max7366_6dof \
-    com.qti.sensor.max7366_eyetrack \
-    com.qti.sensor.max7366_ov6211 \
-    com.qti.sensor.max7366_ov9282 \
-    com.qti.sensor.ov13855 \
-    com.qti.sensor.ov32c4c \
-    com.qti.sensor.ov64b40 \
-    com.qti.sensor.ov7251 \
-    com.qti.sensor.s5k2l7 \
-    com.qti.sensor.s5k2x5sp \
-    com.qti.sensor.s5k33dxx \
-    com.qti.sensor.s5k3m5 \
-    com.qti.sensor.s5k3p9 \
-    com.qti.sensor.s5k4h7 \
-    com.qti.sensor.s5k5e9yu05 \
-    com.qti.sensor.s5k5e9yx04 \
-    com.qti.sensor.s5khp1s \
-    com.qti.sensor.s5kjd1sp \
-    com.qti.sensor.s5kjn5 \
-    com.qti.sensor.s5kjns_qtech_main \
     com.qti.sensor.sc820acs_ofilm_front \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -428,7 +387,6 @@ PRODUCT_PACKAGES += \
     libcamxdummysatsoftwarefusionwrapper \
     libcamxdummysatwrapper \
     libcamxevainterface \
-    libdepthmapwrapper_secure \
     cellularSecurityModule \
     com.qti.camx.chiiqutils \
     com.qti.chifeaturecompatibility \
@@ -465,7 +423,6 @@ PRODUCT_PACKAGES += \
     com.qti.settings.sm8850 \
     com.qti.sfw.settings \
     com.qti.stats.sotr \
-    com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
@@ -475,14 +432,8 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth.lmp_event-impl-qti \
-    android.hardware.bluetooth.ranging@aidl-impl-qti \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@aidl-impl-qti \
-    audio.bluetooth_qti.default \
     camera.qcom.core \
     camera.qcom.sm8850 \
     camera.qcom \
@@ -491,31 +442,16 @@ PRODUCT_PACKAGES += \
     gf_fingerprint.default \
     libaudiocorehal.default \
     libaudiocorehal.qti \
-    libqtigatekeeper \
-    qc_bcs_lib \
-    vendor.qti.hardware.bluetooth.finder-impl-qti \
-    vendor.qti.hardware.bluetooth_sar@aidl-impl \
-    vendor.qti.hardware.bttpi-impl \
-    vendor.qti.hardware.fm-impl \
-    vulkan.adreno \
     lib-imscommon \
     lib-imsdcservice \
-    lib-imsqimf \
     lib-imsvtcore \
-    lib-imsxml \
-    lib-rtpcommon \
     lib-rtpcore \
-    lib-rtpsl \
     libATFWD \
     libCB \
-    libDcfHalFramework \
-    libDcfHalLogger \
     libGPMTEEC_vendor \
     libGPTEE_vendor \
-    libGPreqcancel \
     libGPreqcancel_svc \
     libQSEEComAPI \
-    libQnnHtpV81Stub \
     libQshQmiIDL \
     libQshSession \
     libQtiRilLoadable \
@@ -526,19 +462,9 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libaidenoiser \
-    libaidenoiserv2 \
-    libaodoptfeature \
     libar-pal \
-    libarcsoft_face_biometric \
-    libarcsoft_face_mink \
-    libarcsoft_faceid \
-    libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
-    libaudiofeaturestats \
     libaudioplatformconverter.qti \
-    libbiometricsface_ca.arcsoft \
-    libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
     libcamerapoweroptfeature \
@@ -552,9 +478,7 @@ PRODUCT_PACKAGES += \
     libcamxhwlbpsdriver \
     libcamxhwlfrontend \
     libcamxhwlipedriver \
-    libcamxifestriping \
     libcamximageformatutils \
-    libcamxjumbfcomposer \
     libcamxmetadata \
     libcamxncsdatafactory \
     libcamxofehwl \
@@ -570,132 +494,56 @@ PRODUCT_PACKAGES += \
     libchicore \
     libchifeature2 \
     libchinodeevautils \
-    libclstc_algorithm_adapter \
     libclstc_tm \
     libcne \
     libcneapiclient \
-    libcolor-default \
     libdev_bt \
     libdev_speaker \
     libdiag \
-    libdiagjni \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
-    libdmap_consent_sdk \
     libdrmMinimalfsHelper \
     libdrmfs \
-    libdrmtime \
-    libdscaalgo \
     libdsutils \
     libeai_fixed \
     libeai_float \
-    libembmsservice \
-    libengineplugin \
-    libfaceid_ca_proxy.arcsoft \
     libfastcvopt \
-    libgame_enhance \
-    libgamepoweroptfeature \
     libgf_ca \
     libgf_hal \
     libgoodixfingerprint \
-    libgpt \
-    libgptStaticHelper \
     libgsl \
-    libhdcp1prov \
-    libhdcp2p2prov \
-    libhdcpsrm \
-    libhdr10plus \
     libhdr_als_adapter \
-    libhdr_stub \
     libhdr_tm \
-    libhdrdynamic \
-    libhdrdynamicootf \
     libhdrvivid \
-    libhme \
     libhwliqinterface2 \
-    libidv \
-    libipebpsstriping \
-    libipebpsstriping170 \
-    libipebpsstriping480 \
     libjnihelper \
-    libjpege \
     libkcl \
     libkernelmanager \
-    libkeymasterprovision \
-    libkeymasterutils \
-    liblearningmodule \
     liblistensoundmodel2vendor \
-    liblistensoundmodelaidl \
     libllvm-glnext \
     libllvm-qgl \
-    liblmutils-ns \
-    libloadalgo_stub \
-    libloc_eng_hub \
-    libloc_qwes_iface \
     libloc_ril_client \
     liblqe \
     libmcs \
-    libmctfengine_stub \
     libmdsprpc \
-    libmemgen \
-    libmemperfd \
-    libmeters-ns \
-    libmeters \
-    libmfec \
     libminkdescriptor \
-    libminkipcbinder_vendor \
     libminksocket_vendor \
-    libmlremosaicengine \
-    libmmcamera_bestats \
-    libmmcamera_lscv35 \
-    libmmcamera_mfnr \
-    libmmcamera_mfnr_t4 \
-    libmmcamera_pdpc \
-    libmmfp \
-    libnative-api \
-    libnicm \
-    libnicm_interface \
     libnicm_internal \
     libnicm_modemproxy \
     libnicm_netlink \
-    libnicm_recovery \
     libnicm_utils \
-    libnspframework \
     liboemcrypto \
-    libofestriping \
-    liboffscreenpoweroptfeature \
-    libois_channel_stub \
-    libops \
-    libperfdb \
-    libpinner \
-    libpowercallback \
     libpowercore \
-    libprefapps \
-    libprekill \
-    libprocomp \
-    libproj_qmot_tracker \
-    libproj_sot \
-    libpsmoptfeature \
     libqape_oem_ext \
-    libqasr \
     libqc2audio_base \
-    libqc2audio_basecodec \
-    libqc2audio_core \
-    libqc2audio_hooks \
-    libqc2audio_platform \
-    libqc2audio_swaudiocodec \
-    libqc2audio_utils \
     libqc2vppfilter \
     libqcc_file_agent \
-    libqcci_legacy \
-    libqcmaputils \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
     libqcodec2_cvpfilter \
     libqcodec2_filterbase \
-    libqcodec2_hooks \
     libqcodec2_imgtxrfilter \
     libqcodec2_platform \
     libqcodec2_utils \
@@ -710,19 +558,7 @@ PRODUCT_PACKAGES += \
     libqcrilNrSmsModule \
     libqcrilNrSocketModule \
     libqcrilNrVoiceModule \
-    libqdcm-algo \
-    libqdcm-json-mode-parser \
-    libqdcm-mode-parser \
-    libqdp \
-    libqesdk_manager \
-    libqfdadapter \
     libqfdservice \
-    libqisl \
-    libqll \
-    libqllengine \
-    libqmi \
-    libqmi_csvt_srvc \
-    libqmi_legacy \
     libqmiextservices \
     libqms \
     libqms_client \
@@ -730,41 +566,14 @@ PRODUCT_PACKAGES += \
     libqms_optimized_route_mgr_sdk \
     libqms_packetstats_sdk \
     libqms_sdf_sdk \
-    libqsegnet \
     libqsegnetunittest \
-    libqsh \
-    libqshcamera \
-    libqtbase \
-    libqti-appclassifier \
-    libqti-engine-loader \
-    libqti-jankrescue \
-    libqti-lllite \
     libqti-perfd-client \
-    libqti-perfd \
-    libqti-perfextn-intf \
-    libqti-qape-engine \
     libqti-qesdk-secure \
-    libqti-s3tf \
-    libqti-scenariod \
-    libqti-sslite \
-    libqtiidentitycredential \
-    libqtikeymaster4 \
-    libqtjsonhelper \
-    libqtnodes \
-    libqwes \
-    librcc \
-    libreffeature \
     libril-db \
     libril-legacy \
     libril-qc-ltedirectdisc \
     libril-qc-radioconfig \
     librilqmimiscservices \
-    librpmbStaticHelper \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdmextension \
@@ -777,50 +586,26 @@ PRODUCT_PACKAGES += \
     libsession_pcm_config \
     libsession_voice \
     libsession_voice_config \
-    libsfeShiftExtrapolation \
     libshsc \
-    libsi \
     libsiminputgenutil \
-    libslimclient \
-    libsnapdragoncolor-qdcm \
-    libsns_device_mode_stub \
-    libsns_direct_channel_stub \
-    libsns_dynamic_loader_stub \
-    libsns_remote_proc_state_stub \
     libsnsapi \
     libsnsutils \
     libspcom \
-    libspl \
     libspukeymint \
     libspukeymintprovision \
     libspukeymintutils \
-    libspuprovisionids \
-    libssc_default_listener \
     libssd \
-    libssdStaticHelper \
-    libstandbyfeature \
     libstream_compress \
     libstream_pcm \
     libsv \
     libsvswcpu \
     libsystem_health_mon2 \
-    libtaautoload \
-    libtee_provisioner_qti \
-    libtfestriping \
     libtflite_fd \
     libthermalclient \
-    libtlpd \
-    libtlpd_configmgr \
-    libtlpd_internal \
-    libtlpd_logger \
-    libtzdrmgenprov \
-    libubifocus \
     libvendor.goodix.hardware.biometrics.fingerprint.cap \
     libvideooptfeature \
-    libvppclient \
     libvpplibrary \
     libwqe \
-    libxml \
     qcrilInterfaces \
     qcrilIntermodulemsgs \
     qcrilMarshal \
@@ -911,16 +696,94 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_server.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     manifest_whale.xml \
-    C2PAInternetService \
     activespu \
-    adpl \
     adsprpcd \
-    avf_qcvm_manager \
     aw882xx_cali \
     camera-preamble.json \
     ccid_daemon_nr \
     cdsprpcd \
     colorbin \
+    android.hardware.biometrics.fingerprint-service.gfcap \
+    android.hardware.gatekeeper-rust-service-qti \
+    android.hardware.weaver-service-spu-qti \
+    qcrilNrd \
+    qfp-daemon \
+    vendor.lenovo.hardware.touchscreen-service \
+    vendor.qti.hardware.sensorscalibrate-service \
+    vendor.qti.hardware.spu-service \
+    init.qcrild \
+    init.qti.keymaster \
+    init.qti.media \
+    ks \
+    qcc-vendor \
+    qms \
+    qtigetprop \
+    qtisetprop \
+    smartpa_tool \
+    start_subsys \
+    thermal-engine-v2 \
+    vppservice \
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_PACKAGES += \
+    C2PAInternetService \
+    adpl \
+    android.hardware.bluetooth.lmp_event-impl-qti \
+    android.hardware.bluetooth.ranging@aidl-impl-qti \
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@aidl-impl-qti \
+    android.hardware.bluetooth@aidl-service-qti \
+    android.hardware.gatekeeper-service-spu-qti \
+    android.hardware.security.onekeymint-service-qti \
+    android.hardware.security.secretkeeper-service-qti \
+    audio.bluetooth_qti.default \
+    avf_qcvm_manager \
+    com.qti.eeprom.gt24p128c2csli_imx766 \
+    com.qti.eeprom.irs2381c_polar \
+    com.qti.eeprom.p24c256c_imx766 \
+    com.qti.eeprom.truly_cmb433 \
+    com.qti.ois.bu63169gwz \
+    com.qti.ois.dw9784 \
+    com.qti.sensor.imx362 \
+    com.qti.sensor.imx363 \
+    com.qti.sensor.imx376 \
+    com.qti.sensor.imx386 \
+    com.qti.sensor.imx476 \
+    com.qti.sensor.imx481 \
+    com.qti.sensor.imx519 \
+    com.qti.sensor.imx563 \
+    com.qti.sensor.imx576 \
+    com.qti.sensor.imx586 \
+    com.qti.sensor.imx588 \
+    com.qti.sensor.imx686 \
+    com.qti.sensor.imx688 \
+    com.qti.sensor.imx766 \
+    com.qti.sensor.imx888 \
+    com.qti.sensor.max7366_6dof \
+    com.qti.sensor.max7366_eyetrack \
+    com.qti.sensor.max7366_ov6211 \
+    com.qti.sensor.max7366_ov9282 \
+    com.qti.sensor.ov13855 \
+    com.qti.sensor.ov32c4c \
+    com.qti.sensor.ov64b40 \
+    com.qti.sensor.ov7251 \
+    com.qti.sensor.s5k2l7 \
+    com.qti.sensor.s5k2x5sp \
+    com.qti.sensor.s5k33dxx \
+    com.qti.sensor.s5k3m5 \
+    com.qti.sensor.s5k3p9 \
+    com.qti.sensor.s5k4h7 \
+    com.qti.sensor.s5k5e9yu05 \
+    com.qti.sensor.s5k5e9yx04 \
+    com.qti.sensor.s5khp1s \
+    com.qti.sensor.s5kjd1sp \
+    com.qti.sensor.s5kjn5 \
+    com.qti.sensor.s5kjns_qtech_main \
+    com.qualcomm.mcx.distortionmapper \
     dlsc \
     embmsslServer \
     engine-service \
@@ -929,71 +792,205 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hexlpservice \
     hlosminkdaemon \
-    android.hardware.biometrics.face@4.0-service.face \
-    android.hardware.biometrics.fingerprint-service.gfcap \
-    android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.gatekeeper-rust-service-qti \
-    android.hardware.gatekeeper-service-spu-qti \
-    android.hardware.security.onekeymint-service-qti \
-    android.hardware.security.secretkeeper-service-qti \
-    android.hardware.weaver-service-spu-qti \
-    qcrilNrd \
-    qfp-daemon \
-    vendor.lenovo.hardware.touchscreen-service \
-    vendor.qti.MemHal-service \
-    vendor.qti.hardware.c2pa-aidl-service-qti \
-    vendor.qti.hardware.minkipcbinder@1.0-service \
-    vendor.qti.hardware.perf2-hal-service \
-    vendor.qti.hardware.sensorscalibrate-service \
-    vendor.qti.hardware.spu-service \
-    vendor.qti.hardware.trustedui-aidl-service-qti \
-    init.qcrild \
-    init.qti.keymaster \
-    init.qti.media \
     ipacm-diag \
     ipp_key_gen \
-    ks \
+    lib-imsqimf \
+    lib-imsxml \
+    lib-rtpcommon \
+    lib-rtpsl \
+    libDcfHalFramework \
+    libDcfHalLogger \
+    libGPreqcancel \
+    libQnnHtpV81Stub \
+    libaidenoiser \
+    libaidenoiserv2 \
+    libaodoptfeature \
+    libarcsoft_qnnhtp \
+    libaudiofeaturestats \
+    libbitmlengine \
+    libcamxifestriping \
+    libcamxjumbfcomposer \
+    libclstc_algorithm_adapter \
+    libcolor-default \
+    libdepthmapwrapper_secure \
+    libdiagjni \
+    libdmap_consent_sdk \
+    libdrmtime \
+    libdscaalgo \
+    libembmsservice \
+    libengineplugin \
+    libgame_enhance \
+    libgamepoweroptfeature \
+    libgpt \
+    libgptStaticHelper \
+    libhdcp1prov \
+    libhdcp2p2prov \
+    libhdcpsrm \
+    libhdr10plus \
+    libhdr_stub \
+    libhdrdynamic \
+    libhdrdynamicootf \
+    libhme \
+    libidv \
+    libipebpsstriping \
+    libipebpsstriping170 \
+    libipebpsstriping480 \
+    libjpege \
+    libkeymasterprovision \
+    libkeymasterutils \
+    liblearningmodule \
+    liblistensoundmodelaidl \
+    liblmutils-ns \
+    libloadalgo_stub \
+    libloc_eng_hub \
+    libloc_qwes_iface \
+    libmctfengine_stub \
+    libmemgen \
+    libmemperfd \
+    libmeters \
+    libmeters-ns \
+    libmfec \
+    libminkipcbinder_vendor \
+    libmlremosaicengine \
+    libmmcamera_bestats \
+    libmmcamera_lscv35 \
+    libmmcamera_mfnr \
+    libmmcamera_mfnr_t4 \
+    libmmcamera_pdpc \
+    libmmfp \
+    libnative-api \
+    libnicm \
+    libnicm_interface \
+    libnicm_recovery \
+    libnspframework \
+    libofestriping \
+    liboffscreenpoweroptfeature \
+    libois_channel_stub \
+    libops \
+    libperfdb \
+    libpinner \
+    libpowercallback \
+    libprefapps \
+    libprekill \
+    libprocomp \
+    libproj_qmot_tracker \
+    libproj_sot \
+    libpsmoptfeature \
+    libq3dtools_adreno \
+    libqasr \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils \
+    libqcci_legacy \
+    libqcmaputils \
+    libqcodec2_hooks \
+    libqdcm-algo \
+    libqdcm-json-mode-parser \
+    libqdcm-mode-parser \
+    libqdp \
+    libqesdk_manager \
+    libqfdadapter \
+    libqisl \
+    libqll \
+    libqllengine \
+    libqmi \
+    libqmi_csvt_srvc \
+    libqmi_legacy \
+    libqsegnet \
+    libqsh \
+    libqshcamera \
+    libqtbase \
+    libqti-appclassifier \
+    libqti-engine-loader \
+    libqti-jankrescue \
+    libqti-lllite \
+    libqti-perfd \
+    libqti-perfextn-intf \
+    libqti-qape-engine \
+    libqti-s3tf \
+    libqti-scenariod \
+    libqti-sslite \
+    libqtigatekeeper \
+    libqtiidentitycredential \
+    libqtikeymaster4 \
+    libqtjsonhelper \
+    libqtnodes \
+    libqwes \
+    librcc \
+    libreffeature \
+    librpmbStaticHelper \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
+    libsfeShiftExtrapolation \
+    libsi \
+    libslimclient \
+    libsnapdragoncolor-qdcm \
+    libsns_device_mode_stub \
+    libsns_direct_channel_stub \
+    libsns_dynamic_loader_stub \
+    libsns_remote_proc_state_stub \
+    libspl \
+    libspuprovisionids \
+    libssc_default_listener \
+    libssdStaticHelper \
+    libstandbyfeature \
+    libtaautoload \
+    libtee_provisioner_qti \
+    libtfestriping \
+    libtlpd \
+    libtlpd_configmgr \
+    libtlpd_internal \
+    libtlpd_logger \
+    libtzdrmgenprov \
+    libubifocus \
+    libvppclient \
+    libxml \
     loadalgo \
     lowi-server \
     mlid \
     nvram_cc \
     port-bridge \
     poweropt-service \
-    qcc-vendor \
+    qc_bcs_lib \
     qesdk-manager \
     qesdk-secmanager \
     qmipriod \
-    qms \
     qsap_dcfd \
     qsap_qapeservice \
     qsap_sensors \
     qt-service \
     qti \
-    qtigetprop \
-    qtisetprop \
     qwes_cli \
     qwesd \
     rpmbClient \
     sec_nvm \
     shsusrd \
     slim_daemon \
-    smartpa_tool \
     spdaemon \
     ssr_diag \
-    start_subsys \
-    thermal-engine-v2 \
     tlpd \
-    vppservice \
+    vendor.qti.MemHal-service \
+    vendor.qti.hardware.bluetooth.finder-impl-qti \
+    vendor.qti.hardware.bluetooth_sar@aidl-impl \
+    vendor.qti.hardware.bttpi-impl \
+    vendor.qti.hardware.c2pa-aidl-service-qti \
+    vendor.qti.hardware.fm-impl \
+    vendor.qti.hardware.minkipcbinder@1.0-service \
+    vendor.qti.hardware.perf2-hal-service \
+    vendor.qti.hardware.trustedui-aidl-service-qti \
+    vulkan.adreno \
     wdsdaemon \
     wifi_qos_daemon \
     xtra-daemon
 
 PRODUCT_PACKAGES += \
-    vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
-
-PRODUCT_PACKAGES += \
+    cnd \
     com.qti.node.afbfusion \
     com.qti.node.customhwnode \
     com.qti.node.dummydepth \
@@ -1013,9 +1010,12 @@ PRODUCT_PACKAGES += \
     com.qti.node.swpreprocess \
     com.qti.node.swregistration \
     com.qti.node.swvrt \
+    com.qti.platformsettings.sm8850 \
+    com.qti.qseeutils \
     com.qti.stats.aecwrapper \
     com.qti.stats.afwrapper \
     com.qti.stats.awbwrapper \
+    com.qti.stats.common \
     com.qti.stats.exampleaf \
     com.qti.stats.haf \
     com.qti.stats.hafoverride \
@@ -1028,13 +1028,11 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.af \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
-    libdepthmapwrapper_itof \
-    com.qti.platformsettings.sm8850 \
-    com.qti.qseeutils \
-    com.qti.stats.common \
     com.qualcomm.mcx.nonlinearmapper \
-    libspuqtigatekeeper \
-    vendor.qti.hardware.qseecom@1.0-impl \
+    fm_qsoc_patches \
+    ims-dataservice-daemon \
+    ims_rtp_daemon \
+    imsdaemon \
     lib-imsdpl \
     lib-imsservice \
     libTUITAVMInterface \
@@ -1053,6 +1051,7 @@ PRODUCT_PACKAGES += \
     libchinodehmeutils \
     libcom.qti.chinodeutils \
     libconfigdb \
+    libdepthmapwrapper_itof \
     libdpps \
     libdsi_netctrl \
     libfastcvdsp_stub \
@@ -1084,24 +1083,19 @@ PRODUCT_PACKAGES += \
     libsnapdragoncolor-manager \
     libsnsdiaglog \
     libspukeymintdeviceutils \
+    libspuqtigatekeeper \
     libsuidlookup \
     libtrustedapploader \
     libvideoml \
     libvpphvx \
-    vendor.qti.hardware.camera.aon-service-impl \
-    cnd \
-    vendor.qti.hardware.secureprocessor \
-    ims_rtp_daemon \
+    libwms \
     nicmd \
     qseecomd \
-    trusteduilistener
-
-PRODUCT_PACKAGES += \
-    libwms \
+    trusteduilistener \
+    vendor.dpmd \
     vendor.libdpmfdmgr \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
-    fm_qsoc_patches \
-    ims-dataservice-daemon \
-    imsdaemon \
-    vendor.dpmd
+    vendor.qti.hardware.camera.aon-service-impl \
+    vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.qti.hardware.secureprocessor
