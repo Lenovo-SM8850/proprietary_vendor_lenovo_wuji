@@ -9363,6 +9363,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarcsoft_face_mink",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_face_mink.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libcutils",
+                "libion",
+                "libQSEEComAPI",
+                "libdmabufheap",
+                "libminkdescriptor",
+                "libmpbase",
+                "libc",
+                "libm",
+                "libdl",
+                "libc++",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_faceid",
     owner: "lenovo",
     strip: {
@@ -9486,6 +9518,32 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbiometricsface_ca.arcsoft",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbiometricsface_ca.arcsoft.so",
+            ],
+            shared_libs: [
+                "libfaceid_ca_proxy.arcsoft",
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }

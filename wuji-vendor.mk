@@ -577,11 +577,13 @@ PRODUCT_PACKAGES += \
     libaodoptfeature \
     libar-pal \
     libarcsoft_face_biometric \
+    libarcsoft_face_mink \
     libarcsoft_faceid \
     libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
     libaudiofeaturestats \
     libaudioplatformconverter.qti \
+    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
