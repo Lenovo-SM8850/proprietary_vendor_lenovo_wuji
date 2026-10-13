@@ -10856,6 +10856,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsystem_health_mon2",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsystem_health_mon2.so",
+            ],
+            shared_libs: [
+                "vendor.qti.syshealthmon-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtee_provisioner_qti",
     owner: "lenovo",
     strip: {

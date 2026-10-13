@@ -584,6 +584,7 @@ PRODUCT_PACKAGES += \
     libssdStaticHelper \
     libstream_compress \
     libstream_pcm \
+    libsystem_health_mon2 \
     libtee_provisioner_qti \
     libvideooptfeature \
     libvmfilexfer \
