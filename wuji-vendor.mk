@@ -93,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service-lenovo.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/yepdiag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/yepdiag.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v3/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2_vendor.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3_vendor.xml \
@@ -647,6 +646,7 @@ PRODUCT_PACKAGES += \
     libnspextensionsuperresolutionprovider \
     libqsegnetengine_dsp_skel \
     libsvdsp \
+    libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
