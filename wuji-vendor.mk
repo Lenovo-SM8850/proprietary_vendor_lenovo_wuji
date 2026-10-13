@@ -173,7 +173,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_3.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_4.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_5.conf \
+    vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_6.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_7.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_7.conf \
+    vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_9.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_9.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_gpu_2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_gpu_2.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal_user_case.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_user_case.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_2G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_2G_20MHz_EVM.tflite \
