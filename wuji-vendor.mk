@@ -6,8 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/CHGPD_Baldur.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD_Baldur.cfg \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_CZRXD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_CZRXD.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_PUBG.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_PUBG.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_XCPD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_XCPD.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_YHTJ.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_YHTJ.pmd \
+    vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_YJWJ.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_YJWJ.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_acdb_cal.acdb \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_atp/ATP_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_cdp/CDP_acdb_cal.acdb \
@@ -26,6 +32,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd/QRD_workspaceFileXml.qwsp \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_acdb_cal.acdb \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_qrd_wsa884x/QRD_canoe_wsa884x_workspaceFileXml.qwsp \
+    vendor/lenovo/wuji/proprietary/vendor/etc/assets/lrootfs-20260409.tgz:$(TARGET_COPY_OUT_VENDOR)/etc/assets/lrootfs-20260409.tgz \
+    vendor/lenovo/wuji/proprietary/vendor/etc/assets/usrimg:$(TARGET_COPY_OUT_VENDOR)/etc/assets/usrimg \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_qrd_wsa884x.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
@@ -41,6 +49,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lowi-server.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/lrootfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lrootfs.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.qsap.mpamsvc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.mpamsvc.rc \
@@ -67,13 +77,43 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/pwr/GamePowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/GamePowerOptFeature.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0006.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0006.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0007.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0007.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0008.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0008.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0009.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0009.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0010.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0010.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0011.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0011.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0012.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0012.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0013.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0014.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0014.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0015.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/config/0016.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0016.0_config.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0014_version_update_modules.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
+    vendor/lenovo/wuji/proprietary/vendor/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql \
     vendor/lenovo/wuji/proprietary/vendor/etc/qcvm_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/qcvm_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/res/images/WQHD_1600_2560/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1600_2560/charger/battery_fail.png \
     vendor/lenovo/wuji/proprietary/vendor/etc/res/images/WQHD_1600_2560/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1600_2560/charger/battery_scale.png \
     vendor/lenovo/wuji/proprietary/vendor/etc/res/images/WQHD_1840_2944/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1840_2944/charger/battery_fail.png \
     vendor/lenovo/wuji/proprietary/vendor/etc/res/images/WQHD_1840_2944/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/WQHD_1840_2944/charger/battery_scale.png \
+    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/hexlp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/hexlp.policy \
+    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -163,6 +203,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/lib/cpufd_v1_2_0_32.bin:$(TARGET_COPY_OUT_VENDOR)/lib/cpufd_v1_2_0_32.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.s5kjns_qtech_main.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.default.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.canoe.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_default.bin \
@@ -170,7 +211,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin \
-    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin
+    vendor/lenovo/wuji/proprietary/vendor/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.s5kjns_qtech_main.bin \
+    vendor/lenovo/wuji/proprietary/vendor/lib64/cpufd_v1_2_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_2_0.bin
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
@@ -294,6 +336,7 @@ PRODUCT_PACKAGES += \
     libcamxdummysatwrapper \
     libcamxevainterface \
     libdepthmapwrapper_itof \
+    cellularSecurityModule \
     com.qti.camx.chiiqutils \
     com.qti.chifeaturecompatibility \
     com.qti.chiusecaseselector \
@@ -337,6 +380,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
     com.qualcomm.qti.mcx.usecase.extension \
+    deviceInfoServiceModuleNr \
     android.hardware.bluetooth.ranging@aidl-impl-qti \
     camera.qcom.core \
     camera.qcom.sm8850 \
@@ -349,6 +393,7 @@ PRODUCT_PACKAGES += \
     lib-imsdcservice \
     lib-rtpcore \
     lib-rtpsl \
+    libATFWD \
     libCsecClient \
     libGPMTEEC_vendor \
     libGPTEE_vendor \
@@ -360,6 +405,8 @@ PRODUCT_PACKAGES += \
     libQnnHtpV81Stub \
     libQnnNetRunDirectV81Skel \
     libQshSession \
+    libQtiRilLoadable \
+    libQtiSocket \
     libbitmlenginev2 \
     libcamerabuffer \
     libcamerapoweroptfeature \
@@ -394,6 +441,7 @@ PRODUCT_PACKAGES += \
     libchinodeevautils \
     libchinodehmeutils \
     libclstc_tm \
+    libcne \
     libcom.qti.chinodeutils \
     libdev_speaker \
     libdisp-aba \
@@ -408,6 +456,8 @@ PRODUCT_PACKAGES += \
     libipebpsstriping480 \
     libisphwsetting \
     libkeymasterprovision \
+    libloc_ril_client \
+    liblqe \
     libmfGhostDetection \
     libmmcamera_cac \
     libmmfp \
@@ -418,17 +468,39 @@ PRODUCT_PACKAGES += \
     libpsmoptfeature \
     libqape_oem_ext \
     libqc2vppfilter \
+    libqcrilDataModule \
+    libqcrilNr \
+    libqcrilNrCellInfoModule \
+    libqcrilNrImsModule \
+    libqcrilNrPbmModule \
+    libqcrilNrQtiBus \
+    libqcrilNrSmsModule \
+    libqcrilNrSocketModule \
+    libqcrilNrVoiceModule \
     libqesdk_qshsession \
     libqfdadapter \
     libqfdservice \
     libqfp-service \
     libqll \
     libqllengine \
+    libqmiextservices \
+    libqms \
+    libqms_client \
+    libqms_coex_sdk \
+    libqms_optimized_route_mgr_sdk \
+    libqms_packetstats_sdk \
+    libqms_sdf_sdk \
     libqpt \
     libqsegnet \
+    libqsegnetunittest \
     libqsh \
     libqtnodes \
     libqwes \
+    libril-db \
+    libril-legacy \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    librilqmimiscservices \
     libsdmextension \
     libsession_compress_config \
     libsession_voice_config \
@@ -443,7 +515,34 @@ PRODUCT_PACKAGES += \
     libtee_provisioner_qti \
     libvideooptfeature \
     libvmfilexfer \
+    libwms \
+    libwqe \
     libpseudocryptoplugin \
+    qcrilInterfaces \
+    qcrilIntermodulemsgs \
+    qcrilMarshal \
+    qcrilNrQmiModule \
+    qcrilNrSecureMode \
+    qcrilNr_aidl_IQtiRadioConfig \
+    qcrilNr_aidl_IRadioConfig \
+    qcrilNr_aidl_IRadioMessaging \
+    qcrilNr_aidl_IRadioModem \
+    qcrilNr_aidl_IRadioNetwork \
+    qcrilNr_aidl_IRadioSap \
+    qcrilNr_aidl_IRadioSim \
+    qcrilNr_aidl_IRadioVoice \
+    qcrilNr_aidl_SecureElementService \
+    qcrilNr_aidl_UimLpaService \
+    qcrilNr_aidl_UimRemoteClient \
+    qcrilNr_aidl_UimRemoteServer \
+    qcrilNr_aidl_UimService \
+    qcrilNr_aidl_common \
+    qcril_client \
+    qcrild_libqcrilnr \
+    qcrild_libqcrilnrutils \
+    qtiPeripheralMgr \
+    qtiril-utils \
+    qtiwakelock \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
     libnspextensiongenericqnnprovider \
@@ -453,49 +552,113 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    vendor.libdpmctmgr \
+    vendor.libdpmfdmgr \
+    vendor.libdpmframework \
+    vendor.libdpmtcm \
+    vendor.libmwqemiptablemgr \
     vendor.qti.gnss-service \
     vendor.qti.hardware.camera.aon-service-impl \
+    vendor.qti.hardware.data.connectionaidl-V1-ndk \
+    vendor.qti.hardware.radio.am-V1-ndk \
+    vendor.qti.hardware.radio.atfwd-V1-ndk \
+    vendor.qti.hardware.radio.common-V1-ndk \
+    vendor.qti.hardware.radio.ims-V16-ndk \
+    vendor.qti.hardware.radio.ims-V20-ndk \
+    vendor.qti.hardware.radio.internal.deviceinfo-V1-ndk \
+    vendor.qti.hardware.radio.lpa-V1-ndk \
+    vendor.qti.hardware.radio.qcrilhook-V1-ndk \
+    vendor.qti.hardware.radio.qtiradio-V16-ndk \
+    vendor.qti.hardware.radio.qtiradioconfig-V6-ndk \
+    vendor.qti.hardware.radio.uim-V1-ndk \
+    vendor.qti.hardware.radio.uim_remote_client-V1-ndk \
+    vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
     vendor_lib_rfsa_adsp_libQnnHtpV81_so \
     vendor_lib_rfsa_adsp_libQnnHtpV81Skel_so \
     vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
     TimeService \
+    CarrierConfigResCommon_Sys \
+    QtiTelephonyService \
+    QtiTelephony \
+    ims \
+    imssettings \
+    qcrilmsgtunnel \
+    qcrilhook \
+    android.hardware.radio.config.xml \
+    android.hardware.radio.data.xml \
+    android.hardware.radio.messaging.xml \
+    android.hardware.radio.modem.xml \
+    android.hardware.radio.network.xml \
+    android.hardware.radio.sap.xml \
+    android.hardware.radio.sim.xml \
+    android.hardware.radio.voice.xml \
+    atfwd-saidl.xml \
+    dataconnection-saidl.xml \
+    deviceinfo-saidl.xml \
+    qcrilhook-saidl.xml \
+    qtiradio-saidl.xml \
+    vendor.qti.hardware.data.connectionaidl.xml \
+    vendor.qti.hardware.data.iwlandata.xml \
+    vendor.qti.hardware.radio.am.xml \
+    vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.radio.lpa.xml \
+    vendor.qti.hardware.radio.qtiradioconfig.xml \
+    vendor.qti.hardware.radio.uim.xml \
+    vendor.qti.hardware.radio.uim_remote_client.xml \
+    vendor.qti.hardware.radio.uim_remote_server.xml \
+    manifest_whale.xml \
     adpl \
     avf_qcvm_manager \
     aw882xx_cali \
     camera-preamble.json \
+    ccid_daemon_nr \
+    cnd \
     cnss-daemon \
     diag-router \
+    fm_qsoc_patches \
     hexlpservice \
     hlosminkdaemon \
     android.hardware.biometrics.face@4.0-service.face \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.powerstats-service.qti \
     android.hardware.security.onekeymint-service-qti \
+    qcrilNrd \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.lenovo.hardware.vibrator_dual-service \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.vibrator.service-lenovo \
+    ims-dataservice-daemon \
+    ims_rtp_daemon \
+    imsdaemon \
     init.qcom.post_boot \
+    init.qcrild \
     init.qti.kernel.debug-canoe \
     init.qti.kernel.debug \
     init.qti.kernel.early_debug \
     init.qti.media \
     init.qti.qcv \
+    ks \
     loadalgo \
     lowi-server \
+    lrootfs \
     nvram_cc \
     port-bridge \
     qcc-vendor \
+    qms \
     qseecomd \
+    qtigetprop \
+    qtisetprop \
     qwes_cli \
     qwesd \
     sec_nvm \
     shsusrd \
     spdaemon \
     sscrpcd \
+    start_subsys \
     system_dlkm_modprobe \
     thermal-engine-v2 \
+    vendor.dpmd \
     vendor_cmd_tool \
     vendor_modprobe \
     wfdhdcphalservice \
