@@ -500,6 +500,7 @@ PRODUCT_PACKAGES += \
     libdolbydecoderprocessor \
     libdolbyeglcore \
     libdolbyottcameracontrol \
+    libdolbyproxyandroid \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdsutils \
@@ -709,6 +710,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.gatekeeper-rust-service-qti \
     android.hardware.weaver-service-spu-qti \
+    dvs-aidl-service \
     qcrilNrd \
     qfp-daemon \
     vendor.dolby.media.c2-service-vision \
