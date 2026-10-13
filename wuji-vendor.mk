@@ -171,6 +171,30 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_cpu_7.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_cpu_7.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal-engine_gpu_2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine_gpu_2.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/thermal_user_case.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_user_case.conf \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_2G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_2G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_2G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_2G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_5G_160MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_5G_160MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_5G_160MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_5G_160MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_5G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_5G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_5G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_5G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_160MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_160MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_160MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_160MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_320MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_320MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_iPA_6G_320MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_iPA_6G_320MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_2G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_2G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_2G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_2G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_5G_160MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_5G_160MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_5G_160MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_5G_160MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_5G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_5G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_5G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_5G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_160MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_160MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_160MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_160MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_20MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_20MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_20MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_20MHz_MM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_320MHz_EVM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_320MHz_EVM.tflite \
+    vendor/lenovo/wuji/proprietary/vendor/etc/wifi/CNN_Orne_xPA_6G_320MHz_MM.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/CNN_Orne_xPA_6G_320MHz_MM.tflite \
     vendor/lenovo/wuji/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/lenovo/wuji/proprietary/vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini \
     vendor/lenovo/wuji/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
