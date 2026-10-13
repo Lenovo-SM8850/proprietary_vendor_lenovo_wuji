@@ -1951,37 +1951,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.afbfusion",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.afbfusion.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.aon",
     owner: "lenovo",
     strip: {
@@ -2012,37 +1981,6 @@ cc_prebuilt_library_shared {
                 "libcom.qti.chinodeutils",
                 "com.qti.qseeaon",
                 "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.customhwnode",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.customhwnode.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libcom.qti.chinodeutils",
-                "libchilog",
                 "libc",
                 "libm",
                 "libdl",
@@ -2161,37 +2099,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.dummydepth",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.dummydepth.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.dummyrtb",
     owner: "lenovo",
     strip: {
@@ -2210,35 +2117,6 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.dummysat",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -2470,70 +2348,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.evs",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.evs.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.fcv",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libsync",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.fd",
     owner: "lenovo",
     strip: {
@@ -2566,36 +2380,6 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "libtinyxml2-v36",
                 "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.formatconversion",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.formatconversion.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libcutils",
-                "libc++",
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -2857,50 +2641,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.hdr10phist",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.hdr10phist.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libhdr10plus",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.hdralign",
     owner: "lenovo",
     strip: {
@@ -2974,36 +2714,6 @@ cc_prebuilt_library_shared {
                 "libqti_vndfwk_detect",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.lenovo",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.lenovo.so",
-            ],
-            shared_libs: [
-                "libcamera_metadata",
-                "libchilog",
-                "libcutils",
-                "libcom.qti.chinodeutils",
-                "liblog",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -3127,50 +2837,6 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libcamximageformatutils",
                 "libcamxswispiqmodule",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.mlinference",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.mlinference.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libcamximageformatutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
                 "libz",
@@ -3394,37 +3060,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.remosaic",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.sat",
     owner: "lenovo",
     strip: {
@@ -3546,112 +3181,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.spdepth",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.spdepth.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libsync",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.stich",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.stich.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.superportraitvideo",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.superportraitvideo.so",
-            ],
-            shared_libs: [
-                "libarcsoft_video_superportrait",
-                "libcamera_metadata",
-                "libchilog",
-                "libcutils",
-                "libcom.qti.chinodeutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.swaidenoiser",
     owner: "lenovo",
     strip: {
@@ -3739,50 +3268,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.swec",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.swec.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libcamximageformatutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libz",
                 "libc",
                 "libm",
                 "libdl",
@@ -3934,38 +3419,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.swmlremosaic",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.swmlremosaic.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcamximageformatutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libcutils",
-                "liblog",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.node.swpdpc",
     owner: "lenovo",
     strip: {
@@ -4001,123 +3454,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.node.swpreprocess",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.swregistration",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.node.swvrt",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.node.swvrt.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libcamximageformatutils",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.aec",
     owner: "lenovo",
     strip: {
@@ -4134,37 +3470,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "com.qti.stats.common",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.aecwrapper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
                 "libz",
                 "libc++",
                 "libc",
@@ -4309,37 +3614,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.stats.afwrapper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.asd",
     owner: "lenovo",
     strip: {
@@ -4436,37 +3710,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.stats.awbwrapper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.caflogicaldriver",
     owner: "lenovo",
     strip: {
@@ -4540,133 +3783,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.stats.exampleaf",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.exampleaf.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.haf",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "com.qti.stats.common",
-                "libcamxsocketserverutil",
-                "libopencv",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.hafoverride",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libsync",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.localhistogram",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.pdlib",
     owner: "lenovo",
     strip: {
@@ -4684,99 +3800,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcamxsocketserverutil",
                 "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.pdlibsony",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.pdlibwrapper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.roimixer",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.roimixer.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libcamxsocketserverutil",
-                "com.qti.stats.common",
                 "libz",
                 "libc++",
                 "libc",
@@ -4823,37 +3846,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.stats.statsgenerator",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.statsgenerator.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.tracker",
     owner: "lenovo",
     strip: {
@@ -4875,130 +3867,6 @@ cc_prebuilt_library_shared {
                 "com.qti.stats.common",
                 "libcamxsocketserverutil",
                 "com.qti.stats.sotr",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qtistatic.stats.aec",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qtistatic.stats.af",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qtistatic.stats.awb",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qtistatic.stats.pdlib",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libchilog",
-                "libcutils",
-                "liblog",
-                "libsync",
                 "libz",
                 "libc++",
                 "libc",
@@ -5138,45 +4006,6 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "libcom.qti.chinodeutils",
                 "camera.qcom.sm8850",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdepthmapwrapper_itof",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/libdepthmapwrapper_itof.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
                 "libc",
                 "libm",
                 "libdl",
@@ -6596,36 +5425,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.platformsettings.sm8850",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.platformsettings.sm8850.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libcamxsettingsmanager",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.qseeaon",
     owner: "lenovo",
     strip: {
@@ -6652,53 +5451,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.qseeutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.qseeutils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libprotobuf-cpp-full-21.12-vendorcompat",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libsync",
-                "libsensinghubapi",
-                "libsensinghubsession",
-                "libz",
-                "libdl",
-                "libc",
-                "libm",
             ],
         },
     },
@@ -6755,36 +5507,6 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libcamxsettingsmanager",
                 "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.common",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qti.stats.common.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -6910,48 +5632,6 @@ cc_prebuilt_library_shared {
                 "com.qti.chi.override",
                 "libchilog",
                 "libsync",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qualcomm.mcx.nonlinearmapper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "com.qti.camx.chiiqutils",
-                "com.qti.chi.override",
-                "libchilog",
                 "libz",
                 "libc",
                 "libm",
@@ -7911,41 +6591,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libspuqtigatekeeper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libspuqtigatekeeper.so",
-            ],
-            shared_libs: [
-                "android.hardware.gatekeeper-V1-ndk",
-                "libhardware",
-                "libbinder_ndk",
-                "libbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libgatekeeper",
-                "libspukeymintdeviceutils",
-                "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "qc_bcs_lib",
     owner: "lenovo",
     strip: {
@@ -8115,39 +6760,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qseecom@1.0-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libdmabufheap",
-                "vendor.qti.hardware.qseecom-V1-ndk",
-                "libbinder_ndk",
-                "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vulkan.adreno",
     owner: "lenovo",
     strip: {
@@ -8270,39 +6882,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib-imsdpl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib-imsdpl.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libqmiservices",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libtime_genoff",
-                "libcrypto",
-                "libssl",
-                "libandroid_net",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib-imsqimf",
     owner: "lenovo",
     strip: {
@@ -8317,44 +6896,6 @@ cc_prebuilt_library_shared {
                 "lib-imsdpl",
                 "lib-imsxml",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib-imsservice",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib-imsservice.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder_ndk",
-                "libcutils",
-                "libutils",
-                "lib-imscommon",
-                "libbase",
-                "libqmiservices",
-                "libqmi_csi",
-                "libdiag",
-                "libidl",
-                "libqti_vndfwk_detect_vendor",
-                "libandroid_net",
-                "vendor.qti.ims.configaidlservice-V1-ndk",
-                "vendor.qti.ims.factoryaidlservice-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -8932,71 +7473,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTUITAVMInterface",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTUITAVMInterface.so",
-            ],
-            shared_libs: [
-                "libloadtrusteduiapp",
-                "liblog",
-                "libminksocket_vendor",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedUIAIDL",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedUIAIDL.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder_ndk",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libdmabufheap",
-                "libminksocket_vendor",
-                "libvmmem",
-                "libloadtrusteduiapp",
-                "libTUITAVMInterface",
-                "vendor.qti.hardware.trustedui-V1-ndk",
-                "vendor.qti.hardware.display.config-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libadm",
     owner: "lenovo",
     strip: {
@@ -9158,32 +7634,6 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libvmmem",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libagmmixer",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libagmmixer.so",
-            ],
-            shared_libs: [
-                "libtinyalsa",
-                "libexpat",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -9650,51 +8100,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamerabuffer",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamerabuffer.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.1",
-                "libdmabufheap",
-                "libgralloccore",
-                "libgrallocutils",
-                "libmapperutils",
-                "libvndksupport",
-                "libhidlbase",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common@1.1",
-                "libbinder_ndk",
-                "libdisplayconfig.qti",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libhidltransport",
-                "libhardware",
-                "libcamxcommonutils",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamerapoweroptfeature",
     owner: "lenovo",
     strip: {
@@ -9717,39 +8122,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "vendor.qti.hardware.display.config-V5-ndk",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxasyncdumpmanager",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxasyncdumpmanager.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "com.qti.sfw.settings",
-                "libcamxcommonutils",
-                "libcamxcsl",
-                "libcamximageformatutils",
-                "libcamxmetadata",
-                "libcamxdumpinforecorder",
                 "libc",
                 "libm",
                 "libdl",
@@ -9871,36 +8243,6 @@ cc_prebuilt_library_shared {
                 "libcamxcommonutils",
                 "libcamxcsl",
                 "libsynx",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxdumpinforecorder",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxdumpinforecorder.so",
-            ],
-            shared_libs: [
-                "com.qti.sfw.settings",
-                "libcamxcommonutils",
-                "libtinyxml2-v36",
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
                 "libc",
                 "libm",
                 "libdl",
@@ -10144,76 +8486,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamxhwnodecontext",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxhwnodecontext.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libcamximageformatutils",
-                "libcamxcsl",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxhwquery",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxhwquery.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcommonutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamxifestriping",
     owner: "lenovo",
     strip: {
@@ -10400,34 +8672,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamxods",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxods.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamxofehwl",
     owner: "lenovo",
     strip: {
@@ -10570,64 +8814,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamxsocketclientutil",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxsocketclientutil.so",
-            ],
-            shared_libs: [
-                "libcamxasyncdumpmanager",
-                "libcamxcommonutils",
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxsocketserverutil",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxsocketserverutil.so",
-            ],
-            shared_libs: [
-                "libcamxasyncdumpmanager",
-                "libcamxcommonutils",
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamxswispiqmodule",
     owner: "lenovo",
     strip: {
@@ -10686,66 +8872,6 @@ cc_prebuilt_library_shared {
                 "libqti_vndfwk_detect",
                 "libcdsprpc",
                 "libhwliqinterface2",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxswprocessalgo",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxswprocessalgo.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamxtintlessalgo",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxtintlessalgo.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcamxsocketserverutil",
-                "libsync",
-                "libz",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -11020,48 +9146,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libchinodehmeutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libchinodehmeutils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libchilog",
-                "libcom.qti.chinodeutils",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libclstc_algorithm_adapter",
     owner: "lenovo",
     strip: {
@@ -11232,75 +9316,6 @@ cc_prebuilt_library_shared {
                 "libsdm-color",
                 "libbinder",
                 "libsdmutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcom.qti.chinodeutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcom.qti.chinodeutils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "android.hardware.graphics.common@1.1",
-                "libcamximageformatutils",
-                "libchilog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libconfigdb",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libconfigdb.so",
-            ],
-            shared_libs: [
-                "libxml",
-                "libdiag",
-                "libdsutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -11546,43 +9561,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdpps",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdpps.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdisp-aba",
-                "libqdutils",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libdrm",
-                "libtinyxml2_1",
-                "libdisplaydebug",
-                "libhidlbase",
-                "libdmabufheap",
-                "android.frameworks.sensorservice-V1-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdrmMinimalfsHelper",
     owner: "lenovo",
     strip: {
@@ -11704,44 +9682,6 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libopencv",
                 "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdsi_netctrl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdsi_netctrl.so",
-            ],
-            shared_libs: [
-                "libqdi",
-                "libdiag",
-                "libcutils",
-                "liblog",
-                "libdsutils",
-                "libconfigdb",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmi",
-                "libnicm",
-                "libnicm_dsi",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -11926,33 +9866,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfastcvdsp_stub",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfastcvdsp_stub.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libfastcvopt",
     owner: "lenovo",
     strip: {
@@ -11968,33 +9881,6 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libfastcvdsp_stub",
                 "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfeutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfeutils.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libminksocket_vendor",
-                "libqcbor",
                 "libc++",
                 "libc",
                 "libm",
@@ -12631,45 +10517,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhwlispcffdump",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwlispcffdump.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libidv",
     owner: "lenovo",
     strip: {
@@ -12818,45 +10665,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libisphwsetting",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libisphwsetting.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjnihelper",
     owner: "lenovo",
     strip: {
@@ -12962,36 +10770,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libkernelmanager.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymasterdeviceutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymasterdeviceutils.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libdmabufheap",
-                "libminkdescriptor",
                 "libc++",
                 "libc",
                 "libm",
@@ -13177,31 +10955,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libllvm-qcom",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libllvm-qcom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libllvm-qgl",
     owner: "lenovo",
     strip: {
@@ -13274,38 +11027,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcdsprpc",
                 "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libloadtrusteduiapp",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libloadtrusteduiapp.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libminksocket_vendor",
-                "libtrustedapploader",
-                "libAVFVirtClientInterface",
-                "libdmabufheap",
-                "vendor.qti.AvfQcvmManager-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -13401,35 +11122,6 @@ cc_prebuilt_library_shared {
                 "libdataitems",
                 "libutils",
                 "liblocationservice_glue",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liblocdiagiface",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblocdiagiface.so",
-            ],
-            shared_libs: [
-                "libgps.utils",
-                "libcutils",
-                "libdiag",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -13899,47 +11591,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_cac",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmmcamera_cac.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libcdsprpc",
-                "libOpenCL",
-                "libbitmlenginev2",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_lscv35",
     owner: "lenovo",
     strip: {
@@ -14181,35 +11832,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnicm_dsi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnicm_dsi.so",
-            ],
-            shared_libs: [
-                "libnicm",
-                "libdsutils",
-                "libdiag",
-                "libqmi_cci",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libnicm_interface",
     owner: "lenovo",
     strip: {
@@ -14376,35 +11998,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libssl",
                 "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnicm_vh",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnicm_vh.so",
-            ],
-            shared_libs: [
-                "libnicm",
-                "libdsutils",
-                "libdiag",
-                "libqmi_cci",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -15124,40 +12717,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqc2audio_hwaudiocodec",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqc2audio_hwaudiocodec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libqc2audio_base",
-                "libqc2audio_platform",
-                "libqc2audio_utils",
-                "libqc2audio_basecodec",
-                "libcodec2_vndk",
-                "libstagefright_foundation",
-                "libpalclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqc2audio_platform",
     owner: "lenovo",
     strip: {
@@ -15302,42 +12861,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libfmq",
                 "libbinder",
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "vendor.qti.qccsyshal_aidl-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqcc_sdk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcc_sdk.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "libbinder",
-                "libbase",
-                "libz",
-                "libfmq",
-                "libcrypto",
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
                 "vendor.qti.qccsyshal_aidl-V1-ndk",
@@ -15620,40 +13143,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcodec2_mockfilter",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcodec2_mockfilter.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcodec2_vndk",
-                "libqcodec2_base",
-                "libqcodec2_utils",
-                "libqcodec2_basecodec",
-                "libqcodec2_filterbase",
-                "libqcodec2_platform",
-                "qti.video.utils.videobufferlayout",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqcodec2_platform",
     owner: "lenovo",
     strip: {
@@ -15672,38 +13161,6 @@ cc_prebuilt_library_shared {
                 "libqcodec2_base",
                 "libjsoncpp",
                 "qti.video.utils.videobufferlayout",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqcodec2_streaminteg_filter",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcodec2_streaminteg_filter.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcodec2_vndk",
-                "libqcodec2_base",
-                "libqcodec2_utils",
-                "libqcodec2_basecodec",
-                "libqcodec2_filterbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -16020,33 +13477,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcrilNrLogger",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcrilNrLogger.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libdiag",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqcrilNrPbmModule",
     owner: "lenovo",
     strip: {
@@ -16238,38 +13668,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcrildataaidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcrildataaidl.so",
-            ],
-            shared_libs: [
-                "libqcrilNrFramework",
-                "libqcrilNrQtiMutex",
-                "libqcrilNrLogger",
-                "libutils",
-                "libbinder_ndk",
-                "vendor.qti.hardware.data.connectionfactory-V1-ndk",
-                "vendor.qti.hardware.data.ka-V1-ndk",
-                "vendor.qti.hardware.data.dataactivity-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqdcm-algo",
     owner: "lenovo",
     strip: {
@@ -16362,39 +13760,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqdi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdi.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmi",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqdp",
     owner: "lenovo",
     strip: {
@@ -16414,38 +13779,6 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_client_helper",
                 "libqdpr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqdpr",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdpr.so",
-            ],
-            shared_libs: [
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_helper",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libdiag",
                 "libc++",
                 "libc",
                 "libm",
@@ -16484,38 +13817,6 @@ cc_prebuilt_library_shared {
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libqesdoem_query_sys",
                 "libsqlite",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqesdk_qshsession",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqesdk_qshsession.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "liblog",
-                "libsnsutils",
-                "libjsoncpp",
-                "libsensinghubapi",
-                "libsensinghubapi-prop",
-                "libsensinghubsession",
-                "libsuidlookup",
                 "libc++",
                 "libc",
                 "libm",
@@ -16690,68 +13991,6 @@ cc_prebuilt_library_shared {
                 "libqmiservices",
                 "libidl",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_client_helper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_client_helper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_client_qmux",
-                "libqmi_cci",
-                "libidl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_client_qmux",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_client_qmux.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libidl",
-                "liblog",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -17152,37 +14391,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqshutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqshutils.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libgps.utils",
-                "libsensinghubapi",
-                "libsensinghubsession",
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -17624,25 +14832,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqtigefar",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqtigefar.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqtiidentitycredential",
     owner: "lenovo",
     strip: {
@@ -18004,33 +15193,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "librpmb",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librpmb.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libQSEEComAPI",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "librpmbStaticHelper",
     owner: "lenovo",
     strip: {
@@ -18352,39 +15514,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libsensinghubapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsensorcal",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorcal.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libsnsutils",
-                "libsensinghubsession",
-                "libsensinghubapi",
-                "libsensinghubapi-prop",
-                "libsuidlookup",
                 "libc++",
                 "libc",
                 "libm",
@@ -18782,40 +15911,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsnapdragoncolor-manager",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsnapdragoncolor-manager.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "libsdm-color",
-                "libbinder",
-                "libtinyxml2_1",
-                "libsdmutils",
-                "libdrm",
-                "libdigital-dimming",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsnapdragoncolor-qdcm",
     owner: "lenovo",
     strip: {
@@ -18989,39 +16084,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsnsdiaglog",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsnsdiaglog.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "liblog",
-                "libdiag",
-                "libutils",
-                "libcutils",
-                "libsnsutils",
-                "libsensinghubapi",
-                "libsensinghubapi-prop",
-                "libsensinghubsession",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsnsutils",
     owner: "lenovo",
     strip: {
@@ -19121,40 +16183,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspukeymintdeviceutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspukeymintdeviceutils.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libspcom",
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libdmabufheap",
-                "libminkdescriptor",
-                "libqcbor",
-                "libminksocket_vendor",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -19403,38 +16431,6 @@ cc_prebuilt_library_shared {
                 "liblx-osal",
                 "libar-pal",
                 "libexpat",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsuidlookup",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsuidlookup.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsnsutils",
-                "libsensinghubsession",
-                "libsensinghubapi",
-                "libsensinghubapi-prop",
                 "libc++",
                 "libc",
                 "libm",
@@ -19800,34 +16796,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtrustedapploader",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtrustedapploader.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libtzdrmgenprov",
     owner: "lenovo",
     strip: {
@@ -19923,38 +16891,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvideoml",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvideoml.so",
-            ],
-            shared_libs: [
-                "libcamxcommonutils",
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
-                "libsync",
-                "libcamxsocketserverutil",
-                "libbitmlenginev2",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvideooptfeature",
     owner: "lenovo",
     strip: {
@@ -20012,33 +16948,6 @@ cc_prebuilt_library_shared {
                 "libvpplibrary",
                 "libcutils",
                 "libqdMetaData",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpphvx",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvpphvx.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcdsprpc",
                 "libc++",
                 "libc",
                 "libm",
@@ -21234,49 +18143,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.camera.aon-service-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamxcoreutils",
-                "libcamxmetadata",
-                "libcamxsocketserverutil",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
-                "libcamxcommonutils",
-                "libcamxods",
-                "libcamxasyncdumpmanager",
-                "libcamxsettingsmanager",
-                "libqti_vndfwk_detect",
-                "libbase",
-                "libbinder_ndk",
-                "com.qti.qseeaon",
-                "vendor.qti.hardware.camera.aon-V3-ndk",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.offlinecamera-service-impl",
     owner: "lenovo",
     strip: {
@@ -22308,45 +19174,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "cnd",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/cnd",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libcutils",
-                "liblog",
-                "libnetutils",
-                "libqti_vndfwk_detect_vendor",
-                "libutils",
-                "libcne",
-                "libcneapiclient",
-                "libqmiservices",
-                "libhidlbase",
-                "libbinder_ndk",
-                "libandroid_net",
-                "vendor.qti.latencyaidlservice-V1-ndk",
-                "vendor.qti.data.factoryservice-V2-ndk",
-                "vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "colorbin",
     owner: "lenovo",
     target: {
@@ -23133,50 +19960,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.hardware.secureprocessor",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libbinder_ndk",
-                "libhidlbase",
-                "libAVFVirtClientInterface",
-                "android.hardware.common-V2-ndk",
-                "vendor.qti.hardware.secureprocessor.common-helper",
-                "vendor.qti.hardware.secureprocessor.device-V1-ndk",
-                "vendor.qti.hardware.secureprocessor.common-V1-ndk",
-                "vendor.qti.hardware.secureprocessor.config-V1-ndk",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libdmabufheap",
-                "libminksocket_vendor",
-                "libminkdescriptor",
-                "vendor.qti.AvfQcvmManager-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.qti.hardware.sensorscalibrate-service",
     owner: "lenovo",
     target: {
@@ -23274,47 +20057,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ims_rtp_daemon",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ims_rtp_daemon",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libcutils",
-                "liblog",
-                "lib-imsvtcore",
-                "lib-imsdpl",
-                "lib-rtpsl",
-                "lib-rtpcore",
-                "lib-rtpcommon",
-                "libqmiservices",
-                "libqmi_csi",
-                "libqmi_cci",
-                "vendor.qti.ImsRtpService-aidl-Impl",
-                "vendor.qti.ImsRtpService-V2-ndk",
-                "libbinder_ndk",
-                "libutils",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
@@ -23510,37 +20252,6 @@ cc_prebuilt_binary {
                 "libminksocket_vendor",
                 "libloc_base_util",
                 "liblowi_common",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "nicmd",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/nicmd",
-            ],
-            shared_libs: [
-                "libutils",
-                "libdsutils",
-                "libnicm",
-                "libnicm_internal",
-                "libnicm_utils",
-                "libnicm_recovery",
-                "libnicm_modemproxy",
                 "libc++",
                 "libc",
                 "libm",
@@ -23928,37 +20639,6 @@ cc_prebuilt_binary {
                 "libavservices_minijail",
                 "libsensinghubapi",
                 "libsnsutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qseecomd",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qseecomd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libdrmfs",
-                "libminkdescriptor",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",
@@ -24426,40 +21106,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "trusteduilistener",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/trusteduilistener",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libminksocket_vendor",
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "libTrustedInputUtils",
-                "vendor.qti.hardware.display.config-V7-ndk",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "vendor.qti.hardware.systemhelperaidl-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vppservice",
     owner: "lenovo",
     target: {
@@ -24637,6 +21283,3360 @@ filegroup {
     srcs: [
         "proprietary/vendor/lib64/libgdix_tsd.so",
     ],
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.afbfusion",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_58ffbeb039903b3c",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.customhwnode",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_936e40b0ffe40eba",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libcom.qti.chinodeutils",
+                "libchilog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.dummydepth",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_aac78be4140225d9",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.dummysat",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_8c36f930f47cc0a2",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.evs",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_35de22e71ccc0b6c",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.fcv",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_c9454e36f6a953b9",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libsync",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.formatconversion",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_70fc94e06c4450fd",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libcutils",
+                "libc++",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.hdr10phist",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_56f57b246aab91c3",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libhdr10plus",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.lenovo",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_bdf5d91c6abea33b",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "libcutils",
+                "libcom.qti.chinodeutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.mlinference",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_ea0d89172486094e",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libcamximageformatutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.remosaic",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_a30a93c4e42ca1d4",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.spdepth",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_5d2ad250ba52abf6",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libsync",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.stich",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_4ccc787b7310e842",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.superportraitvideo",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_794a26ee3230c322",
+            ],
+            shared_libs: [
+                "libarcsoft_video_superportrait",
+                "libcamera_metadata",
+                "libchilog",
+                "libcutils",
+                "libcom.qti.chinodeutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.swec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_2f5cda074c5fa1c5",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libcamximageformatutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.swmlremosaic",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_f7e3ea77e9197e63",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcamximageformatutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libcutils",
+                "liblog",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.swpreprocess",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3a221c87c140f230",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.swregistration",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3ed1b9a5e3ec49fd",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.node.swvrt",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_917a5fc3ac7b44b2",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libcamximageformatutils",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.aecwrapper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_6f3dcb1f61c32ca4",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.afwrapper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_736b8c6bb85dc058",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.awbwrapper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_f7f80d86204ff08f",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.exampleaf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_da414e5b3dafceb9",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.haf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_cd0f738020252513",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "com.qti.stats.common",
+                "libcamxsocketserverutil",
+                "libopencv",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.hafoverride",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7f6a2c9d93f74760",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libsync",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.localhistogram",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3b71f3991c81411b",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.pdlibsony",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_702c569b7416160e",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.pdlibwrapper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_0c0ff86f4e0c6f85",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.roimixer",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_8b2a732ae4cfed54",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamxsocketserverutil",
+                "com.qti.stats.common",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.statsgenerator",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_589d1f4242c00874",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qtistatic.stats.aec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_d05548092f783514",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qtistatic.stats.af",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_d3f0bf5b50139834",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qtistatic.stats.awb",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_98e0b2c32a5c7bba",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qtistatic.stats.pdlib",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_81b29f6ca6796630",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdepthmapwrapper_itof",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_25ccfd7f3c8e4a7a",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.platformsettings.sm8850",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_4a4a07d6a9a2ca5e",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libcamxsettingsmanager",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.qseeutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3295950faf3ad216",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
+                "libsync",
+                "libsensinghubapi",
+                "libsensinghubsession",
+                "libz",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qti.stats.common",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_f31edff9034c25c4",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qualcomm.mcx.nonlinearmapper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_edc3b1f3fafd6839",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "com.qti.camx.chiiqutils",
+                "com.qti.chi.override",
+                "libchilog",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspuqtigatekeeper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_ab40c2af35d0be9a",
+            ],
+            shared_libs: [
+                "android.hardware.gatekeeper-V1-ndk",
+                "libhardware",
+                "libbinder_ndk",
+                "libbase",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libgatekeeper",
+                "libspukeymintdeviceutils",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.qseecom@1.0-impl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_e3b0145da69f2e98",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libdmabufheap",
+                "vendor.qti.hardware.qseecom-V1-ndk",
+                "libbinder_ndk",
+                "libQSEEComAPI",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-imsdpl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_056450dd59a9b59d",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libqmiservices",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libtime_genoff",
+                "libcrypto",
+                "libssl",
+                "libandroid_net",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-imsservice",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7f3fc651c40bc248",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder_ndk",
+                "libcutils",
+                "libutils",
+                "lib-imscommon",
+                "libbase",
+                "libqmiservices",
+                "libqmi_csi",
+                "libdiag",
+                "libidl",
+                "libqti_vndfwk_detect_vendor",
+                "libandroid_net",
+                "vendor.qti.ims.configaidlservice-V1-ndk",
+                "vendor.qti.ims.factoryaidlservice-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTUITAVMInterface",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_0eb4e6539bfb7401",
+            ],
+            shared_libs: [
+                "libloadtrusteduiapp",
+                "liblog",
+                "libminksocket_vendor",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTrustedUIAIDL",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3f4d331bdfbefc73",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "libbase",
+                "libdmabufheap",
+                "libminksocket_vendor",
+                "libvmmem",
+                "libloadtrusteduiapp",
+                "libTUITAVMInterface",
+                "vendor.qti.hardware.trustedui-V1-ndk",
+                "vendor.qti.hardware.display.config-V7-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagmmixer",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_bd3e048979d91181",
+            ],
+            shared_libs: [
+                "libtinyalsa",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamerabuffer",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_b07c8e8e09e37904",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.1",
+                "libdmabufheap",
+                "libgralloccore",
+                "libgrallocutils",
+                "libmapperutils",
+                "libvndksupport",
+                "libhidlbase",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common@1.1",
+                "libbinder_ndk",
+                "libdisplayconfig.qti",
+                "libgralloc.qti",
+                "libgralloctypes",
+                "libhidltransport",
+                "libhardware",
+                "libcamxcommonutils",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxasyncdumpmanager",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_c7fe9d87cabc7013",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "com.qti.sfw.settings",
+                "libcamxcommonutils",
+                "libcamxcsl",
+                "libcamximageformatutils",
+                "libcamxmetadata",
+                "libcamxdumpinforecorder",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxdumpinforecorder",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3a9d24735d91248d",
+            ],
+            shared_libs: [
+                "com.qti.sfw.settings",
+                "libcamxcommonutils",
+                "libtinyxml2-v36",
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxhwnodecontext",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_32350f0cc6d321db",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libcamximageformatutils",
+                "libcamxcsl",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxhwquery",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_69c6f94c54399cf7",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcommonutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxods",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_b65608611da33dda",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxsocketclientutil",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7761ee77e931f5e4",
+            ],
+            shared_libs: [
+                "libcamxasyncdumpmanager",
+                "libcamxcommonutils",
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxsocketserverutil",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_67fcc7bef155a828",
+            ],
+            shared_libs: [
+                "libcamxasyncdumpmanager",
+                "libcamxcommonutils",
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxswprocessalgo",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_d076908eb13c7f94",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamxtintlessalgo",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_326a1e3e8f0557a8",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcamxsocketserverutil",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchinodehmeutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_b4b61e8308a39374",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcom.qti.chinodeutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_e1826859f07bd155",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "android.hardware.graphics.common@1.1",
+                "libcamximageformatutils",
+                "libchilog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libconfigdb",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_200d5769cc663e9f",
+            ],
+            shared_libs: [
+                "libxml",
+                "libdiag",
+                "libdsutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdpps",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_5a1dc16afb583519",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdisp-aba",
+                "libqdutils",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libdrm",
+                "libtinyxml2_1",
+                "libdisplaydebug",
+                "libhidlbase",
+                "libdmabufheap",
+                "android.frameworks.sensorservice-V1-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdsi_netctrl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_89753e598c38876e",
+            ],
+            shared_libs: [
+                "libqdi",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libdsutils",
+                "libconfigdb",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_qmux",
+                "libqmi_client_helper",
+                "libqmi",
+                "libnicm",
+                "libnicm_dsi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfastcvdsp_stub",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_9d9900e5c640b27d",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfeutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_fcf74350b14f1c99",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libminksocket_vendor",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhwlispcffdump",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_ac311d76d86c3c23",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libisphwsetting",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3756ca186e09f0e6",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymasterdeviceutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_d25b3b6eabf8aa9c",
+            ],
+            shared_libs: [
+                "libion",
+                "libcutils",
+                "liblog",
+                "libcrypto",
+                "libdmabufheap",
+                "libminkdescriptor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libllvm-qcom",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_4feda423da740cbc",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloadtrusteduiapp",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_3b698481463c188c",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libminksocket_vendor",
+                "libtrustedapploader",
+                "libAVFVirtClientInterface",
+                "libdmabufheap",
+                "vendor.qti.AvfQcvmManager-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblocdiagiface",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7474e9fd2df0caa5",
+            ],
+            shared_libs: [
+                "libgps.utils",
+                "libcutils",
+                "libdiag",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_cac",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_27d180bd3c9234f0",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libOpenCL",
+                "libbitmlenginev2",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnicm_dsi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_b2b355eef7814695",
+            ],
+            shared_libs: [
+                "libnicm",
+                "libdsutils",
+                "libdiag",
+                "libqmi_cci",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnicm_vh",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_1bf3859de8d95e81",
+            ],
+            shared_libs: [
+                "libnicm",
+                "libdsutils",
+                "libdiag",
+                "libqmi_cci",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqc2audio_hwaudiocodec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_35fd52126c022836",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libqc2audio_base",
+                "libqc2audio_platform",
+                "libqc2audio_utils",
+                "libqc2audio_basecodec",
+                "libcodec2_vndk",
+                "libstagefright_foundation",
+                "libpalclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcc_sdk",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_34c0235252fb5493",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libbinder",
+                "libbase",
+                "libz",
+                "libfmq",
+                "libcrypto",
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "vendor.qti.qccsyshal_aidl-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_mockfilter",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_f9bec6c397bdae52",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libqcodec2_platform",
+                "qti.video.utils.videobufferlayout",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_streaminteg_filter",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_9f85a6a9edcfe53f",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcrilNrLogger",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_1e9e9496edb9ae58",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcrildataaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_855b0e8eb9b21fb8",
+            ],
+            shared_libs: [
+                "libqcrilNrFramework",
+                "libqcrilNrQtiMutex",
+                "libqcrilNrLogger",
+                "libutils",
+                "libbinder_ndk",
+                "vendor.qti.hardware.data.connectionfactory-V1-ndk",
+                "vendor.qti.hardware.data.ka-V1-ndk",
+                "vendor.qti.hardware.data.dataactivity-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqdi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_9ab1377221532db1",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_qmux",
+                "libqmi_client_helper",
+                "libqmi",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqdpr",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_6e8685d164d75735",
+            ],
+            shared_libs: [
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_helper",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqesdk_qshsession",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_31112228f30ef4c9",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "liblog",
+                "libsnsutils",
+                "libjsoncpp",
+                "libsensinghubapi",
+                "libsensinghubapi-prop",
+                "libsensinghubsession",
+                "libsuidlookup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_helper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_dd415b7836ce3816",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libqmi_client_qmux",
+                "libqmi_cci",
+                "libidl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_qmux",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_9e60cccae3cfbc4a",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libidl",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqshutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7c4e0724a1b6bc5c",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libgps.utils",
+                "libsensinghubapi",
+                "libsensinghubsession",
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqtigefar",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_be6650aa17c733ab",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librpmb",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_a0fbecef10625bba",
+            ],
+            shared_libs: [
+                "libutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsensorcal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_636fe7eb286f9814",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libsnsutils",
+                "libsensinghubsession",
+                "libsensinghubapi",
+                "libsensinghubapi-prop",
+                "libsuidlookup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnapdragoncolor-manager",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_28bd8da3c85061a5",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libdisplaydebug",
+                "libsdm-color",
+                "libbinder",
+                "libtinyxml2_1",
+                "libsdmutils",
+                "libdrm",
+                "libdigital-dimming",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnsdiaglog",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_029991fde6854487",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "liblog",
+                "libdiag",
+                "libutils",
+                "libcutils",
+                "libsnsutils",
+                "libsensinghubapi",
+                "libsensinghubapi-prop",
+                "libsensinghubsession",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspukeymintdeviceutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_69deaf842c67da85",
+            ],
+            shared_libs: [
+                "libion",
+                "libspcom",
+                "libcutils",
+                "liblog",
+                "libcrypto",
+                "libdmabufheap",
+                "libminkdescriptor",
+                "libqcbor",
+                "libminksocket_vendor",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsuidlookup",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_ab9163c71fe7d217",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libsnsutils",
+                "libsensinghubsession",
+                "libsensinghubapi",
+                "libsensinghubapi-prop",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtrustedapploader",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_97325a6a18471c5d",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminkdescriptor",
+                "libminksocket_vendor",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvideoml",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_86809a648ebe7e38",
+            ],
+            shared_libs: [
+                "libcamxcommonutils",
+                "libcutils",
+                "liblog",
+                "libcdsprpc",
+                "libsync",
+                "libcamxsocketserverutil",
+                "libbitmlenginev2",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpphvx",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_1fbe83634015cc6b",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.camera.aon-service-impl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_9b44ae742432f526",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libbase",
+                "libbinder_ndk",
+                "com.qti.qseeaon",
+                "vendor.qti.hardware.camera.aon-V3-ndk",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "cnd",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_1bbe7346ebecf46d",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libnetutils",
+                "libqti_vndfwk_detect_vendor",
+                "libutils",
+                "libcne",
+                "libcneapiclient",
+                "libqmiservices",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libandroid_net",
+                "vendor.qti.latencyaidlservice-V1-ndk",
+                "vendor.qti.data.factoryservice-V2-ndk",
+                "vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.hardware.secureprocessor",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_a3ff3fc6a5556900",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libAVFVirtClientInterface",
+                "android.hardware.common-V2-ndk",
+                "vendor.qti.hardware.secureprocessor.common-helper",
+                "vendor.qti.hardware.secureprocessor.device-V1-ndk",
+                "vendor.qti.hardware.secureprocessor.common-V1-ndk",
+                "vendor.qti.hardware.secureprocessor.config-V1-ndk",
+                "libgralloc.qti",
+                "libgralloctypes",
+                "libdmabufheap",
+                "libminksocket_vendor",
+                "libminkdescriptor",
+                "vendor.qti.AvfQcvmManager-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ims_rtp_daemon",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_7c7e6c897086fdfa",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "lib-imsvtcore",
+                "lib-imsdpl",
+                "lib-rtpsl",
+                "lib-rtpcore",
+                "lib-rtpcommon",
+                "libqmiservices",
+                "libqmi_csi",
+                "libqmi_cci",
+                "vendor.qti.ImsRtpService-aidl-Impl",
+                "vendor.qti.ImsRtpService-V2-ndk",
+                "libbinder_ndk",
+                "libutils",
+                "libhidlbase",
+                "libavservices_minijail",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "nicmd",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_c4bbf0e5bc650995",
+            ],
+            shared_libs: [
+                "libutils",
+                "libdsutils",
+                "libnicm",
+                "libnicm_internal",
+                "libnicm_utils",
+                "libnicm_recovery",
+                "libnicm_modemproxy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "qseecomd",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_c22562078524435b",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libdrmfs",
+                "libminkdescriptor",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "trusteduilistener",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "//vendor/lenovo/sm8850-common:LenovoShared_abi_v2_e1a3aba094b70ff1",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libminksocket_vendor",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libTrustedInputUtils",
+                "vendor.qti.hardware.display.config-V7-ndk",
+                "vendor.qti.hardware.systemhelper@1.0",
+                "vendor.qti.hardware.systemhelperaidl-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
