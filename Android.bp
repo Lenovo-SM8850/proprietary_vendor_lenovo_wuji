@@ -53,6 +53,190 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "c2.dolby.client",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.client.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libutils",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "libcutils",
+                "libstagefright_bufferpool@2.0.1",
+                "libnativewindow",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libcodec2_vndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "c2.dolby.store",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.store.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libutils",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "liblog",
+                "libcutils",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "c2.dolby.vision.dec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.vision.dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_shim",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libcodec2_hal_common",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "libcodec2_soft_common",
+                "libcutils",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libEGL",
+                "libGLESv3",
+                "libvndksupport",
+                "libdolbyui",
+                "c2.dolby.store",
+                "c2.dolby.client",
+                "libstagefright_bufferpool@2.0.1",
+                "libdolbydecoderprocessor",
+                "libui",
+                "libdolbyproxyandroid",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "c2.dolby.vision.sec.dec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/c2.dolby.vision.sec.dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_shim",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libcodec2_hal_common",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "libcodec2_soft_common",
+                "libcutils",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libEGL",
+                "libGLESv3",
+                "libvndksupport",
+                "libdolbyui",
+                "c2.dolby.store",
+                "c2.dolby.client",
+                "libstagefright_bufferpool@2.0.1",
+                "libdolbydecoderprocessor",
+                "libui",
+                "libdolbyproxyandroid",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.eeprom.gt24p128c2csli_imx766",
     owner: "lenovo",
     strip: {
@@ -7781,95 +7965,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_face_biometric",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarcsoft_face_biometric.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libz",
-                "liblog",
-                "libcutils",
-                "libmpbase",
-                "libnativewindow",
-                "libbiometricsface_ca.arcsoft",
-                "libfaceid_ca_proxy.arcsoft",
-                "libarcsoft_faceid",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_face_mink",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarcsoft_face_mink.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libcutils",
-                "libion",
-                "libQSEEComAPI",
-                "libdmabufheap",
-                "libminkdescriptor",
-                "libmpbase",
-                "libc",
-                "libm",
-                "libdl",
-                "libc++",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_faceid",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarcsoft_faceid.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_qnnhtp",
     owner: "lenovo",
     strip: {
@@ -7968,32 +8063,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbiometricsface_ca.arcsoft",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbiometricsface_ca.arcsoft.so",
-            ],
-            shared_libs: [
-                "libfaceid_ca_proxy.arcsoft",
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -9561,6 +9630,131 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbydecoderprocessor",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbydecoderprocessor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libui",
+                "libutils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libdolbyottcameracontrol",
+                "libhidlbase",
+                "libnativewindow",
+                "libdolbyeglcore",
+                "libcodec2_vndk",
+                "libcodec2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyeglcore",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyeglcore.so",
+            ],
+            shared_libs: [
+                "libEGL",
+                "libGLESv3",
+                "libnativewindow",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyottcameracontrol",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyottcameracontrol.so",
+            ],
+            shared_libs: [
+                "libGLESv3",
+                "libEGL",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyproxyandroid",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdolbyproxyandroid.so",
+            ],
+            shared_libs: [
+                "android.frameworks.sensorservice-V1-ndk",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdrmMinimalfsHelper",
     owner: "lenovo",
     strip: {
@@ -9826,34 +10020,6 @@ cc_prebuilt_library_shared {
                 "liblocdiagiface",
                 "libutils",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfaceid_ca_proxy.arcsoft",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfaceid_ca_proxy.arcsoft.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libcdsprpc",
-                "libarcsoft_faceid",
-                "libmpbase",
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -17901,6 +18067,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnspextensionfrcprovider",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libnspextensionfrcprovider.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnspextensionsuperresolutionprovider",
     owner: "lenovo",
     strip: {
@@ -17930,6 +18116,46 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/rfs/dsp/libsvdsp.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpp_frc",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libvpp_frc.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpp_gfrc_networks",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libvpp_gfrc_networks.so",
             ],
         },
     },
@@ -18027,6 +18253,68 @@ cc_prebuilt_library_shared {
                 "libaudioutils",
                 "liblog",
                 "libtinyxml2-v36",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdapaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswdapaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswgamedapaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswgamedapaidl.so",
+            ],
+            shared_libs: [
+                "libdapparamstorage",
+                "libstagefright_foundation",
+                "libdlbpreg",
+                "libdmshal",
+                "android.hardware.audio.effect-V4-ndk",
+                "android.media.audio.common.types-V5-ndk",
+                "libaudioaidlcommon",
+                "libaudioutils",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudio_aidl_conversion_common_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -18840,6 +19128,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.dolby.media.c2-service-vision.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.media.c2-service-vision.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.hardware.data.connectionaidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.data.connectionaidl.xml",
@@ -19450,45 +19747,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.biometrics.face@4.0-service.face",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.face@4.0-service.face",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.biometrics.face-V4-ndk",
-                "android.hardware.biometrics.common-V4-ndk",
-                "android.hardware.keymaster-V4-ndk",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libui",
-                "libion",
-                "libcamera2ndk_vendor",
-                "libmediandk",
-                "libnativewindow",
-                "libarcsoft_face_biometric",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint-service.gfcap",
     owner: "lenovo",
     target: {
@@ -19713,6 +19971,37 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "dvs-aidl-service",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/dvs-aidl-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.frameworks.sensorservice-V1-ndk",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "qcrilNrd",
     owner: "lenovo",
     target: {
@@ -19765,6 +20054,49 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhidltransport",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.dolby.media.c2-service-vision",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.dolby.media.c2-service-vision",
+            ],
+            shared_libs: [
+                "c2.dolby.vision.dec",
+                "c2.dolby.vision.sec.dec",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libutils",
+                "android.hardware.media.c2-V1-ndk",
+                "libbinder_ndk",
+                "libcodec2_aidl",
+                "libstagefright_aidl_bufferpool2",
+                "libbinder",
+                "c2.dolby.store",
+                "libcutils",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],

@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/wuji
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/wuji/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/DIAG_audio_07-07.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/DIAG_audio_07-07.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/DOFG_CZRXD.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/DOFG_CZRXD.pmd \
@@ -71,19 +72,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/lenovo/wuji/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.weaver-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.vendor.qti.hardware.spu.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.qti.hardware.spu.service.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dolby.media.c2-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-service-vision.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku1/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku2/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_sku3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku3/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v1/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v2/video_system_specs.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/media_canoe_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v3/video_system_specs.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/media_codecs_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1_vendor.xml \
@@ -216,15 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b00 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b04 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b05 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b06 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b07 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b08 \
-    vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.mdt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
@@ -319,10 +308,15 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
     vendor/lenovo/wuji/proprietary/vendor/lib64/cpufd_v1_2_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/cpufd_v1_2_0.bin \
-    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin
+    vendor/lenovo/wuji/proprietary/vendor/lib64/libhmegpu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libhmegpu.bin \
+    vendor/lenovo/wuji/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
+    c2.dolby.client \
+    c2.dolby.store \
+    c2.dolby.vision.dec \
+    c2.dolby.vision.sec.dec \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.p24c256c_imx766 \
@@ -530,14 +524,10 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libaodoptfeature \
     libar-pal \
-    libarcsoft_face_biometric \
-    libarcsoft_face_mink \
-    libarcsoft_faceid \
     libarcsoft_qnnhtp \
     libarcsoft_video_superportrait \
     libaudiofeaturestats \
     libaudioplatformconverter.qti \
-    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
@@ -583,6 +573,10 @@ PRODUCT_PACKAGES += \
     libdisplayqos \
     libdisplayskuutils \
     libdmap_consent_sdk \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyottcameracontrol \
+    libdolbyproxyandroid \
     libdrmMinimalfsHelper \
     libdrmfs \
     libdrmtime \
@@ -592,7 +586,6 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libembmsservice \
     libengineplugin \
-    libfaceid_ca_proxy.arcsoft \
     libfastcvopt \
     libgame_enhance \
     libgamepoweroptfeature \
@@ -848,11 +841,16 @@ PRODUCT_PACKAGES += \
     qtiwakelock \
     libnsp_ipc_cdsp_skel \
     libnspextensioncopyprovider \
+    libnspextensionfrcprovider \
     libnspextensionsuperresolutionprovider \
     libsvdsp \
+    libvpp_frc \
+    libvpp_gfrc_networks \
     libvpp_svc_skel \
     sensors.qsh \
     libquasar \
+    libswdapaidl \
+    libswgamedapaidl \
     vendor.libdpmctmgr \
     vendor.libdpmframework \
     vendor.qti.ImsRtpService-aidl-Impl \
@@ -900,6 +898,7 @@ PRODUCT_PACKAGES += \
     fingerprint-gfcap.xml \
     qcrilhook-saidl.xml \
     qtiradio-saidl.xml \
+    vendor.dolby.media.c2-service-vision.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
     vendor.qti.hardware.radio.am.xml \
@@ -929,7 +928,6 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hexlpservice \
     hlosminkdaemon \
-    android.hardware.biometrics.face@4.0-service.face \
     android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.gatekeeper-rust-service-qti \
@@ -937,8 +935,10 @@ PRODUCT_PACKAGES += \
     android.hardware.security.onekeymint-service-qti \
     android.hardware.security.secretkeeper-service-qti \
     android.hardware.weaver-service-spu-qti \
+    dvs-aidl-service \
     qcrilNrd \
     qfp-daemon \
+    vendor.dolby.media.c2-service-vision \
     vendor.lenovo.hardware.touchscreen-service \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.c2pa-aidl-service-qti \
