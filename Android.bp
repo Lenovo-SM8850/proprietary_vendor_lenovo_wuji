@@ -237,6 +237,26 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "com.qti.sensor.imx858",
     owner: "lenovo",
@@ -275,6 +295,27 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 cc_prebuilt_library_shared {
     name: "com.qti.sensor.sc820acs_ofilm_front",
@@ -2639,6 +2680,7 @@ cc_prebuilt_library_shared {
 }
 
 
+
 cc_prebuilt_library_shared {
     name: "cellularSecurityModule",
     owner: "lenovo",
@@ -4146,6 +4188,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "com.qualcomm.mcx.linearmapper",
     owner: "lenovo",
@@ -4493,6 +4536,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libq3dtools_esx",
     owner: "lenovo",
@@ -4554,6 +4598,11 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
 
 cc_prebuilt_library_shared {
     name: "camera.qcom.core",
@@ -4884,6 +4933,13 @@ cc_prebuilt_library_shared {
 
 
 
+
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "lib-imscommon",
     owner: "lenovo",
@@ -4961,6 +5017,7 @@ cc_prebuilt_library_shared {
 
 
 
+
 cc_prebuilt_library_shared {
     name: "lib-imsvtcore",
     owner: "lenovo",
@@ -4995,6 +5052,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
 cc_prebuilt_library_shared {
     name: "lib-rtpcore",
     owner: "lenovo",
@@ -5025,6 +5084,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libATFWD",
@@ -5109,6 +5169,8 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
 cc_prebuilt_library_shared {
     name: "libGPMTEEC_vendor",
     owner: "lenovo",
@@ -5162,6 +5224,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libGPreqcancel_svc",
@@ -5218,6 +5281,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libQshQmiIDL",
@@ -5507,6 +5571,9 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
+
 cc_prebuilt_library_shared {
     name: "libar-pal",
     owner: "lenovo",
@@ -5544,6 +5611,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libarcsoft_video_superportrait",
     owner: "lenovo",
@@ -5575,6 +5643,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libaudioplatformconverter.qti",
     owner: "lenovo",
@@ -5593,6 +5662,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libbitmlenginev2",
@@ -6055,6 +6125,7 @@ cc_prebuilt_library_shared {
 
 
 
+
 cc_prebuilt_library_shared {
     name: "libcamximageformatutils",
     owner: "lenovo",
@@ -6101,6 +6172,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libcamxmetadata",
@@ -6653,6 +6725,7 @@ cc_prebuilt_library_shared {
 }
 
 
+
 cc_prebuilt_library_shared {
     name: "libclstc_tm",
     owner: "lenovo",
@@ -6778,6 +6851,7 @@ cc_prebuilt_library_shared {
 
 
 
+
 cc_prebuilt_library_shared {
     name: "libdev_bt",
     owner: "lenovo",
@@ -6872,6 +6946,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libdisp-aba",
     owner: "lenovo",
@@ -6952,6 +7027,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libdolbydecoderprocessor",
@@ -7142,6 +7218,8 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
 cc_prebuilt_library_shared {
     name: "libdsutils",
     owner: "lenovo",
@@ -7220,6 +7298,8 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
 cc_prebuilt_library_shared {
     name: "libfastcvopt",
     owner: "lenovo",
@@ -7247,6 +7327,8 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
 
 
 cc_prebuilt_library_shared {
@@ -7346,6 +7428,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
 cc_prebuilt_library_shared {
     name: "libgsl",
     owner: "lenovo",
@@ -7377,6 +7461,10 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
 
 cc_prebuilt_library_shared {
     name: "libhdr_als_adapter",
@@ -7410,6 +7498,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libhdr_tm",
     owner: "lenovo",
@@ -7440,6 +7529,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
 cc_prebuilt_library_shared {
     name: "libhdrvivid",
     owner: "lenovo",
@@ -7469,6 +7560,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libhwliqinterface2",
@@ -7512,6 +7604,10 @@ cc_prebuilt_library_shared {
 
 
 
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libjnihelper",
     owner: "lenovo",
@@ -7542,6 +7638,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libkcl",
@@ -7592,6 +7689,9 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
+
 cc_prebuilt_library_shared {
     name: "liblistensoundmodel2vendor",
     owner: "lenovo",
@@ -7617,6 +7717,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libllvm-glnext",
@@ -7670,6 +7771,10 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -7770,6 +7875,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libmdsprpc",
     owner: "lenovo",
@@ -7804,6 +7910,11 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libminkdescriptor",
     owner: "lenovo",
@@ -7830,6 +7941,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libminksocket_vendor",
@@ -7859,6 +7971,16 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -7959,6 +8081,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libnicm_utils",
     owner: "lenovo",
@@ -7988,6 +8111,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 
 cc_prebuilt_library_shared {
@@ -8025,6 +8149,13 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libpowercore",
     owner: "lenovo",
@@ -8056,6 +8187,12 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libqape_oem_ext",
     owner: "lenovo",
@@ -8084,6 +8221,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libqc2audio_base",
     owner: "lenovo",
@@ -8111,6 +8249,12 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -8181,6 +8325,8 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
 
 
 cc_prebuilt_library_shared {
@@ -8329,6 +8475,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libqcodec2_imgtxrfilter",
@@ -8896,6 +9043,12 @@ cc_prebuilt_library_shared {
 
 
 
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libqfdservice",
     owner: "lenovo",
@@ -8924,6 +9077,12 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 
@@ -9132,6 +9291,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libqsegnetunittest",
     owner: "lenovo",
@@ -9175,6 +9335,13 @@ cc_prebuilt_library_shared {
 }
 
 
+
+
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libqti-perfd-client",
     owner: "lenovo",
@@ -9205,6 +9372,9 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
 cc_prebuilt_library_shared {
     name: "libqti-qesdk-secure",
     owner: "lenovo",
@@ -9230,6 +9400,16 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -9364,6 +9544,12 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -9768,6 +9954,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libshsc",
     owner: "lenovo",
@@ -9792,6 +9979,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libsiminputgenutil",
@@ -9832,6 +10020,12 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -9923,6 +10117,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "libspukeymint",
     owner: "lenovo",
@@ -9991,6 +10186,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
 cc_prebuilt_library_shared {
     name: "libssd",
     owner: "lenovo",
@@ -10019,6 +10216,8 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
 
 cc_prebuilt_library_shared {
     name: "libstream_compress",
@@ -10167,6 +10366,9 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
 cc_prebuilt_library_shared {
     name: "libtflite_fd",
     owner: "lenovo",
@@ -10216,6 +10418,12 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 cc_prebuilt_library_shared {
@@ -10278,6 +10486,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 
 cc_prebuilt_library_shared {
@@ -10355,6 +10564,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "qcrilInterfaces",
@@ -12393,6 +12603,7 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
+
 cc_prebuilt_binary {
     name: "activespu",
     owner: "lenovo",
@@ -12424,6 +12635,7 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+
 cc_prebuilt_binary {
     name: "adsprpcd",
     owner: "lenovo",
@@ -12448,6 +12660,7 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_binary {
     name: "aw882xx_cali",
@@ -12564,6 +12777,14 @@ cc_prebuilt_binary {
 }
 
 
+
+
+
+
+
+
+
+
 cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint-service.gfcap",
     owner: "lenovo",
@@ -12595,6 +12816,7 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+
 cc_prebuilt_binary {
     name: "android.hardware.gatekeeper-rust-service-qti",
     owner: "lenovo",
@@ -12619,6 +12841,9 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     soc_specific: true,
 }
+
+
+
 
 cc_prebuilt_binary {
     name: "android.hardware.weaver-service-spu-qti",
@@ -12829,6 +13054,10 @@ cc_prebuilt_binary {
 }
 
 
+
+
+
+
 cc_prebuilt_binary {
     name: "vendor.qti.hardware.sensorscalibrate-service",
     owner: "lenovo",
@@ -12900,6 +13129,7 @@ cc_prebuilt_binary {
 
 
 
+
 sh_binary {
     name: "init.qcrild",
     owner: "lenovo",
@@ -12923,6 +13153,8 @@ sh_binary {
     filename: "init.qti.media.sh",
     soc_specific: true,
 }
+
+
 
 cc_prebuilt_binary {
     name: "ks",
@@ -12950,6 +13182,12 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+
+
+
+
+
 
 
 cc_prebuilt_binary {
@@ -12993,6 +13231,9 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+
+
 
 cc_prebuilt_binary {
     name: "qms",
@@ -13052,6 +13293,11 @@ cc_prebuilt_binary {
 }
 
 
+
+
+
+
+
 sh_binary {
     name: "qtigetprop",
     owner: "lenovo",
@@ -13067,6 +13313,12 @@ sh_binary {
     filename: "qtisetprop",
     soc_specific: true,
 }
+
+
+
+
+
+
 
 cc_prebuilt_binary {
     name: "smartpa_tool",
@@ -13092,6 +13344,8 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+
 
 sh_binary {
     name: "start_subsys",
@@ -13133,6 +13387,7 @@ cc_prebuilt_binary {
 
 
 
+
 cc_prebuilt_binary {
     name: "vppservice",
     owner: "lenovo",
@@ -13164,6 +13419,9 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+
+
+
 install_symlink {
     name: "vendor_lib64_libEGL_adreno_so",
     soc_specific: true,
@@ -13176,6 +13434,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libGLESv2_adreno.so",
     symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libq3dtools_adreno_so",
+    soc_specific: true,
+    installed_location: "lib64/libq3dtools_adreno.so",
+    symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
 filegroup {
