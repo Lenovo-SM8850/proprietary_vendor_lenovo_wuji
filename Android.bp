@@ -13,7 +13,6 @@ soong_namespace {
     ],
 }
 
-
 cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "lenovo",
@@ -4318,7 +4317,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.mcx.usecase.extension",
     owner: "lenovo",
@@ -5170,7 +5168,6 @@ cc_prebuilt_library_shared {
 
 
 
-
 cc_prebuilt_library_shared {
     name: "libGPMTEEC_vendor",
     owner: "lenovo",
@@ -5393,8 +5390,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 
 
@@ -6846,8 +6841,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
 
 
 
@@ -11772,7 +11765,6 @@ cc_prebuilt_library_shared {
 }
 
 
-
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.offlinecamera-service-impl",
     owner: "lenovo",
@@ -11816,9 +11808,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
-
-
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.radio.am-V1-ndk",
@@ -12224,17 +12213,6 @@ prebuilt_rfsa {
     soc_specific: true,
 }
 
-
-
-
-
-
-
-
-
-
-
-
 android_app_import {
     name: "CACertService",
     owner: "lenovo",
@@ -12245,9 +12223,6 @@ android_app_import {
     },
     soc_specific: true,
 }
-
-
-
 
 android_app_import {
     name: "CarrierConfigResCommon_Sys",
@@ -12342,7 +12317,6 @@ prebuilt_etc {
     sub_dir: "sensors/javalibs",
     soc_specific: true,
 }
-
 
 prebuilt_etc_xml {
     name: "android.hardware.radio.config.xml",
@@ -12443,7 +12417,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-
 prebuilt_etc_xml {
     name: "dataconnection-saidl.xml",
     owner: "lenovo",
@@ -12452,7 +12425,6 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
-
 
 prebuilt_etc_xml {
     name: "deviceinfo-saidl.xml",
@@ -12463,7 +12435,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-
 prebuilt_etc_xml {
     name: "fingerprint-gfcap.xml",
     owner: "lenovo",
@@ -12473,8 +12444,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-
-
 prebuilt_etc_xml {
     name: "qcrilhook-saidl.xml",
     owner: "lenovo",
@@ -12483,7 +12452,6 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
-
 
 prebuilt_etc_xml {
     name: "qtiradio-saidl.xml",
@@ -12583,7 +12551,6 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
-
 
 prebuilt_etc_xml {
     name: "vendor.qti.qccvndhal_aidl-service.xml",
