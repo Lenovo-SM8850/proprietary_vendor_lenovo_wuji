@@ -73,6 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
@@ -235,6 +236,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP_1.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.elf \
     vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP_1.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mdt \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/HYNIX_A003_3Dv9_UFS_4_1.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_1Tb_UFS41_GENERAL_P20_FW00.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SAVONA_V8_TLC_512Gb_UFS41_GENERAL_P20_FW00.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b00 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b01 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/arcface_ta.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/arcface_ta.b03 \
@@ -254,6 +258,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/ffu_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/ffu_config.txt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.bin \
@@ -679,6 +684,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sap.xml \
     android.hardware.radio.sim.xml \
     android.hardware.radio.voice.xml \
+    android.hardware.secure_element.xml \
     atfwd-saidl.xml \
     dataconnection-saidl.xml \
     deviceinfo-saidl.xml \
@@ -695,6 +701,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client.xml \
     vendor.qti.hardware.radio.uim_remote_server.xml \
     manifest_whale.xml \
+    activespu \
     adpl \
     avf_qcvm_manager \
     aw882xx_cali \
@@ -710,6 +717,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.face@4.0-service.face \
     android.hardware.biometrics.fingerprint-service.gfcap \
     android.hardware.bluetooth@aidl-service-qti \
+    android.hardware.gatekeeper-rust-service-qti \
     android.hardware.powerstats-service.qti \
     android.hardware.security.onekeymint-service-qti \
     qcrilNrd \

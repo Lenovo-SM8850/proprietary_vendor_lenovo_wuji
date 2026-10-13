@@ -13062,6 +13062,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.secure_element.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.secure_element.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "atfwd-saidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/atfwd-saidl.xml",
@@ -13202,6 +13211,37 @@ prebuilt_etc_xml {
     src: "proprietary/vendor/etc/vintf/manifest_whale.xml",
     filename_from_src: true,
     sub_dir: "vintf",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "activespu",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/activespu",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libqti-utils",
+                "libcutils",
+                "libbinder_ndk",
+                "vendor.qti.hardware.spu-V2-ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
@@ -13669,6 +13709,31 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.gatekeeper-rust-service-qti",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.gatekeeper-rust-service-qti",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libminkdescriptor",
+                "libc",
             ],
         },
     },
