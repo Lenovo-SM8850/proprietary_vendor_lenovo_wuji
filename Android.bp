@@ -14657,6 +14657,34 @@ filegroup {
     ],
 }
 
+filegroup {
+    name: "libgdix_afe_blob",
+    srcs: [
+        "proprietary/vendor/lib64/libgdix_afe.so",
+    ],
+}
+
+filegroup {
+    name: "libgdix_tsa_blob",
+    srcs: [
+        "proprietary/vendor/lib64/libgdix_tsa.so",
+    ],
+}
+
+filegroup {
+    name: "libgdix_tsc_blob",
+    srcs: [
+        "proprietary/vendor/lib64/libgdix_tsc.so",
+    ],
+}
+
+filegroup {
+    name: "libgdix_tsd_blob",
+    srcs: [
+        "proprietary/vendor/lib64/libgdix_tsd.so",
+    ],
+}
+
 cc_prebuilt_library_shared {
     name: "vendor.qti.diaghal-V1-ndk-system",
     stem: "vendor.qti.diaghal-V1-ndk",

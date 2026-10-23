@@ -255,6 +255,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/gen80200_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80200_zap.mbn \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_config.cfgb:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_config.cfgb \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/goodix_test_limits.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_test_limits.csv \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_1v_unsigned.mbn \
     vendor/lenovo/wuji/proprietary/vendor/firmware/vpu40_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v.mbn \
