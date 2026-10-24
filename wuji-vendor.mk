@@ -66,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit_dvt2.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_rm693a0_amoled_cmd_mode_dsi_tianma_panel_with_DSC_10bit_dvt2.json \
-    vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630946653341585811.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946653341585811.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630946850534658451.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946850534658451.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
