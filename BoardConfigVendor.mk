@@ -3,6 +3,7 @@
 #
 
 AB_OTA_PARTITIONS += \
+    abl \
     aop \
     aop_config \
     bluetooth \

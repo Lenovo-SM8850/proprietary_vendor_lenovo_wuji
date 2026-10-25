@@ -6,6 +6,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),wuji)
 
+$(call add-radio-file-sha1-checked,radio/abl.img,ebd440ccd9c719e06d97353e70ae0e33fadc4885)
 $(call add-radio-file-sha1-checked,radio/aop.img,69eccaa583bc4e094b8485a7d094ed8a4d34c2a8)
 $(call add-radio-file-sha1-checked,radio/aop_config.img,d44c1c8f494be3cd1a5a52fd463a500b14b62df0)
 $(call add-radio-file-sha1-checked,radio/bluetooth.img,c2e9c75542608c48dca3db4572013cc9ccdbda3e)
