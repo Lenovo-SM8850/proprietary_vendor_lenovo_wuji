@@ -11231,17 +11231,6 @@ prebuilt_rfsa {
 }
 
 android_app_import {
-    name: "CACertService",
-    owner: "lenovo",
-    apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-android_app_import {
     name: "CarrierConfigResCommon_Sys",
     owner: "lenovo",
     apk: "proprietary/product/app/CarrierConfigResCommon_Sys/CarrierConfigResCommon_Sys.apk",

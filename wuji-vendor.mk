@@ -631,7 +631,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
-    CACertService \
     CarrierConfigResCommon_Sys \
     QtiTelephonyService \
     QtiTelephony \
