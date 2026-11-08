@@ -829,8 +829,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/lenovo/wuji/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml
+    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk-system \
@@ -858,7 +857,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TxPwrAdmin \
     ImsRtpService-aidl.xml \
-    cacert-saidl.xml \
     datafactoryservice-saidl.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
