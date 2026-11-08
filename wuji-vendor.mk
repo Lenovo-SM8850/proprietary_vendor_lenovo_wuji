@@ -610,7 +610,6 @@ PRODUCT_PACKAGES += \
     libsession_voice_config \
     libsiminputgenutil \
     libsn100u_fw \
-    libsn300u_fw \
     libssd \
     libssdStaticHelper \
     libstream_compress \
