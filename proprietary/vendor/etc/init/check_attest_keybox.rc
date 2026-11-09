@@ -1,0 +1,12 @@
+# Copyright (c) Lenovo Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Lenovo Technologies, Inc.
+
+service lenovo_attest_check /vendor/bin/check_attest_keybox
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start lenovo_attest_check

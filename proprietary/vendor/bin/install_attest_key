@@ -1,0 +1,141 @@
+#!/vendor/bin/sh
+#=============================================================================
+# Copyright (c) Lenovo Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Lenovo Technologies, Inc.
+#=============================================================================
+
+KEYBOX_DIR="/mnt/vendor/persist/keybox"
+VENDOR_ATTEST_DIR="/vendor/etc/attest"
+
+TEE_ENC="${VENDOR_ATTEST_DIR}/TB324ZC000000006.xml.enc"
+STRONGBOX_ENC="${VENDOR_ATTEST_DIR}/TB324ZC000000000_strongbox.xml.enc"
+TEE_TMP="${KEYBOX_DIR}/TB324ZC000000006.xml.tmp"
+STRONGBOX_TMP="${KEYBOX_DIR}/TB324ZC000000000_strongbox.xml.tmp"
+
+TEE_DEVICE_ID="TB324ZC000000006"
+SPU_DEVICE_ID="TB324ZC000000000"
+
+FLAG_FILE="${KEYBOX_DIR}/key_written.flag"
+LOG_FILE="${KEYBOX_DIR}/keybox_install.log"
+
+log_print() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "${LOG_FILE}"
+    log -t install_attest_key "$*"
+}
+
+write_flag() {
+    echo "TEE_STATUS=$1" > "${FLAG_FILE}"
+    echo "SPU_STATUS=$2" >> "${FLAG_FILE}"
+}
+
+update_flag() {
+    local ts="notdone" ss="notdone"
+    [ ${TEE_NEED} -eq 0 ] && ts="done"
+    [ ${SPU_NEED} -eq 0 ] && ss="done"
+    write_flag "${ts}" "${ss}"
+}
+
+mkdir -p "${KEYBOX_DIR}"
+
+cleanup() {
+    rm -f "${TEE_TMP}" "${STRONGBOX_TMP}"
+}
+trap cleanup EXIT
+
+# ---- boot check ----
+TEE_NEED=1
+SPU_NEED=1
+
+if [ ! -f "${FLAG_FILE}" ]; then
+    TEE_KB_OUTPUT=$(/vendor/bin/KmInstallKeybox /dev/null -k 2>/dev/null)
+    if echo "${TEE_KB_OUTPUT}" | grep -q "is provisioned"; then
+        log_print "keybox already provisioned, skip"
+        write_flag "done" "done"
+        exit 0
+    fi
+    log_print "keybox not provisioned, need write"
+else
+    eval "$(grep TEE_STATUS "${FLAG_FILE}" 2>/dev/null)"
+    eval "$(grep SPU_STATUS "${FLAG_FILE}" 2>/dev/null)"
+    [ "${TEE_STATUS}" = "done" ] && TEE_NEED=0
+    [ "${SPU_STATUS}" = "done" ] && SPU_NEED=0
+    if [ ${TEE_NEED} -eq 0 ] && [ ${SPU_NEED} -eq 0 ]; then
+        exit 0
+    fi
+    log_print "flag exists (TEE=${TEE_STATUS:-notdone} SPU=${SPU_STATUS:-notdone}), continue"
+fi
+
+update_flag
+
+log_print "==== attest keybox provision start (TEE_NEED=${TEE_NEED} SPU_NEED=${SPU_NEED}) ===="
+
+if [ ${SPU_NEED} -eq 1 ]; then
+    log_print "wait 30s for SPU ready"
+    sleep 30
+fi
+
+RETRY=0
+while [ ${RETRY} -lt 2 ]; do
+    if [ ${TEE_NEED} -eq 0 ] && [ ${SPU_NEED} -eq 0 ]; then
+        break
+    fi
+
+    RETRY=$((RETRY+1))
+    log_print "--- attempt ${RETRY}/2 ---"
+
+    # TEE
+    if [ ${TEE_NEED} -eq 1 ] && [ -f "${TEE_ENC}" ]; then
+        log_print "decrypt TEE keybox"
+        if /vendor/bin/decrypt_keybox "${TEE_ENC}" "${TEE_TMP}" >> "${LOG_FILE}" 2>&1; then
+            log_print "provision TEE keybox"
+            if /vendor/bin/KmInstallKeybox "${TEE_TMP}" "${TEE_DEVICE_ID}" true false >> "${LOG_FILE}" 2>&1; then
+                log_print "TEE attestation keybox provision OK"
+                TEE_NEED=0
+            else
+                log_print "ERROR: TEE provision failed"
+            fi
+            update_flag
+            rm -f "${TEE_TMP}"
+        else
+            log_print "ERROR: TEE decrypt failed"
+        fi
+    fi
+
+    # SPU
+    if [ ${SPU_NEED} -eq 1 ] && [ -f "${STRONGBOX_ENC}" ]; then
+        log_print "decrypt SPU keybox"
+        if /vendor/bin/decrypt_keybox "${STRONGBOX_ENC}" "${STRONGBOX_TMP}" >> "${LOG_FILE}" 2>&1; then
+            log_print "provision SPU keybox"
+            if /vendor/bin/spu_install_keybox "${SPU_DEVICE_ID}" true "${STRONGBOX_TMP}" >> "${LOG_FILE}" 2>&1; then
+                log_print "SPU strongbox keybox provision OK"
+                SPU_NEED=0
+            else
+                log_print "ERROR: SPU provision failed"
+            fi
+            update_flag
+            rm -f "${STRONGBOX_TMP}"
+        else
+            log_print "ERROR: SPU decrypt failed"
+        fi
+    fi
+
+    if [ ${TEE_NEED} -eq 0 ] && [ ${SPU_NEED} -eq 0 ]; then
+        break
+    fi
+
+    if [ ${RETRY} -lt 2 ]; then
+        log_print "wait 60s before retry"
+        sleep 60
+    fi
+done
+
+# ---- final status ----
+update_flag
+if [ ${TEE_NEED} -eq 0 ] && [ ${SPU_NEED} -eq 0 ]; then
+    log_print "==== all keybox provision OK ===="
+else
+    log_print "==== incomplete (TEE_NEED=${TEE_NEED} SPU_NEED=${SPU_NEED}), retry on next boot ===="
+fi
+
+exit 0

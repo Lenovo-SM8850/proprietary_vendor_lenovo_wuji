@@ -1,0 +1,9 @@
+#!/vendor/bin/sh
+
+RAW_OUT=$(/vendor/bin/KmInstallKeybox /dev/null -k 2>/dev/null)
+
+if echo "$RAW_OUT" | grep -q "is provisioned"; then
+    setprop ro.odm.lenovo.attestationkey 1
+else
+    setprop ro.odm.lenovo.attestationkey 0
+fi

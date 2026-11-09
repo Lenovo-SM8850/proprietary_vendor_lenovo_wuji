@@ -1,0 +1,14 @@
+# Copyright (c) Lenovo Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Lenovo Technologies, Inc.
+
+# Wuji: keybox auto provision (一次性写入,flag 文件控制)
+
+service install_attest_key /vendor/bin/install_attest_key
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start install_attest_key

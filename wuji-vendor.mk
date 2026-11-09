@@ -51,6 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_5.7.0_enpuv6.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__eai_5.11.0_enpuv6.pmd \
     vendor/lenovo/wuji/proprietary/vendor/etc/assets/usrimg:$(TARGET_COPY_OUT_VENDOR)/etc/assets/usrimg \
+    vendor/lenovo/wuji/proprietary/vendor/etc/attest/TB324ZC000000000_strongbox.xml.enc:$(TARGET_COPY_OUT_VENDOR)/etc/attest/TB324ZC000000000_strongbox.xml.enc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/attest/TB324ZC000000006.xml.enc:$(TARGET_COPY_OUT_VENDOR)/etc/attest/TB324ZC000000006.xml.enc \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_whale/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_whale/audio_effects_config_stub.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
@@ -74,10 +76,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/hexlp_unsigned/hexlpservice_boot_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/hexlp_unsigned/hexlpservice_boot_config.json \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-spu-qti.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/check_attest_keybox.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/check_attest_keybox.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/fingerprint-gfcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-gfcap.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
+    vendor/lenovo/wuji/proprietary/vendor/etc/init/install_attest_key.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/install_attest_key.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lowi-server.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
@@ -713,15 +717,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client.xml \
     vendor.qti.hardware.radio.uim_remote_server.xml \
     manifest_whale.xml \
+    KmInstallKeybox \
     activespu \
     adpl \
     avf_qcvm_manager \
     aw882xx_cali \
     camera-preamble.json \
     ccid_daemon_nr \
+    check_attest_keybox \
     cnd \
     cnss-daemon \
     colorbin \
+    decrypt_keybox \
     diag-router \
     fm_qsoc_patches \
     hexlpservice \
@@ -748,6 +755,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.early_debug \
     init.qti.media \
     init.qti.qcv \
+    install_attest_key \
     ks \
     loadalgo \
     lowi-server \
@@ -764,6 +772,7 @@ PRODUCT_PACKAGES += \
     shsusrd \
     smartpa_tool \
     spdaemon \
+    spu_install_keybox \
     sscrpcd \
     start_subsys \
     system_dlkm_modprobe \
