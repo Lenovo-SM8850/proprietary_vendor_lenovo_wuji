@@ -4,7 +4,7 @@
 service hwdiag /vendor/bin/hwdiag
     class core
     user root
-    group root system vendor_qti_diag sdcard_rw cache drmrpc
+    group root system vendor_qti_diag sdcard_rw cache
     seclabel u:r:hwdiag:s0
 
 #

@@ -7,6 +7,8 @@ on init && property:ro.boot.product.vendor.sku=sun
 
 on init && property:ro.vendor.board.family=f-canoe && property:ro.vendor.qti.soc_name=canoe
     enable vendor.keymint-spu-qti
+    setprop ro.strongbox.manufacturer "QTI"
+    setprop ro.strongbox.model "SM8850"
 
 on init && property:ro.vendor.board.family=f-canoe && property:ro.vendor.qti.soc_name=whale
     enable vendor.keymint-spu-qti

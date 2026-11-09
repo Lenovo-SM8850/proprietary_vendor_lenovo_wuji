@@ -10830,42 +10830,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libspuprovisionids",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspuprovisionids.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libcrypto",
-                "libspukeymintprovision",
-                "libqmi_cci",
-                "libqmiservices",
-                "libspukeymintutils",
-                "libspukeymintdeviceutils",
-                "libspukeymint",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libssd",
     owner: "lenovo",
     strip: {
@@ -11001,30 +10965,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtee_provisioner_qti",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtee_provisioner_qti.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "liblog",
-                "libc",
-                "libminkdescriptor",
             ],
         },
     },
@@ -12905,18 +12845,6 @@ android_app_import {
         enabled: false,
     },
     product_specific: true,
-}
-
-android_app_import {
-    name: "QtiTelephonyService",
-    owner: "lenovo",
-    apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
 }
 
 android_app_import {
@@ -15320,7 +15248,6 @@ cc_prebuilt_library_shared {
                 "lib-imsvideocodec",
                 "libmediandk",
                 "libnativewindow",
-                "libion",
                 "libdmabufheap",
                 "lib-imsvtutils",
                 "libandroid",
@@ -15429,34 +15356,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "vendor.qti.diaghal-V1-ndk-system",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libimscamera_jni",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libimscamera_jni.so",
-            ],
-            shared_libs: [
-                "libnativehelper",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],

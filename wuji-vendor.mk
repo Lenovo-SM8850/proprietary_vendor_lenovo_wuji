@@ -217,6 +217,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_100_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_100_green.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_30_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_30_red.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/10_60_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_60_blue.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/9_flicker_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_green.bin \
+    vendor/lenovo/wuji/proprietary/vendor/firmware/9_flicker_orange.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_orange.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/9_flicker_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_flicker_red.bin \
     vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/lenovo/wuji/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
@@ -609,13 +611,11 @@ PRODUCT_PACKAGES += \
     libsiminputgenutil \
     libsn100u_fw \
     libsn300u_fw \
-    libspuprovisionids \
     libssd \
     libssdStaticHelper \
     libstream_compress \
     libstream_pcm \
     libsystem_health_mon2 \
-    libtee_provisioner_qti \
     libvendor.goodix.hardware.biometrics.fingerprint.cap \
     libvideooptfeature \
     libvmfilexfer \
@@ -683,7 +683,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
     TimeService \
     CarrierConfigResCommon_Sys \
-    QtiTelephonyService \
     QtiTelephony \
     ims \
     imssettings \
@@ -851,7 +850,6 @@ PRODUCT_PACKAGES += \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
-    libimscamera_jni \
     libimsmedia_jni \
     vendor.qti.ImsRtpService-V2-ndk-system \
     vendor.qti.diaghal@1.0-system \
