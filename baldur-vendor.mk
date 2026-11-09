@@ -399,8 +399,6 @@ PRODUCT_PACKAGES += \
     libdpps \
     libeai_fixed \
     libeai_float \
-    libhdrdynamic \
-    libhdrdynamicootf \
     libhme \
     libhwliqinterface2 \
     libipebpsstriping \
@@ -439,9 +437,7 @@ PRODUCT_PACKAGES += \
     libssdStaticHelper \
     libstream_compress \
     libstream_pcm \
-    libsvswcpu \
     libtee_provisioner_qti \
-    libtflite_fd \
     libvideooptfeature \
     libvmfilexfer \
     libpseudocryptoplugin \
@@ -456,7 +452,6 @@ PRODUCT_PACKAGES += \
     libquasar \
     vendor.qti.gnss-service \
     vendor.qti.hardware.camera.aon-service-impl \
-    vendor.qti.qccvndhal_aidl-V2-ndk \
     vendor_lib_rfsa_adsp_capi_dofg_nn_so_1 \
     vendor_lib_rfsa_adsp_libQnnHtpV81_so \
     vendor_lib_rfsa_adsp_libQnnHtpV81Skel_so \
