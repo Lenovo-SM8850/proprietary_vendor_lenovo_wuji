@@ -597,12 +597,6 @@ PRODUCT_PACKAGES += \
     libqll \
     libqllengine \
     libqmiextservices \
-    libqms \
-    libqms_client \
-    libqms_coex_sdk \
-    libqms_optimized_route_mgr_sdk \
-    libqms_packetstats_sdk \
-    libqms_sdf_sdk \
     libqpt \
     libqsegnet \
     libqsegnetunittest \
@@ -769,7 +763,6 @@ PRODUCT_PACKAGES += \
     nvram_cc \
     port-bridge \
     qcc-vendor \
-    qms \
     qseecomd \
     qtigetprop \
     qtisetprop \
@@ -795,7 +788,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/lenovo/wuji/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/audio/sku_alor/audio_effects_config_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/audio_effects_config_stub.xml \
-    vendor/lenovo/wuji/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
     vendor/lenovo/wuji/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lenovo/wuji/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/lenovo/wuji/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -842,10 +834,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/wuji/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
-    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy
+    vendor/lenovo/wuji/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk-system \
@@ -877,5 +867,4 @@ PRODUCT_PACKAGES += \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
     mwqem-saidl.xml \
-    qms-saidl.xml \
     vendor.qti.ims.factoryaidlservice.xml
